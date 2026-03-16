@@ -1,10 +1,205 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>WGLT Boggle V4</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WGLT Black History Boggle V4</title>
+
+<style>
+
+body{
+background:#0b0b0f;
+color:white;
+font-family:Arial;
+text-align:center;
+margin:0;
+padding:20px;
+}
+
+#board{
+display:grid;
+grid-template-columns:repeat(4,80px);
+grid-gap:10px;
+justify-content:center;
+margin-top:20px;
+}
+
+.tile{
+width:80px;
+height:80px;
+font-size:32px;
+font-weight:bold;
+display:flex;
+align-items:center;
+justify-content:center;
+border-radius:12px;
+background:#222;
+cursor:pointer;
+user-select:none;
+}
+
+.tile.gold{
+background:#cfa63c;
+color:black;
+}
+
+#currentWord{
+font-size:28px;
+margin-top:15px;
+letter-spacing:4px;
+}
+
+button{
+margin-top:10px;
+padding:10px 20px;
+font-size:16px;
+border-radius:8px;
+border:none;
+background:#1faa59;
+color:white;
+cursor:pointer;
+}
+
+</style>
 </head>
+
 <body>
-<h2>WGLT Boggle Project</h2>
-<p>This package contains the JSON word banks and theme data for your game.</p>
+
+<h1>WGLT Black History Boggle</h1>
+
+<div>
+<select id="grade">
+<option value="K2">K-2</option>
+<option value="G35">3-5</option>
+<option value="G68">6-8</option>
+<option value="G912">9-12</option>
+</select>
+
+<button onclick="startGame()">Start Game</button>
+<button onclick="hint()">Hint</button>
+</div>
+
+<div id="currentWord"></div>
+
+<div id="board"></div>
+
+<script>
+
+let board=[]
+let current=[]
+let library={}
+let themes={}
+let placedWords=[]
+
+async function loadData(){
+
+library = await fetch("./data/wglt_word_library.json").then(r=>r.json())
+themes = await fetch("./data/wglt_themes.json").then(r=>r.json())
+
+}
+
+function randomLetter(){
+const letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+return letters[Math.floor(Math.random()*letters.length)]
+}
+
+function generateBoard(){
+
+board=[]
+placedWords=[]
+const boardDiv=document.getElementById("board")
+boardDiv.innerHTML=""
+
+for(let i=0;i<16;i++){
+
+let letter=randomLetter()
+
+const tile=document.createElement("div")
+tile.className="tile"
+tile.innerText=letter
+
+tile.dataset.index=i
+
+tile.onpointerdown=()=>selectTile(i)
+
+boardDiv.appendChild(tile)
+
+board.push(letter)
+
+}
+
+}
+
+function selectTile(i){
+
+if(current.includes(i))return
+
+current.push(i)
+
+updateWord()
+
+}
+
+function updateWord(){
+
+let word=current.map(i=>board[i]).join("")
+
+document.getElementById("currentWord").innerText=word
+
+}
+
+function clearWord(){
+current=[]
+document.getElementById("currentWord").innerText=""
+}
+
+function checkWord(){
+
+let word=current.map(i=>board[i]).join("")
+
+const grade=document.getElementById("grade").value
+
+if(library[grade].bonusWords.includes(word)){
+
+alert("Valid word: "+word)
+
+}else{
+
+alert("Not found")
+
+}
+
+clearWord()
+
+}
+
+function hint(){
+
+if(!placedWords.length){
+
+alert("Hint: look for a history word!")
+
+return
+
+}
+
+let word=placedWords[Math.floor(Math.random()*placedWords.length)]
+
+alert("Hint: "+word.length+" letters")
+
+}
+
+function startGame(){
+
+generateBoard()
+
+clearWord()
+
+}
+
+loadData()
+
+</script>
+
 </body>
 </html>
