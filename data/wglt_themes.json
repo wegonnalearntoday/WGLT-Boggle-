@@ -1,0 +1,150 @@
+{
+  "civilrights": {
+    "title": "Civil Rights",
+    "words": [
+      {
+        "word": "KING",
+        "fact": "Dr. Martin Luther King Jr. led the Civil Rights Movement through nonviolent protest."
+      },
+      {
+        "word": "PARKS",
+        "fact": "Rosa Parks sparked the Montgomery Bus Boycott by refusing to give up her seat."
+      },
+      {
+        "word": "VOTE",
+        "fact": "Voting rights were a major focus of civil rights activism."
+      },
+      {
+        "word": "MARCH",
+        "fact": "Marches helped activists gather support and demand justice."
+      },
+      {
+        "word": "RIGHTS",
+        "fact": "Civil rights protect people from discrimination and unequal treatment."
+      },
+      {
+        "word": "UNITY",
+        "fact": "Unity gave civil rights movements strength."
+      },
+      {
+        "word": "PEACE",
+        "fact": "Many civil rights leaders promoted nonviolent change."
+      },
+      {
+        "word": "JUSTICE",
+        "fact": "Justice means fairness under the law."
+      }
+    ]
+  },
+  "inventors": {
+    "title": "Inventors & STEM",
+    "words": [
+      {
+        "word": "CARVER",
+        "fact": "George Washington Carver improved agriculture with crop research."
+      },
+      {
+        "word": "LATIMER",
+        "fact": "Lewis Latimer improved the carbon filament used in light bulbs."
+      },
+      {
+        "word": "PATENT",
+        "fact": "A patent protects an inventor's idea."
+      },
+      {
+        "word": "SCIENCE",
+        "fact": "Black scientists have shaped many modern discoveries."
+      },
+      {
+        "word": "STEM",
+        "fact": "STEM stands for science, technology, engineering, and mathematics."
+      },
+      {
+        "word": "LIGHT",
+        "fact": "Latimer's work improved electric lighting."
+      },
+      {
+        "word": "IDEA",
+        "fact": "Every invention begins with an idea."
+      },
+      {
+        "word": "BUILD",
+        "fact": "Inventors build, test, and improve designs."
+      }
+    ]
+  },
+  "arts": {
+    "title": "Arts & Literature",
+    "words": [
+      {
+        "word": "ANGELOU",
+        "fact": "Maya Angelou was a poet and civil rights activist."
+      },
+      {
+        "word": "BALDWIN",
+        "fact": "James Baldwin wrote influential essays and novels."
+      },
+      {
+        "word": "ELLA",
+        "fact": "Ella Fitzgerald was known as the First Lady of Song."
+      },
+      {
+        "word": "DUKE",
+        "fact": "Duke Ellington was a legendary jazz composer."
+      },
+      {
+        "word": "JAZZ",
+        "fact": "Jazz music grew from African American musical traditions."
+      },
+      {
+        "word": "POEM",
+        "fact": "Poetry expresses thoughts, culture, and history."
+      },
+      {
+        "word": "SONG",
+        "fact": "Music has long told stories of struggle and celebration."
+      },
+      {
+        "word": "WRITE",
+        "fact": "Writing preserves stories and culture."
+      }
+    ]
+  },
+  "sports": {
+    "title": "Sports Pioneers",
+    "words": [
+      {
+        "word": "JACKIE",
+        "fact": "Jackie Robinson broke Major League Baseball's color barrier in 1947."
+      },
+      {
+        "word": "TRACK",
+        "fact": "Track and field includes many historic Black athletes."
+      },
+      {
+        "word": "FIELD",
+        "fact": "Sports fields have often been places where barriers were broken."
+      },
+      {
+        "word": "TEAM",
+        "fact": "Great athletes help lead their teams."
+      },
+      {
+        "word": "LEAD",
+        "fact": "Leadership matters on and off the field."
+      },
+      {
+        "word": "GOAL",
+        "fact": "Goals represent determination and focus."
+      },
+      {
+        "word": "SPORT",
+        "fact": "Sports history includes many important breakthroughs."
+      },
+      {
+        "word": "WIN",
+        "fact": "Winning can inspire future generations."
+      }
+    ]
+  }
+}
