@@ -35,6 +35,14 @@
         {
           "word": "STEM",
           "fact": "Inventors and builders help us understand Stem."
+        },
+        {
+          "word": "TEST",
+          "fact": "Inventors and builders help us understand Test."
+        },
+        {
+          "word": "DRAW",
+          "fact": "Inventors and builders help us understand Draw."
         }
       ],
       "G35": [
@@ -69,6 +77,14 @@
         {
           "word": "IDEA",
           "fact": "Every invention begins with an idea."
+        },
+        {
+          "word": "DEVICE",
+          "fact": "A device is a tool designed for a specific job."
+        },
+        {
+          "word": "DESIGN",
+          "fact": "Design helps inventors turn ideas into useful solutions."
         }
       ],
       "G68": [
@@ -103,6 +119,14 @@
         {
           "word": "INVENT",
           "fact": "To invent is to create something new or improve something old."
+        },
+        {
+          "word": "SYSTEM",
+          "fact": "A system is a set of parts working together."
+        },
+        {
+          "word": "DESIGN",
+          "fact": "Design connects function, testing, and real people."
         }
       ],
       "G912": [
@@ -137,6 +161,14 @@
         {
           "word": "TECHNOLOGY",
           "fact": "Technology includes both tools and the systems built around them."
+        },
+        {
+          "word": "PROTOTYPE",
+          "fact": "A prototype makes an idea testable before full production."
+        },
+        {
+          "word": "MECHANISM",
+          "fact": "A mechanism is the working part of a machine or system."
         }
       ]
     }
@@ -176,108 +208,140 @@
         {
           "word": "RIGHT",
           "fact": "Civil rights lessons teach Right."
+        },
+        {
+          "word": "HOPE",
+          "fact": "Civil rights lessons teach Hope."
+        },
+        {
+          "word": "CARE",
+          "fact": "Civil rights lessons teach Care."
         }
       ],
       "G35": [
         {
           "word": "KING",
-          "fact": "Dr. Martin Luther King Jr. helped lead the Civil Rights Movement through nonviolent protest."
+          "fact": "Civil rights helps us understand King."
         },
         {
           "word": "PARKS",
-          "fact": "Rosa Parks became a symbol of resistance after refusing to give up her bus seat."
+          "fact": "Civil rights helps us understand Parks."
         },
         {
           "word": "VOTE",
-          "fact": "Voting rights were a major focus of civil rights activism."
+          "fact": "Civil rights helps us understand Vote."
         },
         {
           "word": "MARCH",
-          "fact": "Marches helped movements gather support and attention."
+          "fact": "Civil rights helps us understand March."
         },
         {
           "word": "RIGHTS",
-          "fact": "Civil rights protect people from unfair treatment."
+          "fact": "Civil rights helps us understand Rights."
         },
         {
           "word": "UNITY",
-          "fact": "Working together made movements stronger."
+          "fact": "Civil rights helps us understand Unity."
         },
         {
           "word": "PEACE",
-          "fact": "Many leaders promoted nonviolent change."
+          "fact": "Civil rights helps us understand Peace."
         },
         {
           "word": "JUSTICE",
-          "fact": "Justice means fairness under the law."
+          "fact": "Civil rights helps us understand Justice."
+        },
+        {
+          "word": "FAIR",
+          "fact": "Civil rights helps us understand Fair."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Civil rights helps us understand Voice."
         }
       ],
       "G68": [
         {
           "word": "DOUGLASS",
-          "fact": "Frederick Douglass spoke and wrote powerfully for freedom and citizenship."
+          "fact": "Civil rights history includes Douglass."
         },
         {
           "word": "PARKS",
-          "fact": "Rosa Parks helped spark the Montgomery Bus Boycott."
+          "fact": "Civil rights history includes Parks."
         },
         {
           "word": "BALLOT",
-          "fact": "The ballot represents the power to vote and participate in democracy."
+          "fact": "Civil rights history includes Ballot."
         },
         {
           "word": "JUSTICE",
-          "fact": "Justice is a central goal of civil rights work."
+          "fact": "Civil rights history includes Justice."
         },
         {
           "word": "PROTEST",
-          "fact": "Protests can bring attention to injustice and demand change."
+          "fact": "Civil rights history includes Protest."
         },
         {
           "word": "RIGHTS",
-          "fact": "Rights are protections people hold under law and society."
+          "fact": "Civil rights history includes Rights."
         },
         {
           "word": "EQUALITY",
-          "fact": "Equality means people deserve fair treatment and opportunity."
+          "fact": "Civil rights history includes Equality."
         },
         {
           "word": "FREEDOM",
-          "fact": "Freedom includes both liberty and access to full citizenship."
+          "fact": "Civil rights history includes Freedom."
+        },
+        {
+          "word": "VOTING",
+          "fact": "Civil rights history includes Voting."
+        },
+        {
+          "word": "MARCH",
+          "fact": "Civil rights history includes March."
         }
       ],
       "G912": [
         {
           "word": "SEGREGATION",
-          "fact": "Segregation used laws and custom to separate people and deny equal access."
+          "fact": "Civil rights movements challenge power through Segregation."
         },
         {
           "word": "SUFFRAGE",
-          "fact": "Suffrage refers to the right to vote."
+          "fact": "Civil rights movements challenge power through Suffrage."
         },
         {
           "word": "JUSTICE",
-          "fact": "Civil rights movements challenge unequal power and unequal treatment."
+          "fact": "Civil rights movements challenge power through Justice."
         },
         {
           "word": "ADVOCACY",
-          "fact": "Advocacy means speaking and organizing for change."
+          "fact": "Civil rights movements challenge power through Advocacy."
         },
         {
           "word": "LEGISLATION",
-          "fact": "Legislation can protect rights or restrict them, depending on who writes it."
+          "fact": "Civil rights movements challenge power through Legislation."
         },
         {
           "word": "ACTIVISM",
-          "fact": "Activism uses collective action to challenge injustice."
+          "fact": "Civil rights movements challenge power through Activism."
         },
         {
           "word": "LIBERATION",
-          "fact": "Liberation goes beyond access and aims at freedom from oppressive systems."
+          "fact": "Civil rights movements challenge power through Liberation."
         },
         {
           "word": "DEMOCRACY",
-          "fact": "Democracy depends on participation, rights, and accountability."
+          "fact": "Civil rights movements challenge power through Democracy."
+        },
+        {
+          "word": "EQUALITY",
+          "fact": "Civil rights movements challenge power through Equality."
+        },
+        {
+          "word": "PROTEST",
+          "fact": "Civil rights movements challenge power through Protest."
         }
       ]
     }
@@ -317,108 +381,140 @@
         {
           "word": "DANCE",
           "fact": "Music helps people share Dance."
+        },
+        {
+          "word": "SHOW",
+          "fact": "Music helps people share Show."
+        },
+        {
+          "word": "CLAP",
+          "fact": "Music helps people share Clap."
         }
       ],
       "G35": [
         {
           "word": "ELLA",
-          "fact": "Ella Fitzgerald became one of the most celebrated jazz singers in history."
+          "fact": "Music and culture include Ella."
         },
         {
           "word": "DUKE",
-          "fact": "Duke Ellington was a legendary composer and bandleader."
+          "fact": "Music and culture include Duke."
         },
         {
           "word": "JAZZ",
-          "fact": "Jazz grew from Black musical traditions and changed music worldwide."
+          "fact": "Music and culture include Jazz."
         },
         {
           "word": "SONG",
-          "fact": "Songs can teach, celebrate, and protest."
+          "fact": "Music and culture include Song."
         },
         {
           "word": "BEAT",
-          "fact": "Beat helps music move and groove."
+          "fact": "Music and culture include Beat."
         },
         {
           "word": "SOUL",
-          "fact": "Soul music carries emotion, power, and style."
+          "fact": "Music and culture include Soul."
         },
         {
           "word": "DRUM",
-          "fact": "Drums help drive rhythm and energy."
+          "fact": "Music and culture include Drum."
         },
         {
           "word": "DANCE",
-          "fact": "Dance connects music with movement and expression."
+          "fact": "Music and culture include Dance."
+        },
+        {
+          "word": "BAND",
+          "fact": "Music and culture include Band."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Music and culture include Voice."
         }
       ],
       "G68": [
         {
           "word": "COLTRANE",
-          "fact": "John Coltrane transformed jazz with bold improvisation and spiritual intensity."
+          "fact": "Music and culture can be explored through Coltrane."
         },
         {
           "word": "MOTOWN",
-          "fact": "Motown helped bring Black artists to global audiences."
+          "fact": "Music and culture can be explored through Motown."
         },
         {
           "word": "RHYTHM",
-          "fact": "Rhythm organizes time and motion in music."
+          "fact": "Music and culture can be explored through Rhythm."
         },
         {
           "word": "MELODY",
-          "fact": "Melody is the line a listener often remembers."
+          "fact": "Music and culture can be explored through Melody."
         },
         {
           "word": "BLUES",
-          "fact": "The blues influenced jazz, rock, soul, and many other genres."
+          "fact": "Music and culture can be explored through Blues."
         },
         {
           "word": "GOSPEL",
-          "fact": "Gospel music shaped both church and popular music traditions."
+          "fact": "Music and culture can be explored through Gospel."
         },
         {
           "word": "JAZZ",
-          "fact": "Jazz values creativity, listening, and improvisation."
+          "fact": "Music and culture can be explored through Jazz."
         },
         {
           "word": "LYRIC",
-          "fact": "Lyrics can tell stories, teach ideas, and express identity."
+          "fact": "Music and culture can be explored through Lyric."
+        },
+        {
+          "word": "CHOIR",
+          "fact": "Music and culture can be explored through Choir."
+        },
+        {
+          "word": "STAGE",
+          "fact": "Music and culture can be explored through Stage."
         }
       ],
       "G912": [
         {
           "word": "IMPROVISATION",
-          "fact": "Improvisation is central to many Black musical traditions, especially jazz."
+          "fact": "Music and culture invite deeper thinking about Improvisation."
         },
         {
           "word": "MOTOWN",
-          "fact": "Motown blended artistry, business, and crossover appeal."
+          "fact": "Music and culture invite deeper thinking about Motown."
         },
         {
           "word": "HIPHOP",
-          "fact": "Hip-hop includes music, language, movement, visual style, and social commentary."
+          "fact": "Music and culture invite deeper thinking about Hiphop."
         },
         {
           "word": "RHYTHM",
-          "fact": "Rhythm can shape both sound and physical response."
+          "fact": "Music and culture invite deeper thinking about Rhythm."
         },
         {
           "word": "MELODY",
-          "fact": "Melody often carries the emotional center of a song."
+          "fact": "Music and culture invite deeper thinking about Melody."
         },
         {
           "word": "CULTURE",
-          "fact": "Music can preserve memory, identity, and resistance."
+          "fact": "Music and culture invite deeper thinking about Culture."
         },
         {
           "word": "PERFORMANCE",
-          "fact": "Performance turns composition into lived experience."
+          "fact": "Music and culture invite deeper thinking about Performance."
         },
         {
           "word": "LEGACY",
-          "fact": "Musical legacy lives through influence and reinterpretation."
+          "fact": "Music and culture invite deeper thinking about Legacy."
+        },
+        {
+          "word": "LYRICS",
+          "fact": "Music and culture invite deeper thinking about Lyrics."
+        },
+        {
+          "word": "PRODUCTION",
+          "fact": "Music and culture invite deeper thinking about Production."
         }
       ]
     }
@@ -458,108 +554,140 @@
         {
           "word": "RACE",
           "fact": "Sports can teach Race."
+        },
+        {
+          "word": "FAST",
+          "fact": "Sports can teach Fast."
+        },
+        {
+          "word": "PLAY",
+          "fact": "Sports can teach Play."
         }
       ],
       "G35": [
         {
           "word": "JACKIE",
-          "fact": "Jackie Robinson broke Major League Baseball's modern color barrier in 1947."
+          "fact": "Sports history includes Jackie."
         },
         {
           "word": "TRACK",
-          "fact": "Track and field includes many historic Black athletes and record-setters."
+          "fact": "Sports history includes Track."
         },
         {
           "word": "FIELD",
-          "fact": "Sports fields have often been places where barriers were challenged."
+          "fact": "Sports history includes Field."
         },
         {
           "word": "TEAM",
-          "fact": "Great athletes work with and lift their teams."
+          "fact": "Sports history includes Team."
         },
         {
           "word": "LEAD",
-          "fact": "Leadership matters on and off the field."
+          "fact": "Sports history includes Lead."
         },
         {
           "word": "GOAL",
-          "fact": "Goals represent determination and focus."
+          "fact": "Sports history includes Goal."
         },
         {
           "word": "SPORT",
-          "fact": "Sports history includes many important breakthroughs."
+          "fact": "Sports history includes Sport."
         },
         {
           "word": "WIN",
-          "fact": "Winning can inspire future generations."
+          "fact": "Sports history includes Win."
+        },
+        {
+          "word": "RACE",
+          "fact": "Sports history includes Race."
+        },
+        {
+          "word": "PLAY",
+          "fact": "Sports history includes Play."
         }
       ],
       "G68": [
         {
           "word": "ROBINSON",
-          "fact": "Jackie Robinson changed baseball and the nation by challenging racial barriers."
+          "fact": "Sports legends can be explored through Robinson."
         },
         {
           "word": "SERENA",
-          "fact": "Serena Williams dominated tennis and redefined excellence on the court."
+          "fact": "Sports legends can be explored through Serena."
         },
         {
           "word": "JORDAN",
-          "fact": "Michael Jordan became one of the most influential athletes in the world."
+          "fact": "Sports legends can be explored through Jordan."
         },
         {
           "word": "OLYMPIC",
-          "fact": "The Olympic stage has featured many groundbreaking Black athletes."
+          "fact": "Sports legends can be explored through Olympic."
         },
         {
           "word": "TRACK",
-          "fact": "Track and field has produced iconic performances and social statements."
+          "fact": "Sports legends can be explored through Track."
         },
         {
           "word": "TEAM",
-          "fact": "Team sports depend on trust, communication, and shared purpose."
+          "fact": "Sports legends can be explored through Team."
         },
         {
           "word": "GOAL",
-          "fact": "Goals help athletes focus training and performance."
+          "fact": "Sports legends can be explored through Goal."
         },
         {
           "word": "LEADER",
-          "fact": "Athletes can lead both in sport and in public life."
+          "fact": "Sports legends can be explored through Leader."
+        },
+        {
+          "word": "TRAIN",
+          "fact": "Sports legends can be explored through Train."
+        },
+        {
+          "word": "COURT",
+          "fact": "Sports legends can be explored through Court."
         }
       ],
       "G912": [
         {
           "word": "REPRESENTATION",
-          "fact": "Sports can change representation by making excellence visible in public culture."
+          "fact": "Sports and public life invite deeper thinking about Representation."
         },
         {
           "word": "ROBINSON",
-          "fact": "Jackie Robinson's career showed how athletic achievement and civil rights history intersect."
+          "fact": "Sports and public life invite deeper thinking about Robinson."
         },
         {
           "word": "OLYMPIC",
-          "fact": "Global sport can become a stage for both national pride and protest."
+          "fact": "Sports and public life invite deeper thinking about Olympic."
         },
         {
           "word": "LEGACY",
-          "fact": "Athletic legacy includes influence, activism, style, and impact beyond statistics."
+          "fact": "Sports and public life invite deeper thinking about Legacy."
         },
         {
           "word": "PERFORMANCE",
-          "fact": "Performance reflects both preparation and pressure."
+          "fact": "Sports and public life invite deeper thinking about Performance."
         },
         {
           "word": "LEADERSHIP",
-          "fact": "Sports leadership can involve discipline, example, and voice."
+          "fact": "Sports and public life invite deeper thinking about Leadership."
         },
         {
           "word": "TRAINING",
-          "fact": "Training builds consistency, endurance, and skill."
+          "fact": "Sports and public life invite deeper thinking about Training."
         },
         {
           "word": "COMPETITION",
-          "fact": "Competition can sharpen talent while revealing larger social questions."
+          "fact": "Sports and public life invite deeper thinking about Competition."
+        },
+        {
+          "word": "ATHLETE",
+          "fact": "Sports and public life invite deeper thinking about Athlete."
+        },
+        {
+          "word": "CHAMPION",
+          "fact": "Sports and public life invite deeper thinking about Champion."
         }
       ]
     }
@@ -599,108 +727,140 @@
         {
           "word": "BUY",
           "fact": "Money lessons can teach Buy."
+        },
+        {
+          "word": "SELL",
+          "fact": "Money lessons can teach Sell."
+        },
+        {
+          "word": "COST",
+          "fact": "Money lessons can teach Cost."
         }
       ],
       "G35": [
         {
           "word": "SAVE",
-          "fact": "Saving means keeping money for future needs or goals."
+          "fact": "Financial literacy includes Save."
         },
         {
           "word": "BANK",
-          "fact": "A bank is a place where money can be stored and managed."
+          "fact": "Financial literacy includes Bank."
         },
         {
           "word": "EARN",
-          "fact": "People earn money by working, selling, or creating value."
+          "fact": "Financial literacy includes Earn."
         },
         {
           "word": "SPEND",
-          "fact": "Spending means using money to buy something."
+          "fact": "Financial literacy includes Spend."
         },
         {
           "word": "BUDGET",
-          "fact": "A budget is a plan for how money will be used."
+          "fact": "Financial literacy includes Budget."
         },
         {
           "word": "GOAL",
-          "fact": "Money goals help people plan instead of guessing."
+          "fact": "Financial literacy includes Goal."
         },
         {
           "word": "CREDIT",
-          "fact": "Credit lets people borrow money and pay it back later."
+          "fact": "Financial literacy includes Credit."
         },
         {
           "word": "DEBT",
-          "fact": "Debt is money owed to someone else."
+          "fact": "Financial literacy includes Debt."
+        },
+        {
+          "word": "MONEY",
+          "fact": "Financial literacy includes Money."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Financial literacy includes Plan."
         }
       ],
       "G68": [
         {
           "word": "BUDGET",
-          "fact": "Budgeting helps people balance needs, wants, and future goals."
+          "fact": "Financial literacy can be explored through Budget."
         },
         {
           "word": "CREDIT",
-          "fact": "Credit can be useful, but it must be managed carefully."
+          "fact": "Financial literacy can be explored through Credit."
         },
         {
           "word": "DEBT",
-          "fact": "Debt grows more expensive when interest builds up."
+          "fact": "Financial literacy can be explored through Debt."
         },
         {
           "word": "INVEST",
-          "fact": "Investing puts money into something expected to grow over time."
+          "fact": "Financial literacy can be explored through Invest."
         },
         {
           "word": "BANKING",
-          "fact": "Banking includes saving, deposits, withdrawals, and account management."
+          "fact": "Financial literacy can be explored through Banking."
         },
         {
           "word": "INCOME",
-          "fact": "Income is money received from work, business, or other sources."
+          "fact": "Financial literacy can be explored through Income."
         },
         {
           "word": "SPEND",
-          "fact": "Spending choices shape long-term financial health."
+          "fact": "Financial literacy can be explored through Spend."
         },
         {
           "word": "WEALTH",
-          "fact": "Wealth is built through assets, planning, and time."
+          "fact": "Financial literacy can be explored through Wealth."
+        },
+        {
+          "word": "ASSET",
+          "fact": "Financial literacy can be explored through Asset."
+        },
+        {
+          "word": "CASHFLOW",
+          "fact": "Financial literacy can be explored through Cashflow."
         }
       ],
       "G912": [
         {
           "word": "COMPOUND",
-          "fact": "Compounding lets money grow on both the original amount and past growth."
+          "fact": "Financial literacy invites deeper thinking about Compound."
         },
         {
           "word": "INVEST",
-          "fact": "Investing involves risk, time horizon, and expected return."
+          "fact": "Financial literacy invites deeper thinking about Invest."
         },
         {
           "word": "CREDIT",
-          "fact": "Credit history affects borrowing costs and opportunity."
+          "fact": "Financial literacy invites deeper thinking about Credit."
         },
         {
           "word": "BUDGET",
-          "fact": "A budget is a decision-making tool, not just a spreadsheet."
+          "fact": "Financial literacy invites deeper thinking about Budget."
         },
         {
           "word": "ASSET",
-          "fact": "Assets can grow value or produce income."
+          "fact": "Financial literacy invites deeper thinking about Asset."
         },
         {
           "word": "LIABILITY",
-          "fact": "Liabilities are obligations that reduce net worth."
+          "fact": "Financial literacy invites deeper thinking about Liability."
         },
         {
           "word": "INTEREST",
-          "fact": "Interest is the cost of borrowing or the reward for saving."
+          "fact": "Financial literacy invites deeper thinking about Interest."
         },
         {
           "word": "ECONOMICS",
-          "fact": "Economics studies choices under scarcity and the systems built around them."
+          "fact": "Financial literacy invites deeper thinking about Economics."
+        },
+        {
+          "word": "INCOME",
+          "fact": "Financial literacy invites deeper thinking about Income."
+        },
+        {
+          "word": "SAVINGS",
+          "fact": "Financial literacy invites deeper thinking about Savings."
         }
       ]
     }
@@ -740,108 +900,140 @@
         {
           "word": "RIGHT",
           "fact": "Civics helps us learn Right."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Civics helps us learn Voice."
+        },
+        {
+          "word": "FAIR",
+          "fact": "Civics helps us learn Fair."
         }
       ],
       "G35": [
         {
           "word": "VOTE",
-          "fact": "Voting helps people choose leaders and make decisions."
+          "fact": "Government and civics include Vote."
         },
         {
           "word": "LAW",
-          "fact": "Laws set rules for communities and governments."
+          "fact": "Government and civics include Law."
         },
         {
           "word": "COURT",
-          "fact": "Courts help interpret laws and settle disputes."
+          "fact": "Government and civics include Court."
         },
         {
           "word": "BILL",
-          "fact": "A bill is a proposed law."
+          "fact": "Government and civics include Bill."
         },
         {
           "word": "RIGHTS",
-          "fact": "Rights protect freedoms and fairness."
+          "fact": "Government and civics include Rights."
         },
         {
           "word": "POWER",
-          "fact": "Government power should be limited and balanced."
+          "fact": "Government and civics include Power."
         },
         {
           "word": "CIVIC",
-          "fact": "Civic life includes how people participate in community and government."
+          "fact": "Government and civics include Civic."
         },
         {
           "word": "VOICE",
-          "fact": "Citizens can use their voice to participate."
+          "fact": "Government and civics include Voice."
+        },
+        {
+          "word": "RULE",
+          "fact": "Government and civics include Rule."
+        },
+        {
+          "word": "STATE",
+          "fact": "Government and civics include State."
         }
       ],
       "G68": [
         {
           "word": "SENATE",
-          "fact": "The Senate is one part of the United States Congress."
+          "fact": "Government and civics can be explored through Senate."
         },
         {
           "word": "COURT",
-          "fact": "Courts interpret the law and review legal questions."
+          "fact": "Government and civics can be explored through Court."
         },
         {
           "word": "BALLOT",
-          "fact": "A ballot is the method used to cast a vote."
+          "fact": "Government and civics can be explored through Ballot."
         },
         {
           "word": "POLICY",
-          "fact": "Policy is a plan or course of action adopted by leaders or institutions."
+          "fact": "Government and civics can be explored through Policy."
         },
         {
           "word": "VOTER",
-          "fact": "A voter participates directly in democracy."
+          "fact": "Government and civics can be explored through Voter."
         },
         {
           "word": "RIGHTS",
-          "fact": "Rights and responsibilities both matter in civic life."
+          "fact": "Government and civics can be explored through Rights."
         },
         {
           "word": "DEBATE",
-          "fact": "Debate helps people test ideas and arguments."
+          "fact": "Government and civics can be explored through Debate."
         },
         {
           "word": "JUSTICE",
-          "fact": "Justice is a major goal of fair government."
+          "fact": "Government and civics can be explored through Justice."
+        },
+        {
+          "word": "PUBLIC",
+          "fact": "Government and civics can be explored through Public."
+        },
+        {
+          "word": "LAW",
+          "fact": "Government and civics can be explored through Law."
         }
       ],
       "G912": [
         {
           "word": "CONSTITUTION",
-          "fact": "A constitution sets the framework and limits of government."
+          "fact": "Government and civics invite deeper thinking about Constitution."
         },
         {
           "word": "LEGISLATION",
-          "fact": "Legislation is lawmaking through elected bodies."
+          "fact": "Government and civics invite deeper thinking about Legislation."
         },
         {
           "word": "DEMOCRACY",
-          "fact": "Democracy depends on participation, rights, and accountability."
+          "fact": "Government and civics invite deeper thinking about Democracy."
         },
         {
           "word": "JUDICIAL",
-          "fact": "Judicial power focuses on interpreting the law."
+          "fact": "Government and civics invite deeper thinking about Judicial."
         },
         {
           "word": "REPRESENTATION",
-          "fact": "Representation asks who speaks and acts for the people."
+          "fact": "Government and civics invite deeper thinking about Representation."
         },
         {
           "word": "POLICY",
-          "fact": "Policy choices shape real outcomes in daily life."
+          "fact": "Government and civics invite deeper thinking about Policy."
         },
         {
           "word": "SOVEREIGNTY",
-          "fact": "Sovereignty refers to supreme governing authority."
+          "fact": "Government and civics invite deeper thinking about Sovereignty."
         },
         {
           "word": "CITIZENSHIP",
-          "fact": "Citizenship carries both protections and responsibilities."
+          "fact": "Government and civics invite deeper thinking about Citizenship."
+        },
+        {
+          "word": "PUBLIC",
+          "fact": "Government and civics invite deeper thinking about Public."
+        },
+        {
+          "word": "GOVERNMENT",
+          "fact": "Government and civics invite deeper thinking about Government."
         }
       ]
     }
@@ -881,6 +1073,14 @@
         {
           "word": "SHARE",
           "fact": "HBCUs & Education helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "HBCUs & Education helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "HBCUs & Education helps us practice Build."
         }
       ],
       "G35": [
@@ -915,6 +1115,14 @@
         {
           "word": "GOAL",
           "fact": "HBCUs & Education includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "HBCUs & Education includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "HBCUs & Education includes ideas about Action."
         }
       ],
       "G68": [
@@ -949,6 +1157,14 @@
         {
           "word": "LEGACY",
           "fact": "HBCUs & Education can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "HBCUs & Education can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "HBCUs & Education can be explored through Change."
         }
       ],
       "G912": [
@@ -983,6 +1199,14 @@
         {
           "word": "ANALYSIS",
           "fact": "HBCUs & Education invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "HBCUs & Education invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "HBCUs & Education invites deeper thinking about History."
         }
       ]
     }
@@ -1022,6 +1246,14 @@
         {
           "word": "SHARE",
           "fact": "Writers & Thinkers helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Writers & Thinkers helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Writers & Thinkers helps us practice Build."
         }
       ],
       "G35": [
@@ -1056,6 +1288,14 @@
         {
           "word": "GOAL",
           "fact": "Writers & Thinkers includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Writers & Thinkers includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Writers & Thinkers includes ideas about Action."
         }
       ],
       "G68": [
@@ -1090,6 +1330,14 @@
         {
           "word": "LEGACY",
           "fact": "Writers & Thinkers can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Writers & Thinkers can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Writers & Thinkers can be explored through Change."
         }
       ],
       "G912": [
@@ -1124,6 +1372,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Writers & Thinkers invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Writers & Thinkers invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Writers & Thinkers invites deeper thinking about History."
         }
       ]
     }
@@ -1163,6 +1419,14 @@
         {
           "word": "SHARE",
           "fact": "Medical Pioneers helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Medical Pioneers helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Medical Pioneers helps us practice Build."
         }
       ],
       "G35": [
@@ -1197,6 +1461,14 @@
         {
           "word": "GOAL",
           "fact": "Medical Pioneers includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Medical Pioneers includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Medical Pioneers includes ideas about Action."
         }
       ],
       "G68": [
@@ -1231,6 +1503,14 @@
         {
           "word": "LEGACY",
           "fact": "Medical Pioneers can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Medical Pioneers can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Medical Pioneers can be explored through Change."
         }
       ],
       "G912": [
@@ -1265,6 +1545,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Medical Pioneers invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Medical Pioneers invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Medical Pioneers invites deeper thinking about History."
         }
       ]
     }
@@ -1304,6 +1592,14 @@
         {
           "word": "SHARE",
           "fact": "STEM & Future Tech helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "STEM & Future Tech helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "STEM & Future Tech helps us practice Build."
         }
       ],
       "G35": [
@@ -1338,6 +1634,14 @@
         {
           "word": "GOAL",
           "fact": "STEM & Future Tech includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "STEM & Future Tech includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "STEM & Future Tech includes ideas about Action."
         }
       ],
       "G68": [
@@ -1372,6 +1676,14 @@
         {
           "word": "LEGACY",
           "fact": "STEM & Future Tech can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "STEM & Future Tech can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "STEM & Future Tech can be explored through Change."
         }
       ],
       "G912": [
@@ -1406,6 +1718,14 @@
         {
           "word": "ANALYSIS",
           "fact": "STEM & Future Tech invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "STEM & Future Tech invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "STEM & Future Tech invites deeper thinking about History."
         }
       ]
     }
@@ -1445,6 +1765,14 @@
         {
           "word": "SHARE",
           "fact": "Black History Foundations helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Black History Foundations helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Black History Foundations helps us practice Build."
         }
       ],
       "G35": [
@@ -1479,6 +1807,14 @@
         {
           "word": "GOAL",
           "fact": "Black History Foundations includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Black History Foundations includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Black History Foundations includes ideas about Action."
         }
       ],
       "G68": [
@@ -1513,6 +1849,14 @@
         {
           "word": "LEGACY",
           "fact": "Black History Foundations can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Black History Foundations can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Black History Foundations can be explored through Change."
         }
       ],
       "G912": [
@@ -1547,6 +1891,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Black History Foundations invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Black History Foundations invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Black History Foundations invites deeper thinking about History."
         }
       ]
     }
@@ -1586,6 +1938,14 @@
         {
           "word": "SHARE",
           "fact": "Entrepreneurs & Business helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Entrepreneurs & Business helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Entrepreneurs & Business helps us practice Build."
         }
       ],
       "G35": [
@@ -1620,6 +1980,14 @@
         {
           "word": "GOAL",
           "fact": "Entrepreneurs & Business includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Entrepreneurs & Business includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Entrepreneurs & Business includes ideas about Action."
         }
       ],
       "G68": [
@@ -1654,6 +2022,14 @@
         {
           "word": "LEGACY",
           "fact": "Entrepreneurs & Business can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Entrepreneurs & Business can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Entrepreneurs & Business can be explored through Change."
         }
       ],
       "G912": [
@@ -1688,6 +2064,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Entrepreneurs & Business invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Entrepreneurs & Business invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Entrepreneurs & Business invites deeper thinking about History."
         }
       ]
     }
@@ -1727,6 +2111,14 @@
         {
           "word": "SHARE",
           "fact": "Visual Arts & Design helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Visual Arts & Design helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Visual Arts & Design helps us practice Build."
         }
       ],
       "G35": [
@@ -1761,6 +2153,14 @@
         {
           "word": "GOAL",
           "fact": "Visual Arts & Design includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Visual Arts & Design includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Visual Arts & Design includes ideas about Action."
         }
       ],
       "G68": [
@@ -1795,6 +2195,14 @@
         {
           "word": "LEGACY",
           "fact": "Visual Arts & Design can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Visual Arts & Design can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Visual Arts & Design can be explored through Change."
         }
       ],
       "G912": [
@@ -1829,6 +2237,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Visual Arts & Design invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Visual Arts & Design invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Visual Arts & Design invites deeper thinking about History."
         }
       ]
     }
@@ -1868,6 +2284,14 @@
         {
           "word": "SHARE",
           "fact": "Service & Military History helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Service & Military History helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Service & Military History helps us practice Build."
         }
       ],
       "G35": [
@@ -1902,6 +2326,14 @@
         {
           "word": "GOAL",
           "fact": "Service & Military History includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Service & Military History includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Service & Military History includes ideas about Action."
         }
       ],
       "G68": [
@@ -1936,6 +2368,14 @@
         {
           "word": "LEGACY",
           "fact": "Service & Military History can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Service & Military History can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Service & Military History can be explored through Change."
         }
       ],
       "G912": [
@@ -1970,6 +2410,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Service & Military History invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Service & Military History invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Service & Military History invites deeper thinking about History."
         }
       ]
     }
@@ -2009,6 +2457,14 @@
         {
           "word": "SHARE",
           "fact": "Community Builders helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Community Builders helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Community Builders helps us practice Build."
         }
       ],
       "G35": [
@@ -2043,6 +2499,14 @@
         {
           "word": "GOAL",
           "fact": "Community Builders includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Community Builders includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Community Builders includes ideas about Action."
         }
       ],
       "G68": [
@@ -2077,6 +2541,14 @@
         {
           "word": "LEGACY",
           "fact": "Community Builders can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Community Builders can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Community Builders can be explored through Change."
         }
       ],
       "G912": [
@@ -2111,6 +2583,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Community Builders invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Community Builders invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Community Builders invites deeper thinking about History."
         }
       ]
     }
@@ -2150,6 +2630,14 @@
         {
           "word": "SHARE",
           "fact": "Education Leaders helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Education Leaders helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Education Leaders helps us practice Build."
         }
       ],
       "G35": [
@@ -2184,6 +2672,14 @@
         {
           "word": "GOAL",
           "fact": "Education Leaders includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Education Leaders includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Education Leaders includes ideas about Action."
         }
       ],
       "G68": [
@@ -2218,6 +2714,14 @@
         {
           "word": "LEGACY",
           "fact": "Education Leaders can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Education Leaders can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Education Leaders can be explored through Change."
         }
       ],
       "G912": [
@@ -2252,6 +2756,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Education Leaders invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Education Leaders invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Education Leaders invites deeper thinking about History."
         }
       ]
     }
@@ -2291,6 +2803,14 @@
         {
           "word": "SHARE",
           "fact": "Science & Discovery helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Science & Discovery helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Science & Discovery helps us practice Build."
         }
       ],
       "G35": [
@@ -2325,6 +2845,14 @@
         {
           "word": "GOAL",
           "fact": "Science & Discovery includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Science & Discovery includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Science & Discovery includes ideas about Action."
         }
       ],
       "G68": [
@@ -2359,6 +2887,14 @@
         {
           "word": "LEGACY",
           "fact": "Science & Discovery can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Science & Discovery can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Science & Discovery can be explored through Change."
         }
       ],
       "G912": [
@@ -2393,6 +2929,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Science & Discovery invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Science & Discovery invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Science & Discovery invites deeper thinking about History."
         }
       ]
     }
@@ -2432,6 +2976,14 @@
         {
           "word": "SHARE",
           "fact": "Space & Exploration helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Space & Exploration helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Space & Exploration helps us practice Build."
         }
       ],
       "G35": [
@@ -2466,6 +3018,14 @@
         {
           "word": "GOAL",
           "fact": "Space & Exploration includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Space & Exploration includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Space & Exploration includes ideas about Action."
         }
       ],
       "G68": [
@@ -2500,6 +3060,14 @@
         {
           "word": "LEGACY",
           "fact": "Space & Exploration can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Space & Exploration can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Space & Exploration can be explored through Change."
         }
       ],
       "G912": [
@@ -2534,6 +3102,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Space & Exploration invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Space & Exploration invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Space & Exploration invites deeper thinking about History."
         }
       ]
     }
@@ -2573,6 +3149,14 @@
         {
           "word": "SHARE",
           "fact": "Divine Nine & Greek Life helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Divine Nine & Greek Life helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Divine Nine & Greek Life helps us practice Build."
         }
       ],
       "G35": [
@@ -2607,6 +3191,14 @@
         {
           "word": "GOAL",
           "fact": "Divine Nine & Greek Life includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Divine Nine & Greek Life includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Divine Nine & Greek Life includes ideas about Action."
         }
       ],
       "G68": [
@@ -2641,6 +3233,14 @@
         {
           "word": "LEGACY",
           "fact": "Divine Nine & Greek Life can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Divine Nine & Greek Life can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Divine Nine & Greek Life can be explored through Change."
         }
       ],
       "G912": [
@@ -2675,6 +3275,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Divine Nine & Greek Life invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Divine Nine & Greek Life invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Divine Nine & Greek Life invites deeper thinking about History."
         }
       ]
     }
@@ -2714,6 +3322,14 @@
         {
           "word": "SHARE",
           "fact": "Media & Journalism helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Media & Journalism helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Media & Journalism helps us practice Build."
         }
       ],
       "G35": [
@@ -2748,6 +3364,14 @@
         {
           "word": "GOAL",
           "fact": "Media & Journalism includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Media & Journalism includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Media & Journalism includes ideas about Action."
         }
       ],
       "G68": [
@@ -2782,6 +3406,14 @@
         {
           "word": "LEGACY",
           "fact": "Media & Journalism can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Media & Journalism can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Media & Journalism can be explored through Change."
         }
       ],
       "G912": [
@@ -2816,6 +3448,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Media & Journalism invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Media & Journalism invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Media & Journalism invites deeper thinking about History."
         }
       ]
     }
@@ -2855,6 +3495,14 @@
         {
           "word": "SHARE",
           "fact": "Politics & Public Life helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Politics & Public Life helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Politics & Public Life helps us practice Build."
         }
       ],
       "G35": [
@@ -2889,6 +3537,14 @@
         {
           "word": "GOAL",
           "fact": "Politics & Public Life includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Politics & Public Life includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Politics & Public Life includes ideas about Action."
         }
       ],
       "G68": [
@@ -2923,6 +3579,14 @@
         {
           "word": "LEGACY",
           "fact": "Politics & Public Life can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Politics & Public Life can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Politics & Public Life can be explored through Change."
         }
       ],
       "G912": [
@@ -2957,6 +3621,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Politics & Public Life invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Politics & Public Life invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Politics & Public Life invites deeper thinking about History."
         }
       ]
     }
@@ -2996,6 +3668,14 @@
         {
           "word": "SHARE",
           "fact": "Activism & Organizing helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Activism & Organizing helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Activism & Organizing helps us practice Build."
         }
       ],
       "G35": [
@@ -3030,6 +3710,14 @@
         {
           "word": "GOAL",
           "fact": "Activism & Organizing includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Activism & Organizing includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Activism & Organizing includes ideas about Action."
         }
       ],
       "G68": [
@@ -3064,6 +3752,14 @@
         {
           "word": "LEGACY",
           "fact": "Activism & Organizing can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Activism & Organizing can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Activism & Organizing can be explored through Change."
         }
       ],
       "G912": [
@@ -3098,6 +3794,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Activism & Organizing invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Activism & Organizing invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Activism & Organizing invites deeper thinking about History."
         }
       ]
     }
@@ -3137,6 +3841,14 @@
         {
           "word": "SHARE",
           "fact": "Architecture & Building helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Architecture & Building helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Architecture & Building helps us practice Build."
         }
       ],
       "G35": [
@@ -3171,6 +3883,14 @@
         {
           "word": "GOAL",
           "fact": "Architecture & Building includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Architecture & Building includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Architecture & Building includes ideas about Action."
         }
       ],
       "G68": [
@@ -3205,6 +3925,14 @@
         {
           "word": "LEGACY",
           "fact": "Architecture & Building can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Architecture & Building can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Architecture & Building can be explored through Change."
         }
       ],
       "G912": [
@@ -3239,6 +3967,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Architecture & Building invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Architecture & Building invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Architecture & Building invites deeper thinking about History."
         }
       ]
     }
@@ -3278,6 +4014,14 @@
         {
           "word": "SHARE",
           "fact": "Leadership Traits helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Leadership Traits helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Leadership Traits helps us practice Build."
         }
       ],
       "G35": [
@@ -3312,6 +4056,14 @@
         {
           "word": "GOAL",
           "fact": "Leadership Traits includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Leadership Traits includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Leadership Traits includes ideas about Action."
         }
       ],
       "G68": [
@@ -3346,6 +4098,14 @@
         {
           "word": "LEGACY",
           "fact": "Leadership Traits can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Leadership Traits can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Leadership Traits can be explored through Change."
         }
       ],
       "G912": [
@@ -3380,6 +4140,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Leadership Traits invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Leadership Traits invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Leadership Traits invites deeper thinking about History."
         }
       ]
     }
@@ -3419,6 +4187,14 @@
         {
           "word": "SHARE",
           "fact": "Innovation & Problem Solving helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Innovation & Problem Solving helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Innovation & Problem Solving helps us practice Build."
         }
       ],
       "G35": [
@@ -3453,6 +4229,14 @@
         {
           "word": "GOAL",
           "fact": "Innovation & Problem Solving includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Innovation & Problem Solving includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Innovation & Problem Solving includes ideas about Action."
         }
       ],
       "G68": [
@@ -3487,6 +4271,14 @@
         {
           "word": "LEGACY",
           "fact": "Innovation & Problem Solving can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Innovation & Problem Solving can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Innovation & Problem Solving can be explored through Change."
         }
       ],
       "G912": [
@@ -3521,6 +4313,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Innovation & Problem Solving invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Innovation & Problem Solving invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Innovation & Problem Solving invites deeper thinking about History."
         }
       ]
     }
@@ -3560,6 +4360,14 @@
         {
           "word": "SHARE",
           "fact": "Performing Arts helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Performing Arts helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Performing Arts helps us practice Build."
         }
       ],
       "G35": [
@@ -3594,6 +4402,14 @@
         {
           "word": "GOAL",
           "fact": "Performing Arts includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Performing Arts includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Performing Arts includes ideas about Action."
         }
       ],
       "G68": [
@@ -3628,6 +4444,14 @@
         {
           "word": "LEGACY",
           "fact": "Performing Arts can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Performing Arts can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Performing Arts can be explored through Change."
         }
       ],
       "G912": [
@@ -3662,6 +4486,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Performing Arts invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Performing Arts invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Performing Arts invites deeper thinking about History."
         }
       ]
     }
@@ -3701,6 +4533,14 @@
         {
           "word": "SHARE",
           "fact": "Transportation & Movement helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Transportation & Movement helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Transportation & Movement helps us practice Build."
         }
       ],
       "G35": [
@@ -3735,6 +4575,14 @@
         {
           "word": "GOAL",
           "fact": "Transportation & Movement includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Transportation & Movement includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Transportation & Movement includes ideas about Action."
         }
       ],
       "G68": [
@@ -3769,6 +4617,14 @@
         {
           "word": "LEGACY",
           "fact": "Transportation & Movement can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Transportation & Movement can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Transportation & Movement can be explored through Change."
         }
       ],
       "G912": [
@@ -3803,6 +4659,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Transportation & Movement invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Transportation & Movement invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Transportation & Movement invites deeper thinking about History."
         }
       ]
     }
@@ -3842,6 +4706,14 @@
         {
           "word": "SHARE",
           "fact": "Democracy in Action helps us practice Share."
+        },
+        {
+          "word": "CARE",
+          "fact": "Democracy in Action helps us practice Care."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Democracy in Action helps us practice Build."
         }
       ],
       "G35": [
@@ -3876,6 +4748,14 @@
         {
           "word": "GOAL",
           "fact": "Democracy in Action includes ideas about Goal."
+        },
+        {
+          "word": "VALUE",
+          "fact": "Democracy in Action includes ideas about Value."
+        },
+        {
+          "word": "ACTION",
+          "fact": "Democracy in Action includes ideas about Action."
         }
       ],
       "G68": [
@@ -3910,6 +4790,14 @@
         {
           "word": "LEGACY",
           "fact": "Democracy in Action can be explored through Legacy."
+        },
+        {
+          "word": "TRUTH",
+          "fact": "Democracy in Action can be explored through Truth."
+        },
+        {
+          "word": "CHANGE",
+          "fact": "Democracy in Action can be explored through Change."
         }
       ],
       "G912": [
@@ -3944,6 +4832,14 @@
         {
           "word": "ANALYSIS",
           "fact": "Democracy in Action invites deeper thinking about Analysis."
+        },
+        {
+          "word": "POWER",
+          "fact": "Democracy in Action invites deeper thinking about Power."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Democracy in Action invites deeper thinking about History."
         }
       ]
     }
