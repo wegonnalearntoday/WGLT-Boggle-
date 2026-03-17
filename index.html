@@ -1,205 +1,727 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WGLT Black History Boggle V4</title>
-
-<style>
-
-body{
-background:#0b0b0f;
-color:white;
-font-family:Arial;
-text-align:center;
-margin:0;
-padding:20px;
-}
-
-#board{
-display:grid;
-grid-template-columns:repeat(4,80px);
-grid-gap:10px;
-justify-content:center;
-margin-top:20px;
-}
-
-.tile{
-width:80px;
-height:80px;
-font-size:32px;
-font-weight:bold;
-display:flex;
-align-items:center;
-justify-content:center;
-border-radius:12px;
-background:#222;
-cursor:pointer;
-user-select:none;
-}
-
-.tile.gold{
-background:#cfa63c;
-color:black;
-}
-
-#currentWord{
-font-size:28px;
-margin-top:15px;
-letter-spacing:4px;
-}
-
-button{
-margin-top:10px;
-padding:10px 20px;
-font-size:16px;
-border-radius:8px;
-border:none;
-background:#1faa59;
-color:white;
-cursor:pointer;
-}
-
-</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>WGLT Black History Boggle V4</title>
+  <style>
+    :root{
+      --bg:#08080c; --panel:#13131a; --panel2:#1b1b24; --line:rgba(255,255,255,.09);
+      --text:#f8f1da; --muted:#beb59a; --red:#d72638; --green:#1faa59; --gold:#f4c542; --blue:#5fb9ff;
+      --shadow:0 12px 30px rgba(0,0,0,.35);
+    }
+    *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
+    html,body{
+      margin:0; min-height:100%;
+      background:
+        radial-gradient(circle at top, rgba(244,197,66,.12), transparent 22%),
+        radial-gradient(circle at bottom left, rgba(215,38,56,.12), transparent 24%),
+        radial-gradient(circle at bottom right, rgba(31,170,89,.12), transparent 24%),
+        linear-gradient(180deg,#101017,#08080c 50%,#050507 100%);
+      color:var(--text); font-family:Arial,Helvetica,sans-serif; overflow-x:hidden;
+    }
+    body{padding:10px}
+    .app{width:min(1100px,100%); margin:0 auto; display:grid; gap:10px}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), var(--panel); border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow)}
+    .hero{padding:16px}
+    h1{margin:0; font-size:clamp(1.5rem,3vw,2.35rem)}
+    .subtitle{margin-top:6px; color:var(--muted); line-height:1.35}
+    .controls{display:grid; gap:10px; padding-top:12px; grid-template-columns:repeat(6,minmax(0,1fr)); align-items:end}
+    .control{display:grid; gap:6px}
+    .control label{font-size:.88rem; color:var(--muted)}
+    select,button{
+      height:48px; border-radius:14px; border:1px solid var(--line); background:var(--panel2); color:var(--text); padding:0 12px; font-weight:700
+    }
+    button{cursor:pointer}
+    .primary{background:linear-gradient(135deg, rgba(31,170,89,.26), rgba(244,197,66,.18))}
+    .secondary{background:#22222c}
+    .danger{background:rgba(215,38,56,.15)}
+    .pulse{animation:pulse 1.2s infinite}
+    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(244,197,66,.45)}70%{box-shadow:0 0 0 12px rgba(244,197,66,0)}100%{box-shadow:0 0 0 0 rgba(244,197,66,0)}}
+    .stats{display:grid; gap:10px; grid-template-columns:repeat(5,minmax(0,1fr)); padding-top:12px}
+    .stat{background:var(--panel2); border:1px solid var(--line); border-radius:16px; padding:12px; text-align:center}
+    .stat .k{font-size:.8rem; color:var(--muted)}
+    .stat .v{font-size:1.18rem; font-weight:800; margin-top:4px}
+    .layout{display:grid; gap:10px; grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr)}
+    .leftCol,.rightCol{display:grid; gap:10px}
+    .boardWrap{padding:14px; display:grid; gap:12px; justify-items:center}
+    .statusRow{width:100%; display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px; align-items:center}
+    .pill{background:var(--panel2); border:1px solid var(--line); border-radius:999px; padding:8px 12px; color:var(--muted); font-size:.92rem}
+    .currentWord{
+      width:min(520px,100%); min-height:58px; border-radius:16px; border:1px solid var(--line); background:var(--panel2);
+      display:flex; align-items:center; justify-content:center; padding:8px 12px; text-align:center; font-size:1.35rem; font-weight:800; letter-spacing:2px
+    }
+    .board{width:min(520px,100%); display:grid; grid-template-columns:repeat(4,1fr); gap:10px; touch-action:none; user-select:none}
+    .tile{
+      aspect-ratio:1/1; border-radius:18px; display:grid; place-items:center; font-weight:900; font-size:clamp(1.35rem,4vw,2rem);
+      border:2px solid rgba(255,255,255,.1); background:linear-gradient(180deg,#262632,#1a1a22); position:relative; color:var(--text)
+    }
+    .tile.mult{background:linear-gradient(180deg, #4b3a0f, #241a06); border-color:rgba(244,197,66,.6)}
+    .tile.mult::after{content:"x2"; position:absolute; top:6px; right:7px; font-size:.7rem; color:var(--gold); background:rgba(0,0,0,.28); border-radius:999px; padding:2px 6px}
+    .tile.active{transform:translateY(-2px) scale(1.02); border-color:rgba(95,185,255,.85); box-shadow:0 0 0 3px rgba(95,185,255,.17), 0 10px 18px rgba(0,0,0,.25)}
+    .tile.hintGlow{box-shadow:0 0 0 3px rgba(244,197,66,.22), 0 0 22px rgba(244,197,66,.45)}
+    .tile.good{animation:goodFlash .45s ease}
+    @keyframes goodFlash{0%{box-shadow:0 0 0 0 rgba(31,170,89,.45)}40%{box-shadow:0 0 0 10px rgba(31,170,89,.1)}100%{box-shadow:0 0 0 0 rgba(31,170,89,0)}}
+    .actionRow{display:flex; flex-wrap:wrap; gap:10px; justify-content:center}
+    .rightPanel{padding:14px}
+    .sectionTitle{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:8px}
+    .sectionTitle h3{margin:0; font-size:1rem}
+    .tiny{font-size:.82rem; color:var(--muted)}
+    .wordList,.foundList,.leaderboard{display:flex; flex-wrap:wrap; gap:8px; align-content:flex-start; min-height:70px}
+    .chip{padding:8px 10px; border-radius:999px; background:var(--panel2); border:1px solid var(--line); font-size:.9rem}
+    .chip.found{background:rgba(31,170,89,.16); border-color:rgba(31,170,89,.45)}
+    .chip.hiddenWord{color:#7b735c; letter-spacing:2px}
+    .factBox{background:var(--panel2); border:1px solid var(--line); border-radius:16px; padding:12px; line-height:1.45}
+    .toast{
+      position:fixed; left:50%; bottom:22px; transform:translateX(-50%) translateY(20px); padding:14px 18px; border-radius:16px; z-index:20; opacity:0; pointer-events:none;
+      border:1px solid var(--line); background:rgba(17,17,24,.96); box-shadow:var(--shadow); text-align:center; min-width:min(360px,92vw); max-width:92vw; transition:all .18s ease
+    }
+    .toast.show{opacity:1; transform:translateX(-50%) translateY(0)}
+    .toast.good{border-color:rgba(31,170,89,.5)} .toast.bad{border-color:rgba(215,38,56,.5)}
+    .toast .big{font-size:1.1rem; font-weight:900} .toast .small{font-size:.92rem; color:var(--muted); margin-top:4px}
+    .overlay{position:fixed; inset:0; background:rgba(0,0,0,.6); display:none; place-items:center; z-index:30; padding:12px}
+    .overlay.show{display:grid}
+    .modal{width:min(520px,100%); background:var(--panel); border:1px solid var(--line); border-radius:24px; padding:18px; box-shadow:var(--shadow); text-align:center}
+    .modal h2{margin:0 0 8px} .modal p{color:var(--muted)}
+    .leaderRow{display:flex; justify-content:space-between; gap:10px; padding:8px 10px; border-radius:12px; background:var(--panel2); border:1px solid var(--line); margin-bottom:8px}
+    .muted{color:var(--muted)}
+    .confetti{position:fixed; top:-20px; width:10px; height:16px; opacity:.92; z-index:40; animation:fall linear forwards}
+    @keyframes fall{to{transform:translateY(110vh) rotate(720deg); opacity:1}}
+    @media (max-width:920px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.layout{grid-template-columns:1fr}}
+    @media (max-width:640px){
+      body{padding:8px}.app{gap:8px}.controls .control:last-child{grid-column:1/-1}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
+      .board{width:min(96vw,420px); gap:8px; margin:0 auto}.currentWord{width:min(96vw,420px); font-size:1.1rem}
+      .tile{border-radius:14px; font-size:clamp(1.2rem,8vw,1.7rem)} .wordList,.foundList,.leaderboard{justify-content:center} .statusRow{justify-content:center}
+    }
+  </style>
 </head>
-
 <body>
+<div class="app">
+  <section class="panel hero">
+    <h1>WGLT Black History Boggle V4</h1>
+    <div class="subtitle">Version 3 look and feel, with bigger JSON word banks, puzzle-aware hints, hidden word banks, and gold x2 multiplier tiles.</div>
+    <div class="controls">
+      <div class="control"><label for="gradeSelect">Grade Band</label><select id="gradeSelect"><option value="K2">K-2</option><option value="G35" selected>3-5</option><option value="G68">6-8</option><option value="G912">9-12</option></select></div>
+      <div class="control"><label for="difficultySelect">Difficulty</label><select id="difficultySelect"><option value="easy" selected>Easy • 4:00</option><option value="medium">Medium • 3:00</option><option value="hard">Hard • 1:30</option></select></div>
+      <div class="control"><label for="themeSelect">Theme</label><select id="themeSelect"></select></div>
+      <div class="control"><label for="langSelect">Language</label><select id="langSelect"><option value="en" selected>English</option><option value="es">Español labels</option></select></div>
+      <div class="control"><label>&nbsp;</label><button id="soundBtn" class="secondary">Sound: On</button></div>
+      <div class="control"><label>&nbsp;</label><button id="startBtn" class="primary pulse">Start Game</button></div>
+    </div>
+    <div class="stats">
+      <div class="stat"><div class="k">Time</div><div class="v" id="timeStat">4:00</div></div>
+      <div class="stat"><div class="k">Score</div><div class="v" id="scoreStat">0</div></div>
+      <div class="stat"><div class="k">Combo</div><div class="v" id="comboStat">x1</div></div>
+      <div class="stat"><div class="k">Found</div><div class="v" id="foundStat">0</div></div>
+      <div class="stat"><div class="k">Multiplier Tiles</div><div class="v" id="multStat">0</div></div>
+    </div>
+  </section>
 
-<h1>WGLT Black History Boggle</h1>
+  <section class="layout">
+    <div class="leftCol">
+      <section class="panel boardWrap">
+        <div class="statusRow">
+          <div class="pill" id="themePill">Theme: Civil Rights</div>
+          <div class="pill" id="gradePill">Grade: 3-5</div>
+          <div class="pill" id="diffPill">Mode: Easy</div>
+        </div>
+        <div class="currentWord" id="currentWord">LOADING...</div>
+        <div class="board" id="board"></div>
+        <div class="actionRow">
+          <button id="hintBtn" class="secondary">Hint</button>
+          <button id="clearBtn" class="secondary">Clear Path</button>
+          <button id="newBoardBtn" class="danger">New Board</button>
+        </div>
+      </section>
 
-<div>
-<select id="grade">
-<option value="K2">K-2</option>
-<option value="G35">3-5</option>
-<option value="G68">6-8</option>
-<option value="G912">9-12</option>
-</select>
+      <section class="panel rightPanel">
+        <div class="sectionTitle">
+          <h3 id="targetTitle">Target Words</h3>
+          <div class="tiny" id="targetHint">Easy shows the list. Medium and Hard reveal as found.</div>
+        </div>
+        <div class="wordList" id="targetWords"></div>
+      </section>
+    </div>
 
-<button onclick="startGame()">Start Game</button>
-<button onclick="hint()">Hint</button>
+    <div class="rightCol">
+      <section class="panel rightPanel">
+        <div class="sectionTitle"><h3>Found Words</h3><div class="tiny">History words score bigger. Bonus words still count.</div></div>
+        <div class="foundList" id="foundWords"></div>
+      </section>
+
+      <section class="panel rightPanel">
+        <div class="sectionTitle"><h3>History Spotlight</h3><div class="tiny">Micro-learning card</div></div>
+        <div class="factBox" id="factBox">Loading theme and word banks...</div>
+      </section>
+
+      <section class="panel rightPanel">
+        <div class="sectionTitle"><h3>Leaderboard</h3><div class="tiny">Saved on this device</div></div>
+        <div class="leaderboard" id="leaderboard"></div>
+      </section>
+    </div>
+  </section>
 </div>
 
-<div id="currentWord"></div>
-
-<div id="board"></div>
+<div class="toast" id="toast"></div>
+<div class="overlay" id="overlay">
+  <div class="modal">
+    <h2 id="endTitle">Round Complete</h2>
+    <p id="endText">Great work.</p>
+    <div class="actionRow">
+      <button id="playAgainBtn" class="primary">Play Again</button>
+      <button id="closeModalBtn" class="secondary">Close</button>
+    </div>
+  </div>
+</div>
 
 <script>
+(() => {
+  const ui = {
+    gradeSelect: document.getElementById('gradeSelect'),
+    difficultySelect: document.getElementById('difficultySelect'),
+    themeSelect: document.getElementById('themeSelect'),
+    langSelect: document.getElementById('langSelect'),
+    soundBtn: document.getElementById('soundBtn'),
+    startBtn: document.getElementById('startBtn'),
+    board: document.getElementById('board'),
+    currentWord: document.getElementById('currentWord'),
+    targetWords: document.getElementById('targetWords'),
+    foundWords: document.getElementById('foundWords'),
+    factBox: document.getElementById('factBox'),
+    timeStat: document.getElementById('timeStat'),
+    scoreStat: document.getElementById('scoreStat'),
+    comboStat: document.getElementById('comboStat'),
+    foundStat: document.getElementById('foundStat'),
+    multStat: document.getElementById('multStat'),
+    themePill: document.getElementById('themePill'),
+    gradePill: document.getElementById('gradePill'),
+    diffPill: document.getElementById('diffPill'),
+    toast: document.getElementById('toast'),
+    overlay: document.getElementById('overlay'),
+    endTitle: document.getElementById('endTitle'),
+    endText: document.getElementById('endText'),
+    playAgainBtn: document.getElementById('playAgainBtn'),
+    closeModalBtn: document.getElementById('closeModalBtn'),
+    hintBtn: document.getElementById('hintBtn'),
+    clearBtn: document.getElementById('clearBtn'),
+    newBoardBtn: document.getElementById('newBoardBtn'),
+    leaderboard: document.getElementById('leaderboard')
+  };
 
-let board=[]
-let current=[]
-let library={}
-let themes={}
-let placedWords=[]
+  let WORD_LIBRARY = null;
+  let THEMES = null;
 
-async function loadData(){
+  const state = {
+    board: [],
+    multiplierIndices: new Set(),
+    selected: [],
+    dragging: false,
+    found: new Set(),
+    foundTarget: new Set(),
+    score: 0,
+    combo: 1,
+    timer: null,
+    timeLeft: 240,
+    soundOn: true,
+    gameActive: false,
+    currentThemeKey: 'civilrights',
+    currentGrade: ui.gradeSelect.value,
+    currentDifficulty: ui.difficultySelect.value,
+    placedTargets: [],
+    hintWordSet: new Set()
+  };
 
-library = await fetch("./data/wglt_word_library.json").then(r=>r.json())
-themes = await fetch("./data/wglt_themes.json").then(r=>r.json())
+  function difficultySeconds(diff){ return diff === 'easy' ? 240 : diff === 'medium' ? 180 : 90; }
+  function randomInt(max){ return Math.floor(Math.random() * max); }
+  function minLengthForGrade(grade){ return WORD_LIBRARY?.[grade]?.minLength || 3; }
+  function currentTheme(){ return THEMES[state.currentThemeKey]; }
 
-}
+  async function loadJSON(path){
+    const res = await fetch(path);
+    if(!res.ok) throw new Error(`Could not load ${path}`);
+    return await res.json();
+  }
 
-function randomLetter(){
-const letters="ABCDEFGHIJKLMNOPQRSTUVWXYZ"
-return letters[Math.floor(Math.random()*letters.length)]
-}
+  async function init(){
+    try{
+      [WORD_LIBRARY, THEMES] = await Promise.all([
+        loadJSON('./data/wglt_word_library.json'),
+        loadJSON('./data/wglt_themes.json')
+      ]);
+      Object.entries(THEMES).forEach(([key, val]) => {
+        const opt = document.createElement('option');
+        opt.value = key;
+        opt.textContent = val.title;
+        ui.themeSelect.appendChild(opt);
+      });
+      state.currentThemeKey = ui.themeSelect.value || 'civilrights';
+      updatePills();
+      renderLeaderboard();
+      state.timeLeft = difficultySeconds(state.currentDifficulty);
+      generateBoard();
+      renderBoard();
+      updateStats();
+      updateTargetWords();
+      ui.factBox.textContent = 'Word banks loaded. Easy mode shows the target list. Medium and Hard reveal them as they are found.';
+      wireEvents();
+    }catch(err){
+      ui.factBox.textContent = 'Could not load the JSON files. Keep index.html and the data folder together when you upload to GitHub Pages.';
+      console.error(err);
+    }
+  }
 
-function generateBoard(){
+  function updatePills(){
+    if(!THEMES) return;
+    ui.themePill.textContent = `Theme: ${currentTheme().title}`;
+    ui.gradePill.textContent = `Grade: ${ui.gradeSelect.options[ui.gradeSelect.selectedIndex].text}`;
+    ui.diffPill.textContent = `Mode: ${ui.difficultySelect.options[ui.difficultySelect.selectedIndex].text.split('•')[0].trim()}`;
+  }
 
-board=[]
-placedWords=[]
-const boardDiv=document.getElementById("board")
-boardDiv.innerHTML=""
+  function acceptedLibrary(){
+    return new Set([
+      ...(WORD_LIBRARY[state.currentGrade]?.bonusWords || []),
+      ...currentTheme().words.map(w => w.word)
+    ].map(w => w.toUpperCase()));
+  }
 
-for(let i=0;i<16;i++){
+  function updateTargetWords(){
+    if(!THEMES) return;
+    const diff = state.currentDifficulty;
+    ui.targetWords.innerHTML = '';
+    currentTheme().words.forEach(item => {
+      const chip = document.createElement('div');
+      chip.className = 'chip';
+      if(diff === 'easy'){
+        chip.textContent = item.word;
+        if(state.foundTarget.has(item.word)) chip.classList.add('found');
+      } else {
+        if(state.foundTarget.has(item.word)){
+          chip.textContent = item.word;
+          chip.classList.add('found');
+        } else {
+          chip.textContent = '•'.repeat(item.word.length);
+          chip.classList.add('hiddenWord');
+        }
+      }
+      ui.targetWords.appendChild(chip);
+    });
+  }
 
-let letter=randomLetter()
+  function renderFoundWords(){
+    ui.foundWords.innerHTML = '';
+    [...state.found].sort((a,b)=>a.localeCompare(b)).forEach(word => {
+      const chip = document.createElement('div');
+      chip.className = 'chip found';
+      chip.textContent = word;
+      ui.foundWords.appendChild(chip);
+    });
+    ui.foundStat.textContent = state.found.size;
+  }
 
-const tile=document.createElement("div")
-tile.className="tile"
-tile.innerText=letter
+  function formatTime(seconds){
+    const m = Math.floor(seconds / 60);
+    const s = seconds % 60;
+    return `${m}:${String(s).padStart(2,'0')}`;
+  }
 
-tile.dataset.index=i
+  function updateStats(){
+    ui.timeStat.textContent = formatTime(state.timeLeft);
+    ui.scoreStat.textContent = state.score;
+    ui.comboStat.textContent = `x${state.combo}`;
+    ui.multStat.textContent = state.multiplierIndices.size;
+  }
 
-tile.onpointerdown=()=>selectTile(i)
+  function setCurrentWord(text){
+    ui.currentWord.textContent = text || '...';
+  }
 
-boardDiv.appendChild(tile)
+  function pathCellsForWord(word){
+    const dirs = [[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]];
+    for(let attempt=0; attempt<260; attempt++){
+      const used = new Set();
+      const path = [];
+      const start = randomInt(16);
+      path.push(start); used.add(start);
+      let ok = true;
+      for(let i=1;i<word.length;i++){
+        const last = path[path.length-1];
+        const r = Math.floor(last/4), c = last%4;
+        const neighbors = dirs.map(([dr,dc]) => [r+dr,c+dc])
+          .filter(([nr,nc]) => nr>=0 && nr<4 && nc>=0 && nc<4)
+          .map(([nr,nc]) => nr*4+nc)
+          .filter(idx => !used.has(idx));
+        if(!neighbors.length){ ok = false; break; }
+        path.push(neighbors[randomInt(neighbors.length)]);
+        used.add(path[path.length-1]);
+      }
+      if(ok) return path;
+    }
+    return null;
+  }
 
-board.push(letter)
+  function letterPoolForGrade(grade){
+    const pools = {
+      K2: "AAABCDEEEFGHIIJLLMNNOOPPRRSTTUUVWY",
+      G35: "AAABCDEEEFGHIIJLLMNNOOPPRRSSTTTUVWY",
+      G68: "AAAABCDEEEFGHIIJKLMNNNOOPPRRSSTTTUVWY",
+      G912: "AAAABCDEEEFGHIIJKLMNNNOOPPRRSSTTTUVWXYZ"
+    };
+    return pools[grade] || pools.G35;
+  }
 
-}
+  function generateBoard(){
+    const board = Array(16).fill(null);
+    state.placedTargets = [];
+    const targetList = [...currentTheme().words].sort((a,b)=>b.word.length-a.word.length).slice(0,5);
+    targetList.forEach(item => {
+      let w = item.word.toUpperCase();
+      if(w.length > 8) w = w.slice(0,8);
+      const path = pathCellsForWord(w);
+      if(!path) return;
+      let fits = true;
+      for(let i=0;i<path.length;i++){
+        const idx = path[i];
+        if(board[idx] && board[idx] !== w[i]) { fits = false; break; }
+      }
+      if(fits){
+        for(let i=0;i<path.length;i++) board[path[i]] = w[i];
+        state.placedTargets.push({word:w, path:[...path], fact:item.fact});
+      }
+    });
 
-}
+    const bonusPool = (WORD_LIBRARY[state.currentGrade]?.bonusWords || []).filter(w => w.length >= minLengthForGrade(state.currentGrade) && w.length <= 6);
+    for(let t=0; t<3; t++){
+      const bonus = bonusPool[randomInt(bonusPool.length)];
+      const path = pathCellsForWord(bonus);
+      if(!path) continue;
+      let fits = true;
+      for(let i=0;i<path.length;i++){
+        const idx = path[i];
+        if(board[idx] && board[idx] !== bonus[i]) { fits = false; break; }
+      }
+      if(fits){
+        for(let i=0;i<path.length;i++) board[path[i]] = bonus[i];
+      }
+    }
 
-function selectTile(i){
+    const pool = letterPoolForGrade(state.currentGrade);
+    for(let i=0;i<16;i++) if(!board[i]) board[i] = pool[randomInt(pool.length)];
+    state.board = board;
 
-if(current.includes(i))return
+    const mults = new Set();
+    while(mults.size < 3) mults.add(randomInt(16));
+    state.multiplierIndices = mults;
+    state.hintWordSet = new Set();
+  }
 
-current.push(i)
+  function renderBoard(){
+    ui.board.innerHTML = '';
+    state.board.forEach((letter, idx) => {
+      const tile = document.createElement('div');
+      tile.className = 'tile';
+      if(state.multiplierIndices.has(idx)) tile.classList.add('mult');
+      tile.dataset.index = idx;
+      tile.textContent = letter;
+      ui.board.appendChild(tile);
+    });
+    updateTileStates();
+  }
 
-updateWord()
+  function updateTileStates(){
+    const active = new Set(state.selected);
+    [...ui.board.children].forEach((tile, idx) => {
+      tile.classList.toggle('active', active.has(idx));
+    });
+    setCurrentWord(state.selected.map(i => state.board[i]).join('') || (state.gameActive ? 'DRAG TO SPELL' : 'PRESS START'));
+  }
 
-}
+  function neighbors(a,b){
+    const ar = Math.floor(a/4), ac = a%4;
+    const br = Math.floor(b/4), bc = b%4;
+    return Math.abs(ar-br) <= 1 && Math.abs(ac-bc) <= 1 && a !== b;
+  }
 
-function updateWord(){
+  function addIndex(idx){
+    if(!state.gameActive) return;
+    if(!state.selected.length){
+      state.selected.push(idx);
+      return updateTileStates();
+    }
+    if(state.selected.includes(idx)) return;
+    if(neighbors(state.selected[state.selected.length-1], idx)){
+      state.selected.push(idx);
+      updateTileStates();
+    }
+  }
 
-let word=current.map(i=>board[i]).join("")
+  function clearPath(){
+    state.selected = [];
+    updateTileStates();
+  }
 
-document.getElementById("currentWord").innerText=word
+  function wordMeta(word){
+    const themeWord = currentTheme().words.find(x => x.word === word);
+    if(themeWord) return {type:'theme', fact:themeWord.fact};
+    if(acceptedLibrary().has(word)) return {type:'bonus', fact:`${word} counts as a grade-band bonus word in this mode.`};
+    return {type:'invalid', fact:''};
+  }
 
-}
+  function pointsFor(word, usedMultiplier, type){
+    let base = word.length <= 3 ? 100 : word.length === 4 ? 140 : word.length === 5 ? 180 : word.length === 6 ? 220 : 260;
+    if(type === 'theme') base += 120;
+    base *= state.combo;
+    if(usedMultiplier) base *= 2;
+    return base;
+  }
 
-function clearWord(){
-current=[]
-document.getElementById("currentWord").innerText=""
-}
+  function showToast(kind, big, small=''){
+    ui.toast.className = `toast show ${kind}`;
+    ui.toast.innerHTML = `<div class="big">${big}</div>${small ? `<div class="small">${small}</div>` : ''}`;
+    clearTimeout(showToast._t);
+    showToast._t = setTimeout(() => ui.toast.className = 'toast', 1500);
+  }
 
-function checkWord(){
+  function playBeep(freq=520, duration=0.08){
+    if(!state.soundOn) return;
+    try{
+      const ctx = playBeep.ctx || (playBeep.ctx = new (window.AudioContext || window.webkitAudioContext)());
+      const osc = ctx.createOscillator(); const gain = ctx.createGain();
+      osc.type = 'sine'; osc.frequency.value = freq; gain.gain.value = .03;
+      osc.connect(gain); gain.connect(ctx.destination); osc.start(); osc.stop(ctx.currentTime + duration);
+    }catch(e){}
+  }
 
-let word=current.map(i=>board[i]).join("")
+  function confettiBurst(count=90){
+    const colors = ['#d72638','#1faa59','#f4c542','#5fb9ff','#ffffff'];
+    for(let i=0;i<count;i++){
+      const c = document.createElement('div');
+      c.className = 'confetti';
+      c.style.left = `${Math.random()*100}vw`;
+      c.style.background = colors[i % colors.length];
+      c.style.animationDuration = `${2.2 + Math.random()*1.8}s`;
+      document.body.appendChild(c);
+      setTimeout(() => c.remove(), 4300);
+    }
+  }
 
-const grade=document.getElementById("grade").value
+  function flashSelected(){
+    state.selected.forEach(i => {
+      const tile = ui.board.children[i];
+      if(tile){
+        tile.classList.add('good');
+        setTimeout(() => tile.classList.remove('good'), 420);
+      }
+    });
+  }
 
-if(library[grade].bonusWords.includes(word)){
+  function completeWord(){
+    if(!state.selected.length) return;
+    const word = state.selected.map(i => state.board[i]).join('');
+    const meta = wordMeta(word);
+    const usedMultiplier = state.selected.some(i => state.multiplierIndices.has(i));
 
-alert("Valid word: "+word)
+    if(word.length < minLengthForGrade(state.currentGrade)){
+      showToast('bad', 'Too short', `Use at least ${minLengthForGrade(state.currentGrade)} letters.`);
+      playBeep(230, .09);
+      state.combo = 1; clearPath(); updateStats(); return;
+    }
 
-}else{
+    if(meta.type === 'invalid'){
+      showToast('bad', 'Not found', `${word} is not in this grade-band list.`);
+      playBeep(220, .1);
+      state.combo = 1; clearPath(); updateStats(); return;
+    }
 
-alert("Not found")
+    if(state.found.has(word)){
+      showToast('bad', 'Already found', `${word} is already on your board list.`);
+      playBeep(260, .08);
+      clearPath(); return;
+    }
 
-}
+    state.found.add(word);
+    if(meta.type === 'theme') state.foundTarget.add(word);
+    const pts = pointsFor(word, usedMultiplier, meta.type);
+    state.score += pts;
+    state.combo += 1;
+    ui.factBox.textContent = meta.type === 'theme' ? meta.fact : `${word} scored as a bonus word, so younger players still get credit for real reading wins.`;
+    renderFoundWords(); updateTargetWords(); updateStats(); flashSelected();
+    playBeep(meta.type === 'theme' ? 720 : 580, .09);
+    showToast('good', `+${pts} points`, `${word}${usedMultiplier ? ' used a gold x2 tile' : ''}${meta.type === 'theme' ? ' • history word' : ' • bonus word'}`);
+    clearPath(); checkRoundWin();
+  }
 
-clearWord()
+  function hint(){
+    if(!state.gameActive) return;
+    const remaining = state.placedTargets.filter(item => !state.foundTarget.has(item.word));
+    if(!remaining.length){
+      showToast('good', 'All target words found', 'You already cleared the lesson list.');
+      return;
+    }
 
-}
+    const unseen = remaining.filter(item => !state.hintWordSet.has(item.word));
+    const pick = (unseen.length ? unseen : remaining)[randomInt((unseen.length ? unseen : remaining).length)];
+    state.hintWordSet.add(pick.word);
 
-function hint(){
+    const tiles = [...ui.board.children];
+    tiles.forEach(t => t.classList.remove('hintGlow'));
+    const startTile = tiles[pick.path[0]];
+    if(startTile){
+      startTile.classList.add('hintGlow');
+      setTimeout(() => startTile.classList.remove('hintGlow'), 1600);
+    }
 
-if(!placedWords.length){
+    if(state.currentDifficulty === 'easy'){
+      showToast('good', 'Hint', `${pick.word[0]}...${pick.word[pick.word.length-1]} • ${pick.word.length} letters`);
+    } else if(state.currentDifficulty === 'medium'){
+      showToast('good', 'Hint', `${pick.word[0]}... • ${pick.word.length} letters`);
+    } else {
+      showToast('good', 'Hint', `${pick.word.length} letters`);
+    }
+  }
 
-alert("Hint: look for a history word!")
+  function startTimer(){
+    clearInterval(state.timer);
+    state.timer = setInterval(() => {
+      state.timeLeft -= 1;
+      updateStats();
+      if(state.timeLeft <= 0) endRound();
+    }, 1000);
+  }
 
-return
+  function checkRoundWin(){
+    if(state.foundTarget.size === currentTheme().words.length || state.foundTarget.size === state.placedTargets.length){
+      confettiBurst(110);
+      showToast('good', 'Theme Cleared!', 'You found every target word on this board.');
+    }
+  }
 
-}
+  function saveScore(){
+    const key = 'wglt_boggle_scores_v4';
+    const scores = JSON.parse(localStorage.getItem(key) || '[]');
+    scores.push({
+      score: state.score,
+      grade: state.currentGrade,
+      difficulty: state.currentDifficulty,
+      theme: currentTheme().title,
+      found: state.found.size
+    });
+    scores.sort((a,b) => b.score - a.score);
+    localStorage.setItem(key, JSON.stringify(scores.slice(0,8)));
+  }
 
-let word=placedWords[Math.floor(Math.random()*placedWords.length)]
+  function renderLeaderboard(){
+    const key = 'wglt_boggle_scores_v4';
+    const scores = JSON.parse(localStorage.getItem(key) || '[]');
+    ui.leaderboard.innerHTML = '';
+    if(!scores.length){
+      ui.leaderboard.innerHTML = `<div class="tiny">No scores yet. Start a round and light up the board.</div>`;
+      return;
+    }
+    scores.forEach((s, i) => {
+      const row = document.createElement('div');
+      row.className = 'leaderRow';
+      row.innerHTML = `<strong>#${i+1} ${s.score}</strong><span class="muted">${s.theme} • ${s.grade} • ${s.difficulty}</span>`;
+      ui.leaderboard.appendChild(row);
+    });
+  }
 
-alert("Hint: "+word.length+" letters")
+  function endRound(){
+    clearInterval(state.timer);
+    state.gameActive = false;
+    clearPath();
+    saveScore();
+    ui.endTitle.textContent = 'Time Up';
+    ui.endText.textContent = `Score: ${state.score} • Found: ${state.found.size} words • Target words: ${state.foundTarget.size}/${currentTheme().words.length}`;
+    ui.overlay.classList.add('show');
+    renderLeaderboard();
+  }
 
-}
+  function startGame(newBoard=true){
+    state.currentThemeKey = ui.themeSelect.value;
+    state.currentGrade = ui.gradeSelect.value;
+    state.currentDifficulty = ui.difficultySelect.value;
+    state.timeLeft = difficultySeconds(state.currentDifficulty);
+    state.score = 0; state.combo = 1; state.found = new Set(); state.foundTarget = new Set();
+    state.gameActive = true; state.hintWordSet = new Set();
+    updatePills();
+    if(newBoard) generateBoard();
+    renderBoard(); renderFoundWords(); updateTargetWords();
+    ui.factBox.textContent = `${currentTheme().title} is ready. Puzzle-aware hints now point to words actually placed on this board.`;
+    clearPath(); updateStats(); startTimer(); ui.overlay.classList.remove('show');
+    playBeep(500,.05);
+  }
 
-function startGame(){
+  function coordsToTile(clientX, clientY){
+    const el = document.elementFromPoint(clientX, clientY);
+    const tile = el && el.closest('.tile');
+    if(!tile || !ui.board.contains(tile)) return null;
+    return Number(tile.dataset.index);
+  }
 
-generateBoard()
+  function pointerStart(e){
+    const tile = e.target.closest('.tile');
+    if(!tile || !state.gameActive) return;
+    e.preventDefault();
+    state.dragging = true;
+    try { tile.setPointerCapture(e.pointerId); } catch(err) {}
+    clearPath();
+    addIndex(Number(tile.dataset.index));
+  }
 
-clearWord()
+  function pointerMove(e){
+    if(!state.dragging || !state.gameActive) return;
+    const idx = coordsToTile(e.clientX, e.clientY);
+    if(idx !== null) addIndex(idx);
+  }
 
-}
+  function pointerEnd(){
+    if(!state.dragging) return;
+    state.dragging = false;
+    completeWord();
+  }
 
-loadData()
+  function wireEvents(){
+    ui.board.addEventListener('pointerdown', pointerStart);
+    ui.board.addEventListener('pointermove', pointerMove);
+    window.addEventListener('pointerup', pointerEnd);
+    window.addEventListener('pointercancel', pointerEnd);
 
+    ui.clearBtn.addEventListener('click', clearPath);
+    ui.hintBtn.addEventListener('click', hint);
+    ui.newBoardBtn.addEventListener('click', () => startGame(true));
+    ui.playAgainBtn.addEventListener('click', () => startGame(true));
+    ui.closeModalBtn.addEventListener('click', () => ui.overlay.classList.remove('show'));
+    ui.startBtn.addEventListener('click', () => startGame(true));
+
+    ui.soundBtn.addEventListener('click', () => {
+      state.soundOn = !state.soundOn;
+      ui.soundBtn.textContent = `Sound: ${state.soundOn ? 'On' : 'Off'}`;
+    });
+
+    [ui.gradeSelect, ui.difficultySelect, ui.themeSelect].forEach(el => {
+      el.addEventListener('change', () => {
+        state.currentGrade = ui.gradeSelect.value;
+        state.currentDifficulty = ui.difficultySelect.value;
+        state.currentThemeKey = ui.themeSelect.value;
+        state.timeLeft = difficultySeconds(state.currentDifficulty);
+        updatePills(); updateStats(); updateTargetWords();
+      });
+    });
+
+    ui.langSelect.addEventListener('change', () => {
+      const es = ui.langSelect.value === 'es';
+      document.getElementById('targetTitle').textContent = es ? 'Palabras Meta' : 'Target Words';
+      document.getElementById('targetHint').textContent = es ? 'Fácil muestra la lista. Medio y Difícil revelan al encontrarlas.' : 'Easy shows the list. Medium and Hard reveal them as they are found.';
+      ui.hintBtn.textContent = es ? 'Pista' : 'Hint';
+      ui.clearBtn.textContent = es ? 'Limpiar Ruta' : 'Clear Path';
+      ui.newBoardBtn.textContent = es ? 'Nuevo Tablero' : 'New Board';
+      ui.startBtn.textContent = es ? 'Comenzar' : 'Start Game';
+      ui.soundBtn.textContent = `${es ? 'Sonido' : 'Sound'}: ${state.soundOn ? (es ? 'Sí' : 'On') : (es ? 'No' : 'Off')}`;
+    });
+  }
+
+  init();
+})();
 </script>
-
 </body>
 </html>
