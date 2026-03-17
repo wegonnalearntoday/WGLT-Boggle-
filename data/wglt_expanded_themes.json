@@ -1,0 +1,3951 @@
+{
+  "inventors": {
+    "title": "Inventors & STEM",
+    "default": true,
+    "bands": {
+      "K2": [
+        {
+          "word": "IDEA",
+          "fact": "Inventors and builders help us understand Idea."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Inventors and builders help us understand Build."
+        },
+        {
+          "word": "LIGHT",
+          "fact": "Inventors and builders help us understand Light."
+        },
+        {
+          "word": "TOOLS",
+          "fact": "Inventors and builders help us understand Tools."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Inventors and builders help us understand Make."
+        },
+        {
+          "word": "GEAR",
+          "fact": "Inventors and builders help us understand Gear."
+        },
+        {
+          "word": "CODE",
+          "fact": "Inventors and builders help us understand Code."
+        },
+        {
+          "word": "STEM",
+          "fact": "Inventors and builders help us understand Stem."
+        }
+      ],
+      "G35": [
+        {
+          "word": "CARVER",
+          "fact": "George Washington Carver advanced agricultural science and practical innovation."
+        },
+        {
+          "word": "LATIMER",
+          "fact": "Lewis Latimer improved the carbon filament used in electric lighting."
+        },
+        {
+          "word": "PATENT",
+          "fact": "A patent protects an inventor's idea or creation."
+        },
+        {
+          "word": "SCIENCE",
+          "fact": "Science helps inventors test ideas and solve problems."
+        },
+        {
+          "word": "STEM",
+          "fact": "STEM stands for science, technology, engineering, and mathematics."
+        },
+        {
+          "word": "LIGHT",
+          "fact": "Electric lighting became more practical thanks to inventors and engineers."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Inventors build, test, revise, and improve."
+        },
+        {
+          "word": "IDEA",
+          "fact": "Every invention begins with an idea."
+        }
+      ],
+      "G68": [
+        {
+          "word": "CARVER",
+          "fact": "George Washington Carver used agricultural research to help farmers improve soil and diversify crops."
+        },
+        {
+          "word": "LATIMER",
+          "fact": "Lewis Latimer was an inventor and draftsman who improved light bulb technology."
+        },
+        {
+          "word": "MORGAN",
+          "fact": "Garrett Morgan invented safety devices including a traffic signal and a breathing hood."
+        },
+        {
+          "word": "WALKER",
+          "fact": "Madam C.J. Walker built innovative hair-care products and a national business."
+        },
+        {
+          "word": "PATENT",
+          "fact": "A patent gives legal protection to an inventor's original work."
+        },
+        {
+          "word": "SCIENCE",
+          "fact": "Scientific thinking helps inventors solve real-world problems."
+        },
+        {
+          "word": "ENGINEER",
+          "fact": "Engineers design and improve systems, tools, and machines."
+        },
+        {
+          "word": "INVENT",
+          "fact": "To invent is to create something new or improve something old."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LATIMER",
+          "fact": "Lewis Latimer's drafting and engineering work helped shape electric lighting systems."
+        },
+        {
+          "word": "MORGAN",
+          "fact": "Garrett Morgan combined invention and entrepreneurship to solve public-safety problems."
+        },
+        {
+          "word": "WALKER",
+          "fact": "Madam C.J. Walker built a manufacturing and sales network around innovative products."
+        },
+        {
+          "word": "CARVER",
+          "fact": "George Washington Carver used applied research to transform agricultural practice."
+        },
+        {
+          "word": "PATENT",
+          "fact": "Patents can protect inventions while also revealing technical design to the public."
+        },
+        {
+          "word": "INNOVATION",
+          "fact": "Innovation often comes from solving practical problems under real constraints."
+        },
+        {
+          "word": "ENGINEERING",
+          "fact": "Engineering turns ideas, data, and materials into usable systems."
+        },
+        {
+          "word": "TECHNOLOGY",
+          "fact": "Technology includes both tools and the systems built around them."
+        }
+      ]
+    }
+  },
+  "civilrights": {
+    "title": "Civil Rights",
+    "bands": {
+      "K2": [
+        {
+          "word": "KING",
+          "fact": "Civil rights lessons teach King."
+        },
+        {
+          "word": "VOTE",
+          "fact": "Civil rights lessons teach Vote."
+        },
+        {
+          "word": "PEACE",
+          "fact": "Civil rights lessons teach Peace."
+        },
+        {
+          "word": "MARCH",
+          "fact": "Civil rights lessons teach March."
+        },
+        {
+          "word": "FAIR",
+          "fact": "Civil rights lessons teach Fair."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Civil rights lessons teach Voice."
+        },
+        {
+          "word": "UNITY",
+          "fact": "Civil rights lessons teach Unity."
+        },
+        {
+          "word": "RIGHT",
+          "fact": "Civil rights lessons teach Right."
+        }
+      ],
+      "G35": [
+        {
+          "word": "KING",
+          "fact": "Dr. Martin Luther King Jr. helped lead the Civil Rights Movement through nonviolent protest."
+        },
+        {
+          "word": "PARKS",
+          "fact": "Rosa Parks became a symbol of resistance after refusing to give up her bus seat."
+        },
+        {
+          "word": "VOTE",
+          "fact": "Voting rights were a major focus of civil rights activism."
+        },
+        {
+          "word": "MARCH",
+          "fact": "Marches helped movements gather support and attention."
+        },
+        {
+          "word": "RIGHTS",
+          "fact": "Civil rights protect people from unfair treatment."
+        },
+        {
+          "word": "UNITY",
+          "fact": "Working together made movements stronger."
+        },
+        {
+          "word": "PEACE",
+          "fact": "Many leaders promoted nonviolent change."
+        },
+        {
+          "word": "JUSTICE",
+          "fact": "Justice means fairness under the law."
+        }
+      ],
+      "G68": [
+        {
+          "word": "DOUGLASS",
+          "fact": "Frederick Douglass spoke and wrote powerfully for freedom and citizenship."
+        },
+        {
+          "word": "PARKS",
+          "fact": "Rosa Parks helped spark the Montgomery Bus Boycott."
+        },
+        {
+          "word": "BALLOT",
+          "fact": "The ballot represents the power to vote and participate in democracy."
+        },
+        {
+          "word": "JUSTICE",
+          "fact": "Justice is a central goal of civil rights work."
+        },
+        {
+          "word": "PROTEST",
+          "fact": "Protests can bring attention to injustice and demand change."
+        },
+        {
+          "word": "RIGHTS",
+          "fact": "Rights are protections people hold under law and society."
+        },
+        {
+          "word": "EQUALITY",
+          "fact": "Equality means people deserve fair treatment and opportunity."
+        },
+        {
+          "word": "FREEDOM",
+          "fact": "Freedom includes both liberty and access to full citizenship."
+        }
+      ],
+      "G912": [
+        {
+          "word": "SEGREGATION",
+          "fact": "Segregation used laws and custom to separate people and deny equal access."
+        },
+        {
+          "word": "SUFFRAGE",
+          "fact": "Suffrage refers to the right to vote."
+        },
+        {
+          "word": "JUSTICE",
+          "fact": "Civil rights movements challenge unequal power and unequal treatment."
+        },
+        {
+          "word": "ADVOCACY",
+          "fact": "Advocacy means speaking and organizing for change."
+        },
+        {
+          "word": "LEGISLATION",
+          "fact": "Legislation can protect rights or restrict them, depending on who writes it."
+        },
+        {
+          "word": "ACTIVISM",
+          "fact": "Activism uses collective action to challenge injustice."
+        },
+        {
+          "word": "LIBERATION",
+          "fact": "Liberation goes beyond access and aims at freedom from oppressive systems."
+        },
+        {
+          "word": "DEMOCRACY",
+          "fact": "Democracy depends on participation, rights, and accountability."
+        }
+      ]
+    }
+  },
+  "music": {
+    "title": "Music & Culture",
+    "bands": {
+      "K2": [
+        {
+          "word": "SONG",
+          "fact": "Music helps people share Song."
+        },
+        {
+          "word": "BEAT",
+          "fact": "Music helps people share Beat."
+        },
+        {
+          "word": "JAZZ",
+          "fact": "Music helps people share Jazz."
+        },
+        {
+          "word": "BAND",
+          "fact": "Music helps people share Band."
+        },
+        {
+          "word": "DRUM",
+          "fact": "Music helps people share Drum."
+        },
+        {
+          "word": "SING",
+          "fact": "Music helps people share Sing."
+        },
+        {
+          "word": "SOUL",
+          "fact": "Music helps people share Soul."
+        },
+        {
+          "word": "DANCE",
+          "fact": "Music helps people share Dance."
+        }
+      ],
+      "G35": [
+        {
+          "word": "ELLA",
+          "fact": "Ella Fitzgerald became one of the most celebrated jazz singers in history."
+        },
+        {
+          "word": "DUKE",
+          "fact": "Duke Ellington was a legendary composer and bandleader."
+        },
+        {
+          "word": "JAZZ",
+          "fact": "Jazz grew from Black musical traditions and changed music worldwide."
+        },
+        {
+          "word": "SONG",
+          "fact": "Songs can teach, celebrate, and protest."
+        },
+        {
+          "word": "BEAT",
+          "fact": "Beat helps music move and groove."
+        },
+        {
+          "word": "SOUL",
+          "fact": "Soul music carries emotion, power, and style."
+        },
+        {
+          "word": "DRUM",
+          "fact": "Drums help drive rhythm and energy."
+        },
+        {
+          "word": "DANCE",
+          "fact": "Dance connects music with movement and expression."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COLTRANE",
+          "fact": "John Coltrane transformed jazz with bold improvisation and spiritual intensity."
+        },
+        {
+          "word": "MOTOWN",
+          "fact": "Motown helped bring Black artists to global audiences."
+        },
+        {
+          "word": "RHYTHM",
+          "fact": "Rhythm organizes time and motion in music."
+        },
+        {
+          "word": "MELODY",
+          "fact": "Melody is the line a listener often remembers."
+        },
+        {
+          "word": "BLUES",
+          "fact": "The blues influenced jazz, rock, soul, and many other genres."
+        },
+        {
+          "word": "GOSPEL",
+          "fact": "Gospel music shaped both church and popular music traditions."
+        },
+        {
+          "word": "JAZZ",
+          "fact": "Jazz values creativity, listening, and improvisation."
+        },
+        {
+          "word": "LYRIC",
+          "fact": "Lyrics can tell stories, teach ideas, and express identity."
+        }
+      ],
+      "G912": [
+        {
+          "word": "IMPROVISATION",
+          "fact": "Improvisation is central to many Black musical traditions, especially jazz."
+        },
+        {
+          "word": "MOTOWN",
+          "fact": "Motown blended artistry, business, and crossover appeal."
+        },
+        {
+          "word": "HIPHOP",
+          "fact": "Hip-hop includes music, language, movement, visual style, and social commentary."
+        },
+        {
+          "word": "RHYTHM",
+          "fact": "Rhythm can shape both sound and physical response."
+        },
+        {
+          "word": "MELODY",
+          "fact": "Melody often carries the emotional center of a song."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Music can preserve memory, identity, and resistance."
+        },
+        {
+          "word": "PERFORMANCE",
+          "fact": "Performance turns composition into lived experience."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Musical legacy lives through influence and reinterpretation."
+        }
+      ]
+    }
+  },
+  "sports": {
+    "title": "Sports Legends",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Sports can teach Team."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Sports can teach Goal."
+        },
+        {
+          "word": "WIN",
+          "fact": "Sports can teach Win."
+        },
+        {
+          "word": "TRACK",
+          "fact": "Sports can teach Track."
+        },
+        {
+          "word": "FIELD",
+          "fact": "Sports can teach Field."
+        },
+        {
+          "word": "LEAD",
+          "fact": "Sports can teach Lead."
+        },
+        {
+          "word": "BALL",
+          "fact": "Sports can teach Ball."
+        },
+        {
+          "word": "RACE",
+          "fact": "Sports can teach Race."
+        }
+      ],
+      "G35": [
+        {
+          "word": "JACKIE",
+          "fact": "Jackie Robinson broke Major League Baseball's modern color barrier in 1947."
+        },
+        {
+          "word": "TRACK",
+          "fact": "Track and field includes many historic Black athletes and record-setters."
+        },
+        {
+          "word": "FIELD",
+          "fact": "Sports fields have often been places where barriers were challenged."
+        },
+        {
+          "word": "TEAM",
+          "fact": "Great athletes work with and lift their teams."
+        },
+        {
+          "word": "LEAD",
+          "fact": "Leadership matters on and off the field."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Goals represent determination and focus."
+        },
+        {
+          "word": "SPORT",
+          "fact": "Sports history includes many important breakthroughs."
+        },
+        {
+          "word": "WIN",
+          "fact": "Winning can inspire future generations."
+        }
+      ],
+      "G68": [
+        {
+          "word": "ROBINSON",
+          "fact": "Jackie Robinson changed baseball and the nation by challenging racial barriers."
+        },
+        {
+          "word": "SERENA",
+          "fact": "Serena Williams dominated tennis and redefined excellence on the court."
+        },
+        {
+          "word": "JORDAN",
+          "fact": "Michael Jordan became one of the most influential athletes in the world."
+        },
+        {
+          "word": "OLYMPIC",
+          "fact": "The Olympic stage has featured many groundbreaking Black athletes."
+        },
+        {
+          "word": "TRACK",
+          "fact": "Track and field has produced iconic performances and social statements."
+        },
+        {
+          "word": "TEAM",
+          "fact": "Team sports depend on trust, communication, and shared purpose."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Goals help athletes focus training and performance."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Athletes can lead both in sport and in public life."
+        }
+      ],
+      "G912": [
+        {
+          "word": "REPRESENTATION",
+          "fact": "Sports can change representation by making excellence visible in public culture."
+        },
+        {
+          "word": "ROBINSON",
+          "fact": "Jackie Robinson's career showed how athletic achievement and civil rights history intersect."
+        },
+        {
+          "word": "OLYMPIC",
+          "fact": "Global sport can become a stage for both national pride and protest."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Athletic legacy includes influence, activism, style, and impact beyond statistics."
+        },
+        {
+          "word": "PERFORMANCE",
+          "fact": "Performance reflects both preparation and pressure."
+        },
+        {
+          "word": "LEADERSHIP",
+          "fact": "Sports leadership can involve discipline, example, and voice."
+        },
+        {
+          "word": "TRAINING",
+          "fact": "Training builds consistency, endurance, and skill."
+        },
+        {
+          "word": "COMPETITION",
+          "fact": "Competition can sharpen talent while revealing larger social questions."
+        }
+      ]
+    }
+  },
+  "financial": {
+    "title": "Financial Literacy",
+    "bands": {
+      "K2": [
+        {
+          "word": "SAVE",
+          "fact": "Money lessons can teach Save."
+        },
+        {
+          "word": "BANK",
+          "fact": "Money lessons can teach Bank."
+        },
+        {
+          "word": "COIN",
+          "fact": "Money lessons can teach Coin."
+        },
+        {
+          "word": "EARN",
+          "fact": "Money lessons can teach Earn."
+        },
+        {
+          "word": "CASH",
+          "fact": "Money lessons can teach Cash."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Money lessons can teach Plan."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Money lessons can teach Goal."
+        },
+        {
+          "word": "BUY",
+          "fact": "Money lessons can teach Buy."
+        }
+      ],
+      "G35": [
+        {
+          "word": "SAVE",
+          "fact": "Saving means keeping money for future needs or goals."
+        },
+        {
+          "word": "BANK",
+          "fact": "A bank is a place where money can be stored and managed."
+        },
+        {
+          "word": "EARN",
+          "fact": "People earn money by working, selling, or creating value."
+        },
+        {
+          "word": "SPEND",
+          "fact": "Spending means using money to buy something."
+        },
+        {
+          "word": "BUDGET",
+          "fact": "A budget is a plan for how money will be used."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Money goals help people plan instead of guessing."
+        },
+        {
+          "word": "CREDIT",
+          "fact": "Credit lets people borrow money and pay it back later."
+        },
+        {
+          "word": "DEBT",
+          "fact": "Debt is money owed to someone else."
+        }
+      ],
+      "G68": [
+        {
+          "word": "BUDGET",
+          "fact": "Budgeting helps people balance needs, wants, and future goals."
+        },
+        {
+          "word": "CREDIT",
+          "fact": "Credit can be useful, but it must be managed carefully."
+        },
+        {
+          "word": "DEBT",
+          "fact": "Debt grows more expensive when interest builds up."
+        },
+        {
+          "word": "INVEST",
+          "fact": "Investing puts money into something expected to grow over time."
+        },
+        {
+          "word": "BANKING",
+          "fact": "Banking includes saving, deposits, withdrawals, and account management."
+        },
+        {
+          "word": "INCOME",
+          "fact": "Income is money received from work, business, or other sources."
+        },
+        {
+          "word": "SPEND",
+          "fact": "Spending choices shape long-term financial health."
+        },
+        {
+          "word": "WEALTH",
+          "fact": "Wealth is built through assets, planning, and time."
+        }
+      ],
+      "G912": [
+        {
+          "word": "COMPOUND",
+          "fact": "Compounding lets money grow on both the original amount and past growth."
+        },
+        {
+          "word": "INVEST",
+          "fact": "Investing involves risk, time horizon, and expected return."
+        },
+        {
+          "word": "CREDIT",
+          "fact": "Credit history affects borrowing costs and opportunity."
+        },
+        {
+          "word": "BUDGET",
+          "fact": "A budget is a decision-making tool, not just a spreadsheet."
+        },
+        {
+          "word": "ASSET",
+          "fact": "Assets can grow value or produce income."
+        },
+        {
+          "word": "LIABILITY",
+          "fact": "Liabilities are obligations that reduce net worth."
+        },
+        {
+          "word": "INTEREST",
+          "fact": "Interest is the cost of borrowing or the reward for saving."
+        },
+        {
+          "word": "ECONOMICS",
+          "fact": "Economics studies choices under scarcity and the systems built around them."
+        }
+      ]
+    }
+  },
+  "civics": {
+    "title": "Government & Civics",
+    "bands": {
+      "K2": [
+        {
+          "word": "VOTE",
+          "fact": "Civics helps us learn Vote."
+        },
+        {
+          "word": "LAW",
+          "fact": "Civics helps us learn Law."
+        },
+        {
+          "word": "RULE",
+          "fact": "Civics helps us learn Rule."
+        },
+        {
+          "word": "FLAG",
+          "fact": "Civics helps us learn Flag."
+        },
+        {
+          "word": "COURT",
+          "fact": "Civics helps us learn Court."
+        },
+        {
+          "word": "TOWN",
+          "fact": "Civics helps us learn Town."
+        },
+        {
+          "word": "STATE",
+          "fact": "Civics helps us learn State."
+        },
+        {
+          "word": "RIGHT",
+          "fact": "Civics helps us learn Right."
+        }
+      ],
+      "G35": [
+        {
+          "word": "VOTE",
+          "fact": "Voting helps people choose leaders and make decisions."
+        },
+        {
+          "word": "LAW",
+          "fact": "Laws set rules for communities and governments."
+        },
+        {
+          "word": "COURT",
+          "fact": "Courts help interpret laws and settle disputes."
+        },
+        {
+          "word": "BILL",
+          "fact": "A bill is a proposed law."
+        },
+        {
+          "word": "RIGHTS",
+          "fact": "Rights protect freedoms and fairness."
+        },
+        {
+          "word": "POWER",
+          "fact": "Government power should be limited and balanced."
+        },
+        {
+          "word": "CIVIC",
+          "fact": "Civic life includes how people participate in community and government."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Citizens can use their voice to participate."
+        }
+      ],
+      "G68": [
+        {
+          "word": "SENATE",
+          "fact": "The Senate is one part of the United States Congress."
+        },
+        {
+          "word": "COURT",
+          "fact": "Courts interpret the law and review legal questions."
+        },
+        {
+          "word": "BALLOT",
+          "fact": "A ballot is the method used to cast a vote."
+        },
+        {
+          "word": "POLICY",
+          "fact": "Policy is a plan or course of action adopted by leaders or institutions."
+        },
+        {
+          "word": "VOTER",
+          "fact": "A voter participates directly in democracy."
+        },
+        {
+          "word": "RIGHTS",
+          "fact": "Rights and responsibilities both matter in civic life."
+        },
+        {
+          "word": "DEBATE",
+          "fact": "Debate helps people test ideas and arguments."
+        },
+        {
+          "word": "JUSTICE",
+          "fact": "Justice is a major goal of fair government."
+        }
+      ],
+      "G912": [
+        {
+          "word": "CONSTITUTION",
+          "fact": "A constitution sets the framework and limits of government."
+        },
+        {
+          "word": "LEGISLATION",
+          "fact": "Legislation is lawmaking through elected bodies."
+        },
+        {
+          "word": "DEMOCRACY",
+          "fact": "Democracy depends on participation, rights, and accountability."
+        },
+        {
+          "word": "JUDICIAL",
+          "fact": "Judicial power focuses on interpreting the law."
+        },
+        {
+          "word": "REPRESENTATION",
+          "fact": "Representation asks who speaks and acts for the people."
+        },
+        {
+          "word": "POLICY",
+          "fact": "Policy choices shape real outcomes in daily life."
+        },
+        {
+          "word": "SOVEREIGNTY",
+          "fact": "Sovereignty refers to supreme governing authority."
+        },
+        {
+          "word": "CITIZENSHIP",
+          "fact": "Citizenship carries both protections and responsibilities."
+        }
+      ]
+    }
+  },
+  "hbcus": {
+    "title": "HBCUs & Education",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "HBCUs & Education helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "HBCUs & Education helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "HBCUs & Education helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "HBCUs & Education helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "HBCUs & Education helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "HBCUs & Education helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "HBCUs & Education helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "HBCUs & Education helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "HBCUs & Education includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "HBCUs & Education includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "HBCUs & Education includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "HBCUs & Education includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "HBCUs & Education includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "HBCUs & Education includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "HBCUs & Education includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "HBCUs & Education includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "HBCUs & Education can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "HBCUs & Education can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "HBCUs & Education can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "HBCUs & Education can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "HBCUs & Education can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "HBCUs & Education can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "HBCUs & Education can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "HBCUs & Education can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "HBCUs & Education invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "HBCUs & Education invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "HBCUs & Education invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "HBCUs & Education invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "HBCUs & Education invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "HBCUs & Education invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "HBCUs & Education invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "HBCUs & Education invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "writers": {
+    "title": "Writers & Thinkers",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Writers & Thinkers helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Writers & Thinkers helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Writers & Thinkers helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Writers & Thinkers helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Writers & Thinkers helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Writers & Thinkers helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Writers & Thinkers helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Writers & Thinkers helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Writers & Thinkers includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Writers & Thinkers includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Writers & Thinkers includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Writers & Thinkers includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Writers & Thinkers includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Writers & Thinkers includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Writers & Thinkers includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Writers & Thinkers includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Writers & Thinkers can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Writers & Thinkers can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Writers & Thinkers can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Writers & Thinkers can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Writers & Thinkers can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Writers & Thinkers can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Writers & Thinkers can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Writers & Thinkers can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Writers & Thinkers invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Writers & Thinkers invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Writers & Thinkers invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Writers & Thinkers invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Writers & Thinkers invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Writers & Thinkers invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Writers & Thinkers invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Writers & Thinkers invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "medicine": {
+    "title": "Medical Pioneers",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Medical Pioneers helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Medical Pioneers helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Medical Pioneers helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Medical Pioneers helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Medical Pioneers helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Medical Pioneers helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Medical Pioneers helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Medical Pioneers helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Medical Pioneers includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Medical Pioneers includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Medical Pioneers includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Medical Pioneers includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Medical Pioneers includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Medical Pioneers includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Medical Pioneers includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Medical Pioneers includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Medical Pioneers can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Medical Pioneers can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Medical Pioneers can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Medical Pioneers can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Medical Pioneers can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Medical Pioneers can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Medical Pioneers can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Medical Pioneers can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Medical Pioneers invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Medical Pioneers invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Medical Pioneers invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Medical Pioneers invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Medical Pioneers invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Medical Pioneers invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Medical Pioneers invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Medical Pioneers invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "stemfuture": {
+    "title": "STEM & Future Tech",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "STEM & Future Tech helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "STEM & Future Tech helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "STEM & Future Tech helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "STEM & Future Tech helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "STEM & Future Tech helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "STEM & Future Tech helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "STEM & Future Tech helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "STEM & Future Tech helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "STEM & Future Tech includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "STEM & Future Tech includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "STEM & Future Tech includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "STEM & Future Tech includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "STEM & Future Tech includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "STEM & Future Tech includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "STEM & Future Tech includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "STEM & Future Tech includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "STEM & Future Tech can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "STEM & Future Tech can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "STEM & Future Tech can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "STEM & Future Tech can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "STEM & Future Tech can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "STEM & Future Tech can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "STEM & Future Tech can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "STEM & Future Tech can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "STEM & Future Tech invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "STEM & Future Tech invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "STEM & Future Tech invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "STEM & Future Tech invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "STEM & Future Tech invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "STEM & Future Tech invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "STEM & Future Tech invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "STEM & Future Tech invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "blackhistory": {
+    "title": "Black History Foundations",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Black History Foundations helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Black History Foundations helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Black History Foundations helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Black History Foundations helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Black History Foundations helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Black History Foundations helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Black History Foundations helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Black History Foundations helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Black History Foundations includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Black History Foundations includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Black History Foundations includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Black History Foundations includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Black History Foundations includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Black History Foundations includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Black History Foundations includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Black History Foundations includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Black History Foundations can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Black History Foundations can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Black History Foundations can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Black History Foundations can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Black History Foundations can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Black History Foundations can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Black History Foundations can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Black History Foundations can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Black History Foundations invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Black History Foundations invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Black History Foundations invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Black History Foundations invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Black History Foundations invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Black History Foundations invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Black History Foundations invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Black History Foundations invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "entrepreneurs": {
+    "title": "Entrepreneurs & Business",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Entrepreneurs & Business helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Entrepreneurs & Business helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Entrepreneurs & Business helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Entrepreneurs & Business helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Entrepreneurs & Business helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Entrepreneurs & Business helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Entrepreneurs & Business helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Entrepreneurs & Business helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Entrepreneurs & Business includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Entrepreneurs & Business includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Entrepreneurs & Business includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Entrepreneurs & Business includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Entrepreneurs & Business includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Entrepreneurs & Business includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Entrepreneurs & Business includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Entrepreneurs & Business includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Entrepreneurs & Business can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Entrepreneurs & Business can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Entrepreneurs & Business can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Entrepreneurs & Business can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Entrepreneurs & Business can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Entrepreneurs & Business can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Entrepreneurs & Business can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Entrepreneurs & Business can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Entrepreneurs & Business invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Entrepreneurs & Business invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Entrepreneurs & Business invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Entrepreneurs & Business invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Entrepreneurs & Business invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Entrepreneurs & Business invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Entrepreneurs & Business invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Entrepreneurs & Business invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "artists": {
+    "title": "Visual Arts & Design",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Visual Arts & Design helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Visual Arts & Design helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Visual Arts & Design helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Visual Arts & Design helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Visual Arts & Design helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Visual Arts & Design helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Visual Arts & Design helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Visual Arts & Design helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Visual Arts & Design includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Visual Arts & Design includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Visual Arts & Design includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Visual Arts & Design includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Visual Arts & Design includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Visual Arts & Design includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Visual Arts & Design includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Visual Arts & Design includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Visual Arts & Design can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Visual Arts & Design can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Visual Arts & Design can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Visual Arts & Design can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Visual Arts & Design can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Visual Arts & Design can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Visual Arts & Design can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Visual Arts & Design can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Visual Arts & Design invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Visual Arts & Design invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Visual Arts & Design invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Visual Arts & Design invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Visual Arts & Design invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Visual Arts & Design invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Visual Arts & Design invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Visual Arts & Design invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "military": {
+    "title": "Service & Military History",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Service & Military History helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Service & Military History helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Service & Military History helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Service & Military History helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Service & Military History helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Service & Military History helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Service & Military History helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Service & Military History helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Service & Military History includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Service & Military History includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Service & Military History includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Service & Military History includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Service & Military History includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Service & Military History includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Service & Military History includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Service & Military History includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Service & Military History can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Service & Military History can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Service & Military History can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Service & Military History can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Service & Military History can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Service & Military History can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Service & Military History can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Service & Military History can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Service & Military History invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Service & Military History invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Service & Military History invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Service & Military History invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Service & Military History invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Service & Military History invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Service & Military History invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Service & Military History invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "community": {
+    "title": "Community Builders",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Community Builders helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Community Builders helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Community Builders helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Community Builders helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Community Builders helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Community Builders helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Community Builders helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Community Builders helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Community Builders includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Community Builders includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Community Builders includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Community Builders includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Community Builders includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Community Builders includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Community Builders includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Community Builders includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Community Builders can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Community Builders can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Community Builders can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Community Builders can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Community Builders can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Community Builders can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Community Builders can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Community Builders can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Community Builders invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Community Builders invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Community Builders invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Community Builders invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Community Builders invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Community Builders invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Community Builders invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Community Builders invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "educationleaders": {
+    "title": "Education Leaders",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Education Leaders helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Education Leaders helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Education Leaders helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Education Leaders helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Education Leaders helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Education Leaders helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Education Leaders helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Education Leaders helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Education Leaders includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Education Leaders includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Education Leaders includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Education Leaders includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Education Leaders includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Education Leaders includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Education Leaders includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Education Leaders includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Education Leaders can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Education Leaders can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Education Leaders can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Education Leaders can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Education Leaders can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Education Leaders can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Education Leaders can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Education Leaders can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Education Leaders invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Education Leaders invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Education Leaders invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Education Leaders invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Education Leaders invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Education Leaders invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Education Leaders invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Education Leaders invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "science": {
+    "title": "Science & Discovery",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Science & Discovery helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Science & Discovery helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Science & Discovery helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Science & Discovery helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Science & Discovery helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Science & Discovery helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Science & Discovery helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Science & Discovery helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Science & Discovery includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Science & Discovery includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Science & Discovery includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Science & Discovery includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Science & Discovery includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Science & Discovery includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Science & Discovery includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Science & Discovery includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Science & Discovery can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Science & Discovery can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Science & Discovery can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Science & Discovery can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Science & Discovery can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Science & Discovery can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Science & Discovery can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Science & Discovery can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Science & Discovery invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Science & Discovery invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Science & Discovery invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Science & Discovery invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Science & Discovery invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Science & Discovery invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Science & Discovery invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Science & Discovery invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "space": {
+    "title": "Space & Exploration",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Space & Exploration helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Space & Exploration helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Space & Exploration helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Space & Exploration helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Space & Exploration helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Space & Exploration helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Space & Exploration helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Space & Exploration helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Space & Exploration includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Space & Exploration includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Space & Exploration includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Space & Exploration includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Space & Exploration includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Space & Exploration includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Space & Exploration includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Space & Exploration includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Space & Exploration can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Space & Exploration can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Space & Exploration can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Space & Exploration can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Space & Exploration can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Space & Exploration can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Space & Exploration can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Space & Exploration can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Space & Exploration invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Space & Exploration invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Space & Exploration invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Space & Exploration invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Space & Exploration invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Space & Exploration invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Space & Exploration invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Space & Exploration invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "divinenine": {
+    "title": "Divine Nine & Greek Life",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Divine Nine & Greek Life helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Divine Nine & Greek Life helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Divine Nine & Greek Life helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Divine Nine & Greek Life helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Divine Nine & Greek Life helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Divine Nine & Greek Life helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Divine Nine & Greek Life helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Divine Nine & Greek Life helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Divine Nine & Greek Life includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Divine Nine & Greek Life includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Divine Nine & Greek Life includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Divine Nine & Greek Life includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Divine Nine & Greek Life includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Divine Nine & Greek Life includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Divine Nine & Greek Life includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Divine Nine & Greek Life includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Divine Nine & Greek Life can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Divine Nine & Greek Life can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Divine Nine & Greek Life can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Divine Nine & Greek Life can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Divine Nine & Greek Life can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Divine Nine & Greek Life can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Divine Nine & Greek Life can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Divine Nine & Greek Life can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Divine Nine & Greek Life invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Divine Nine & Greek Life invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Divine Nine & Greek Life invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Divine Nine & Greek Life invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Divine Nine & Greek Life invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Divine Nine & Greek Life invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Divine Nine & Greek Life invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Divine Nine & Greek Life invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "media": {
+    "title": "Media & Journalism",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Media & Journalism helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Media & Journalism helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Media & Journalism helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Media & Journalism helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Media & Journalism helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Media & Journalism helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Media & Journalism helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Media & Journalism helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Media & Journalism includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Media & Journalism includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Media & Journalism includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Media & Journalism includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Media & Journalism includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Media & Journalism includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Media & Journalism includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Media & Journalism includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Media & Journalism can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Media & Journalism can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Media & Journalism can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Media & Journalism can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Media & Journalism can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Media & Journalism can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Media & Journalism can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Media & Journalism can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Media & Journalism invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Media & Journalism invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Media & Journalism invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Media & Journalism invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Media & Journalism invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Media & Journalism invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Media & Journalism invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Media & Journalism invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "politics": {
+    "title": "Politics & Public Life",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Politics & Public Life helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Politics & Public Life helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Politics & Public Life helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Politics & Public Life helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Politics & Public Life helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Politics & Public Life helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Politics & Public Life helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Politics & Public Life helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Politics & Public Life includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Politics & Public Life includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Politics & Public Life includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Politics & Public Life includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Politics & Public Life includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Politics & Public Life includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Politics & Public Life includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Politics & Public Life includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Politics & Public Life can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Politics & Public Life can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Politics & Public Life can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Politics & Public Life can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Politics & Public Life can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Politics & Public Life can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Politics & Public Life can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Politics & Public Life can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Politics & Public Life invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Politics & Public Life invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Politics & Public Life invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Politics & Public Life invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Politics & Public Life invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Politics & Public Life invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Politics & Public Life invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Politics & Public Life invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "activism": {
+    "title": "Activism & Organizing",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Activism & Organizing helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Activism & Organizing helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Activism & Organizing helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Activism & Organizing helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Activism & Organizing helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Activism & Organizing helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Activism & Organizing helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Activism & Organizing helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Activism & Organizing includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Activism & Organizing includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Activism & Organizing includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Activism & Organizing includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Activism & Organizing includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Activism & Organizing includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Activism & Organizing includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Activism & Organizing includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Activism & Organizing can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Activism & Organizing can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Activism & Organizing can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Activism & Organizing can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Activism & Organizing can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Activism & Organizing can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Activism & Organizing can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Activism & Organizing can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Activism & Organizing invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Activism & Organizing invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Activism & Organizing invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Activism & Organizing invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Activism & Organizing invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Activism & Organizing invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Activism & Organizing invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Activism & Organizing invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "architecture": {
+    "title": "Architecture & Building",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Architecture & Building helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Architecture & Building helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Architecture & Building helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Architecture & Building helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Architecture & Building helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Architecture & Building helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Architecture & Building helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Architecture & Building helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Architecture & Building includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Architecture & Building includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Architecture & Building includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Architecture & Building includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Architecture & Building includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Architecture & Building includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Architecture & Building includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Architecture & Building includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Architecture & Building can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Architecture & Building can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Architecture & Building can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Architecture & Building can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Architecture & Building can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Architecture & Building can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Architecture & Building can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Architecture & Building can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Architecture & Building invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Architecture & Building invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Architecture & Building invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Architecture & Building invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Architecture & Building invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Architecture & Building invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Architecture & Building invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Architecture & Building invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "leadership": {
+    "title": "Leadership Traits",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Leadership Traits helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Leadership Traits helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Leadership Traits helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Leadership Traits helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Leadership Traits helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Leadership Traits helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Leadership Traits helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Leadership Traits helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Leadership Traits includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Leadership Traits includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Leadership Traits includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Leadership Traits includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Leadership Traits includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Leadership Traits includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Leadership Traits includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Leadership Traits includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Leadership Traits can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Leadership Traits can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Leadership Traits can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Leadership Traits can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Leadership Traits can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Leadership Traits can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Leadership Traits can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Leadership Traits can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Leadership Traits invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Leadership Traits invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Leadership Traits invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Leadership Traits invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Leadership Traits invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Leadership Traits invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Leadership Traits invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Leadership Traits invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "innovation": {
+    "title": "Innovation & Problem Solving",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Innovation & Problem Solving helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Innovation & Problem Solving helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Innovation & Problem Solving helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Innovation & Problem Solving helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Innovation & Problem Solving helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Innovation & Problem Solving helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Innovation & Problem Solving helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Innovation & Problem Solving helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Innovation & Problem Solving includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Innovation & Problem Solving includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Innovation & Problem Solving includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Innovation & Problem Solving includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Innovation & Problem Solving includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Innovation & Problem Solving includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Innovation & Problem Solving includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Innovation & Problem Solving includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Innovation & Problem Solving can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Innovation & Problem Solving can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Innovation & Problem Solving can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Innovation & Problem Solving can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Innovation & Problem Solving can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Innovation & Problem Solving can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Innovation & Problem Solving can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Innovation & Problem Solving can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Innovation & Problem Solving invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Innovation & Problem Solving invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Innovation & Problem Solving invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Innovation & Problem Solving invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Innovation & Problem Solving invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Innovation & Problem Solving invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Innovation & Problem Solving invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Innovation & Problem Solving invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "performingarts": {
+    "title": "Performing Arts",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Performing Arts helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Performing Arts helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Performing Arts helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Performing Arts helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Performing Arts helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Performing Arts helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Performing Arts helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Performing Arts helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Performing Arts includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Performing Arts includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Performing Arts includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Performing Arts includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Performing Arts includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Performing Arts includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Performing Arts includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Performing Arts includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Performing Arts can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Performing Arts can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Performing Arts can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Performing Arts can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Performing Arts can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Performing Arts can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Performing Arts can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Performing Arts can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Performing Arts invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Performing Arts invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Performing Arts invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Performing Arts invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Performing Arts invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Performing Arts invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Performing Arts invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Performing Arts invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "transportation": {
+    "title": "Transportation & Movement",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Transportation & Movement helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Transportation & Movement helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Transportation & Movement helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Transportation & Movement helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Transportation & Movement helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Transportation & Movement helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Transportation & Movement helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Transportation & Movement helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Transportation & Movement includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Transportation & Movement includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Transportation & Movement includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Transportation & Movement includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Transportation & Movement includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Transportation & Movement includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Transportation & Movement includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Transportation & Movement includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Transportation & Movement can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Transportation & Movement can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Transportation & Movement can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Transportation & Movement can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Transportation & Movement can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Transportation & Movement can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Transportation & Movement can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Transportation & Movement can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Transportation & Movement invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Transportation & Movement invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Transportation & Movement invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Transportation & Movement invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Transportation & Movement invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Transportation & Movement invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Transportation & Movement invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Transportation & Movement invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  },
+  "democracy": {
+    "title": "Democracy in Action",
+    "bands": {
+      "K2": [
+        {
+          "word": "TEAM",
+          "fact": "Democracy in Action helps us practice Team."
+        },
+        {
+          "word": "HELP",
+          "fact": "Democracy in Action helps us practice Help."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Democracy in Action helps us practice Plan."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Democracy in Action helps us practice Learn."
+        },
+        {
+          "word": "GROW",
+          "fact": "Democracy in Action helps us practice Grow."
+        },
+        {
+          "word": "READ",
+          "fact": "Democracy in Action helps us practice Read."
+        },
+        {
+          "word": "MAKE",
+          "fact": "Democracy in Action helps us practice Make."
+        },
+        {
+          "word": "SHARE",
+          "fact": "Democracy in Action helps us practice Share."
+        }
+      ],
+      "G35": [
+        {
+          "word": "TEAM",
+          "fact": "Democracy in Action includes ideas about Team."
+        },
+        {
+          "word": "PLAN",
+          "fact": "Democracy in Action includes ideas about Plan."
+        },
+        {
+          "word": "VOICE",
+          "fact": "Democracy in Action includes ideas about Voice."
+        },
+        {
+          "word": "POWER",
+          "fact": "Democracy in Action includes ideas about Power."
+        },
+        {
+          "word": "LEARN",
+          "fact": "Democracy in Action includes ideas about Learn."
+        },
+        {
+          "word": "BUILD",
+          "fact": "Democracy in Action includes ideas about Build."
+        },
+        {
+          "word": "STORY",
+          "fact": "Democracy in Action includes ideas about Story."
+        },
+        {
+          "word": "GOAL",
+          "fact": "Democracy in Action includes ideas about Goal."
+        }
+      ],
+      "G68": [
+        {
+          "word": "COMMUNITY",
+          "fact": "Democracy in Action can be explored through Community."
+        },
+        {
+          "word": "LEADER",
+          "fact": "Democracy in Action can be explored through Leader."
+        },
+        {
+          "word": "HISTORY",
+          "fact": "Democracy in Action can be explored through History."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Democracy in Action can be explored through Culture."
+        },
+        {
+          "word": "POWER",
+          "fact": "Democracy in Action can be explored through Power."
+        },
+        {
+          "word": "SERVICE",
+          "fact": "Democracy in Action can be explored through Service."
+        },
+        {
+          "word": "VISION",
+          "fact": "Democracy in Action can be explored through Vision."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Democracy in Action can be explored through Legacy."
+        }
+      ],
+      "G912": [
+        {
+          "word": "LEADERSHIP",
+          "fact": "Democracy in Action invites deeper thinking about Leadership."
+        },
+        {
+          "word": "STRATEGY",
+          "fact": "Democracy in Action invites deeper thinking about Strategy."
+        },
+        {
+          "word": "COMMUNITY",
+          "fact": "Democracy in Action invites deeper thinking about Community."
+        },
+        {
+          "word": "IDENTITY",
+          "fact": "Democracy in Action invites deeper thinking about Identity."
+        },
+        {
+          "word": "SYSTEMS",
+          "fact": "Democracy in Action invites deeper thinking about Systems."
+        },
+        {
+          "word": "LEGACY",
+          "fact": "Democracy in Action invites deeper thinking about Legacy."
+        },
+        {
+          "word": "CULTURE",
+          "fact": "Democracy in Action invites deeper thinking about Culture."
+        },
+        {
+          "word": "ANALYSIS",
+          "fact": "Democracy in Action invites deeper thinking about Analysis."
+        }
+      ]
+    }
+  }
+}
