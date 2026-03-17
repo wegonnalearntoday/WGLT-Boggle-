@@ -3,103 +3,50 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>WGLT Black History Boggle V4.2</title>
+  <title>WGLT Black History Boggle V4.3</title>
   <style>
-    :root{
-      --bg:#08080c; --panel:#13131a; --panel2:#1b1b24; --line:rgba(255,255,255,.09);
-      --text:#f8f1da; --muted:#beb59a; --red:#d72638; --green:#1faa59; --gold:#f4c542; --blue:#5fb9ff;
-      --shadow:0 12px 30px rgba(0,0,0,.35);
-    }
+    :root{--panel:#13131a;--panel2:#1b1b24;--line:rgba(255,255,255,.09);--text:#f8f1da;--muted:#beb59a;--gold:#f4c542;--shadow:0 12px 30px rgba(0,0,0,.35)}
     *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
-    html,body{
-      margin:0; min-height:100%;
-      background:
-        radial-gradient(circle at top, rgba(244,197,66,.12), transparent 22%),
-        radial-gradient(circle at bottom left, rgba(215,38,56,.12), transparent 24%),
-        radial-gradient(circle at bottom right, rgba(31,170,89,.12), transparent 24%),
-        linear-gradient(180deg,#101017,#08080c 50%,#050507 100%);
-      color:var(--text); font-family:Arial,Helvetica,sans-serif; overflow-x:hidden;
-    }
-    body{padding:10px}
-    .app{width:min(1100px,100%); margin:0 auto; display:grid; gap:10px}
-    .panel{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), var(--panel); border:1px solid var(--line); border-radius:24px; box-shadow:var(--shadow)}
-    .hero{padding:16px}
-    h1{margin:0; font-size:clamp(1.5rem,3vw,2.35rem)}
-    .subtitle{margin-top:6px; color:var(--muted); line-height:1.35}
-    .controls{display:grid; gap:10px; padding-top:12px; grid-template-columns:repeat(6,minmax(0,1fr)); align-items:end}
-    .control{display:grid; gap:6px}
-    .control label{font-size:.88rem; color:var(--muted)}
-    select,button{
-      height:48px; border-radius:14px; border:1px solid var(--line); background:var(--panel2); color:var(--text); padding:0 12px; font-weight:700
-    }
-    button{cursor:pointer}
-    .primary{background:linear-gradient(135deg, rgba(31,170,89,.26), rgba(244,197,66,.18))}
-    .secondary{background:#22222c}
-    .danger{background:rgba(215,38,56,.15)}
-    .pulse{animation:pulse 1.2s infinite}
-    @keyframes pulse{0%{box-shadow:0 0 0 0 rgba(244,197,66,.45)}70%{box-shadow:0 0 0 12px rgba(244,197,66,0)}100%{box-shadow:0 0 0 0 rgba(244,197,66,0)}}
-    .stats{display:grid; gap:10px; grid-template-columns:repeat(5,minmax(0,1fr)); padding-top:12px}
-    .stat{background:var(--panel2); border:1px solid var(--line); border-radius:16px; padding:12px; text-align:center}
-    .stat .k{font-size:.8rem; color:var(--muted)}
-    .stat .v{font-size:1.18rem; font-weight:800; margin-top:4px}
-    .layout{display:grid; gap:10px; grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr)}
-    .leftCol,.rightCol{display:grid; gap:10px}
-    .boardWrap{padding:14px; display:grid; gap:12px; justify-items:center}
-    .statusRow{width:100%; display:flex; flex-wrap:wrap; justify-content:space-between; gap:10px; align-items:center}
-    .pill{background:var(--panel2); border:1px solid var(--line); border-radius:999px; padding:8px 12px; color:var(--muted); font-size:.92rem}
-    .currentWord{
-      width:min(520px,100%); min-height:58px; border-radius:16px; border:1px solid var(--line); background:var(--panel2);
-      display:flex; align-items:center; justify-content:center; padding:8px 12px; text-align:center; font-size:1.35rem; font-weight:800; letter-spacing:2px
-    }
-    .board{width:min(520px,100%); display:grid; grid-template-columns:repeat(4,1fr); gap:10px; touch-action:none; user-select:none}
-    .tile{
-      aspect-ratio:1/1; border-radius:18px; display:grid; place-items:center; font-weight:900; font-size:clamp(1.35rem,4vw,2rem);
-      border:2px solid rgba(255,255,255,.1); background:linear-gradient(180deg,#262632,#1a1a22); position:relative; color:var(--text)
-    }
-    .tile.mult{background:linear-gradient(180deg, #4b3a0f, #241a06); border-color:rgba(244,197,66,.6)}
-    .tile.mult::after{content:"x2"; position:absolute; top:6px; right:7px; font-size:.7rem; color:var(--gold); background:rgba(0,0,0,.28); border-radius:999px; padding:2px 6px}
-    .tile.active{transform:translateY(-2px) scale(1.02); border-color:rgba(95,185,255,.85); box-shadow:0 0 0 3px rgba(95,185,255,.17), 0 10px 18px rgba(0,0,0,.25)}
-    .tile.hintGlow{box-shadow:0 0 0 3px rgba(244,197,66,.22), 0 0 22px rgba(244,197,66,.45)}
-    .tile.good{animation:goodFlash .45s ease}
+    html,body{margin:0;min-height:100%;background:radial-gradient(circle at top, rgba(244,197,66,.12), transparent 22%),radial-gradient(circle at bottom left, rgba(215,38,56,.12), transparent 24%),radial-gradient(circle at bottom right, rgba(31,170,89,.12), transparent 24%),linear-gradient(180deg,#101017,#08080c 50%,#050507 100%);color:var(--text);font-family:Arial,Helvetica,sans-serif;overflow-x:hidden}
+    body{padding:10px}.app{width:min(1100px,100%);margin:0 auto;display:grid;gap:10px}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,.03), rgba(255,255,255,.01)), var(--panel);border:1px solid var(--line);border-radius:24px;box-shadow:var(--shadow)}
+    .hero{padding:16px}h1{margin:0;font-size:clamp(1.5rem,3vw,2.35rem)}.subtitle{margin-top:6px;color:var(--muted);line-height:1.35}
+    .controls{display:grid;gap:10px;padding-top:12px;grid-template-columns:repeat(6,minmax(0,1fr));align-items:end}
+    .control{display:grid;gap:6px}.control label{font-size:.88rem;color:var(--muted)}
+    select,button{height:48px;border-radius:14px;border:1px solid var(--line);background:var(--panel2);color:var(--text);padding:0 12px;font-weight:700}
+    button{cursor:pointer}.primary{background:linear-gradient(135deg, rgba(31,170,89,.26), rgba(244,197,66,.18))}.secondary{background:#22222c}.danger{background:rgba(215,38,56,.15)}
+    .pulse{animation:pulse 1.2s infinite}@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(244,197,66,.45)}70%{box-shadow:0 0 0 12px rgba(244,197,66,0)}100%{box-shadow:0 0 0 0 rgba(244,197,66,0)}}
+    .stats{display:grid;gap:10px;grid-template-columns:repeat(6,minmax(0,1fr));padding-top:12px}
+    .stat{background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:12px;text-align:center}.stat .k{font-size:.8rem;color:var(--muted)}.stat .v{font-size:1.12rem;font-weight:800;margin-top:4px}
+    .layout{display:grid;gap:10px;grid-template-columns:minmax(0,1.1fr) minmax(300px,.9fr)}.leftCol,.rightCol{display:grid;gap:10px}
+    .boardWrap{padding:14px;display:grid;gap:12px;justify-items:center}.statusRow{width:100%;display:flex;flex-wrap:wrap;justify-content:space-between;gap:10px;align-items:center}
+    .pill{background:var(--panel2);border:1px solid var(--line);border-radius:999px;padding:8px 12px;color:var(--muted);font-size:.92rem}
+    .currentWord{width:min(520px,100%);min-height:58px;border-radius:16px;border:1px solid var(--line);background:var(--panel2);display:flex;align-items:center;justify-content:center;padding:8px 12px;text-align:center;font-size:1.35rem;font-weight:800;letter-spacing:2px}
+    .board{width:min(520px,100%);display:grid;grid-template-columns:repeat(4,1fr);gap:10px;touch-action:none;user-select:none}
+    .tile{aspect-ratio:1/1;border-radius:18px;display:grid;place-items:center;font-weight:900;font-size:clamp(1.35rem,4vw,2rem);border:2px solid rgba(255,255,255,.1);background:linear-gradient(180deg,#262632,#1a1a22);position:relative;color:var(--text)}
+    .tile.mult{background:linear-gradient(180deg, #4b3a0f, #241a06);border-color:rgba(244,197,66,.6)}.tile.mult::after{content:"x2";position:absolute;top:6px;right:7px;font-size:.7rem;color:var(--gold);background:rgba(0,0,0,.28);border-radius:999px;padding:2px 6px}
+    .tile.active{transform:translateY(-2px) scale(1.02);border-color:rgba(95,185,255,.85);box-shadow:0 0 0 3px rgba(95,185,255,.17), 0 10px 18px rgba(0,0,0,.25)}
+    .tile.hintGlow{box-shadow:0 0 0 3px rgba(244,197,66,.22),0 0 22px rgba(244,197,66,.45)}.tile.good{animation:goodFlash .45s ease}
     @keyframes goodFlash{0%{box-shadow:0 0 0 0 rgba(31,170,89,.45)}40%{box-shadow:0 0 0 10px rgba(31,170,89,.1)}100%{box-shadow:0 0 0 0 rgba(31,170,89,0)}}
-    .actionRow{display:flex; flex-wrap:wrap; gap:10px; justify-content:center}
-    .rightPanel{padding:14px}
-    .sectionTitle{display:flex; align-items:center; justify-content:space-between; gap:10px; margin-bottom:8px}
-    .sectionTitle h3{margin:0; font-size:1rem}
-    .tiny{font-size:.82rem; color:var(--muted)}
-    .wordList,.foundList,.leaderboard{display:flex; flex-wrap:wrap; gap:8px; align-content:flex-start; min-height:70px}
-    .chip{padding:8px 10px; border-radius:999px; background:var(--panel2); border:1px solid var(--line); font-size:.9rem}
-    .chip.found{background:rgba(31,170,89,.16); border-color:rgba(31,170,89,.45)}
-    .chip.hiddenWord{color:#7b735c; letter-spacing:2px}
-    .factBox{background:var(--panel2); border:1px solid var(--line); border-radius:16px; padding:12px; line-height:1.45}
-    .toast{
-      position:fixed; left:50%; bottom:22px; transform:translateX(-50%) translateY(20px); padding:14px 18px; border-radius:16px; z-index:20; opacity:0; pointer-events:none;
-      border:1px solid var(--line); background:rgba(17,17,24,.96); box-shadow:var(--shadow); text-align:center; min-width:min(360px,92vw); max-width:92vw; transition:all .18s ease
-    }
-    .toast.show{opacity:1; transform:translateX(-50%) translateY(0)}
-    .toast.good{border-color:rgba(31,170,89,.5)} .toast.bad{border-color:rgba(215,38,56,.5)}
-    .toast .big{font-size:1.1rem; font-weight:900} .toast .small{font-size:.92rem; color:var(--muted); margin-top:4px}
-    .overlay{position:fixed; inset:0; background:rgba(0,0,0,.6); display:none; place-items:center; z-index:30; padding:12px}
-    .overlay.show{display:grid}
-    .modal{width:min(520px,100%); background:var(--panel); border:1px solid var(--line); border-radius:24px; padding:18px; box-shadow:var(--shadow); text-align:center}
-    .modal h2{margin:0 0 8px} .modal p{color:var(--muted)}
-    .leaderRow{display:flex; justify-content:space-between; gap:10px; padding:8px 10px; border-radius:12px; background:var(--panel2); border:1px solid var(--line); margin-bottom:8px}
-    .muted{color:var(--muted)}
-    .confetti{position:fixed; top:-20px; width:10px; height:16px; opacity:.92; z-index:40; animation:fall linear forwards}
-    @keyframes fall{to{transform:translateY(110vh) rotate(720deg); opacity:1}}
+    .actionRow{display:flex;flex-wrap:wrap;gap:10px;justify-content:center}.rightPanel{padding:14px}.sectionTitle{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:8px}
+    .sectionTitle h3{margin:0;font-size:1rem}.tiny{font-size:.82rem;color:var(--muted)}.wordList,.foundList,.leaderboard{display:flex;flex-wrap:wrap;gap:8px;align-content:flex-start;min-height:70px}
+    .chip{padding:8px 10px;border-radius:999px;background:var(--panel2);border:1px solid var(--line);font-size:.9rem}.chip.found{background:rgba(31,170,89,.16);border-color:rgba(31,170,89,.45)}.chip.hiddenWord{color:#7b735c;letter-spacing:2px}
+    .factBox{background:var(--panel2);border:1px solid var(--line);border-radius:16px;padding:12px;line-height:1.45}
+    .toast{position:fixed;left:50%;bottom:22px;transform:translateX(-50%) translateY(20px);padding:14px 18px;border-radius:16px;z-index:20;opacity:0;pointer-events:none;border:1px solid var(--line);background:rgba(17,17,24,.96);box-shadow:var(--shadow);text-align:center;min-width:min(360px,92vw);max-width:92vw;transition:all .18s ease}
+    .toast.show{opacity:1;transform:translateX(-50%) translateY(0)}.toast.good{border-color:rgba(31,170,89,.5)} .toast.bad{border-color:rgba(215,38,56,.5)}.toast .big{font-size:1.1rem;font-weight:900}.toast .small{font-size:.92rem;color:var(--muted);margin-top:4px}
+    .overlay{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;place-items:center;z-index:30;padding:12px}.overlay.show{display:grid}
+    .modal{width:min(520px,100%);background:var(--panel);border:1px solid var(--line);border-radius:24px;padding:18px;box-shadow:var(--shadow);text-align:center}.modal h2{margin:0 0 8px}.modal p{color:var(--muted)}
+    .leaderRow{display:flex;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:12px;background:var(--panel2);border:1px solid var(--line);margin-bottom:8px}.muted{color:var(--muted)}
+    .confetti{position:fixed;top:-20px;width:10px;height:16px;opacity:.92;z-index:40;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:1}}
     @media (max-width:920px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.layout{grid-template-columns:1fr}}
-    @media (max-width:640px){
-      body{padding:8px}.app{gap:8px}.controls .control:last-child{grid-column:1/-1}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}
-      .board{width:min(96vw,420px); gap:8px; margin:0 auto}.currentWord{width:min(96vw,420px); font-size:1.1rem}
-      .tile{border-radius:14px; font-size:clamp(1.2rem,8vw,1.7rem)} .wordList,.foundList,.leaderboard{justify-content:center} .statusRow{justify-content:center}
-    }
+    @media (max-width:640px){body{padding:8px}.app{gap:8px}.controls .control:last-child{grid-column:1/-1}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.board{width:min(96vw,420px);gap:8px;margin:0 auto}.currentWord{width:min(96vw,420px);font-size:1.1rem}.tile{border-radius:14px;font-size:clamp(1.2rem,8vw,1.7rem)}.wordList,.foundList,.leaderboard{justify-content:center}.statusRow{justify-content:center}}
   </style>
 </head>
 <body>
 <div class="app">
   <section class="panel hero">
-    <h1>WGLT Black History Boggle V4.2</h1>
-    <div class="subtitle">Mixed-age dictionary added. History words score biggest, grade-band words score next, and general dictionary words still count so fewer real words get rejected.</div>
+    <h1>WGLT Black History Boggle V4.3</h1>
+    <div class="subtitle">Smarter board generator: more real words per board, correct on-board targets, and mixed-age dictionary support.</div>
     <div class="controls">
       <div class="control"><label for="gradeSelect">Grade Band</label><select id="gradeSelect"><option value="K2">K-2</option><option value="G35" selected>3-5</option><option value="G68">6-8</option><option value="G912">9-12</option></select></div>
       <div class="control"><label for="difficultySelect">Difficulty</label><select id="difficultySelect"><option value="easy" selected>Easy • 4:00</option><option value="medium">Medium • 3:00</option><option value="hard">Hard • 1:30</option></select></div>
@@ -113,7 +60,8 @@
       <div class="stat"><div class="k">Score</div><div class="v" id="scoreStat">0</div></div>
       <div class="stat"><div class="k">Combo</div><div class="v" id="comboStat">x1</div></div>
       <div class="stat"><div class="k">Found</div><div class="v" id="foundStat">0</div></div>
-      <div class="stat"><div class="k">Multiplier Tiles</div><div class="v" id="multStat">0</div></div>
+      <div class="stat"><div class="k">Multiplier</div><div class="v" id="multStat">0</div></div>
+      <div class="stat"><div class="k">Board Words</div><div class="v" id="boardWordStat">0</div></div>
     </div>
   </section>
 
@@ -193,6 +141,7 @@
     comboStat: document.getElementById('comboStat'),
     foundStat: document.getElementById('foundStat'),
     multStat: document.getElementById('multStat'),
+    boardWordStat: document.getElementById('boardWordStat'),
     themePill: document.getElementById('themePill'),
     gradePill: document.getElementById('gradePill'),
     diffPill: document.getElementById('diffPill'),
@@ -208,28 +157,13 @@
     leaderboard: document.getElementById('leaderboard')
   };
 
-  let WORD_LIBRARY = null;
-  let THEMES = null;
-  let DICTIONARY = null;
-
+  let WORD_LIBRARY = null, THEMES = null, DICTIONARY = null;
+  let DICT_SET = null;
   const state = {
-    board: [],
-    multiplierIndices: new Set(),
-    selected: [],
-    dragging: false,
-    found: new Set(),
-    foundTarget: new Set(),
-    score: 0,
-    combo: 1,
-    timer: null,
-    timeLeft: 240,
-    soundOn: true,
-    gameActive: false,
-    currentThemeKey: 'civilrights',
-    currentGrade: ui.gradeSelect.value,
-    currentDifficulty: ui.difficultySelect.value,
-    placedTargets: [],
-    hintWordSet: new Set()
+    board: [], multiplierIndices: new Set(), selected: [], dragging: false,
+    found: new Set(), foundTarget: new Set(), score: 0, combo: 1, timer: null, timeLeft: 240,
+    soundOn: true, gameActive: false, currentThemeKey: 'civilrights', currentGrade: ui.gradeSelect.value,
+    currentDifficulty: ui.difficultySelect.value, placedTargets: [], hintWordSet: new Set(), boardValidWords: new Set()
   };
 
   function difficultySeconds(diff){ return diff === 'easy' ? 240 : diff === 'medium' ? 180 : 90; }
@@ -237,12 +171,7 @@
   function minLengthForGrade(grade){ return WORD_LIBRARY?.[grade]?.minLength || 3; }
   function currentTheme(){ return THEMES[state.currentThemeKey]; }
   function placedTargetWords(){ return state.placedTargets.map(t => t.word); }
-
-  async function loadJSON(path){
-    const res = await fetch(path);
-    if(!res.ok) throw new Error(`Could not load ${path}`);
-    return await res.json();
-  }
+  async function loadJSON(path){ const res = await fetch(path); if(!res.ok) throw new Error(`Could not load ${path}`); return await res.json(); }
 
   async function init(){
     try{
@@ -251,21 +180,14 @@
         loadJSON('./data/wglt_themes.json'),
         loadJSON('./data/wglt_boggle_dictionary.json')
       ]);
+      DICT_SET = new Set((DICTIONARY.words || []).map(w => w.toUpperCase()));
       Object.entries(THEMES).forEach(([key, val]) => {
-        const opt = document.createElement('option');
-        opt.value = key;
-        opt.textContent = val.title;
-        ui.themeSelect.appendChild(opt);
+        const opt = document.createElement('option'); opt.value = key; opt.textContent = val.title; ui.themeSelect.appendChild(opt);
       });
       state.currentThemeKey = ui.themeSelect.value || 'civilrights';
-      updatePills();
-      renderLeaderboard();
-      state.timeLeft = difficultySeconds(state.currentDifficulty);
-      generateBoard();
-      renderBoard();
-      updateStats();
-      updateTargetWords();
-      ui.factBox.textContent = `Mixed-age dictionary loaded with ${DICTIONARY.words.length.toLocaleString()} fallback words.`;
+      updatePills(); renderLeaderboard(); state.timeLeft = difficultySeconds(state.currentDifficulty);
+      generateBoard(); renderBoard(); updateStats(); updateTargetWords();
+      ui.factBox.textContent = `Loaded ${DICTIONARY.words.length.toLocaleString()} dictionary words. V4.3 packs more valid words onto each board.`;
       wireEvents();
     }catch(err){
       ui.factBox.textContent = 'Could not load the JSON files. Keep index.html and the data folder together when you upload to GitHub Pages.';
@@ -279,9 +201,7 @@
     ui.gradePill.textContent = `Grade: ${ui.gradeSelect.options[ui.gradeSelect.selectedIndex].text}`;
     ui.diffPill.textContent = `Mode: ${ui.difficultySelect.options[ui.difficultySelect.selectedIndex].text.split('•')[0].trim()}`;
   }
-
   function gradeSet(){ return new Set((WORD_LIBRARY[state.currentGrade]?.bonusWords || []).map(w => w.toUpperCase())); }
-  function dictionarySet(){ return new Set((DICTIONARY?.words || []).map(w => w.toUpperCase())); }
 
   function updateTargetWords(){
     const diff = state.currentDifficulty;
@@ -294,70 +214,46 @@
         chip.textContent = word;
         if(state.foundTarget.has(word)) chip.classList.add('found');
       } else {
-        if(state.foundTarget.has(word)){
-          chip.textContent = word;
-          chip.classList.add('found');
-        } else {
-          chip.textContent = '•'.repeat(word.length);
-          chip.classList.add('hiddenWord');
-        }
+        if(state.foundTarget.has(word)){ chip.textContent = word; chip.classList.add('found'); }
+        else { chip.textContent = '•'.repeat(word.length); chip.classList.add('hiddenWord'); }
       }
       ui.targetWords.appendChild(chip);
     });
     if(!words.length){
-      const chip = document.createElement('div');
-      chip.className = 'chip';
-      chip.textContent = 'No target words placed. Tap New Board.';
-      ui.targetWords.appendChild(chip);
+      const chip = document.createElement('div'); chip.className = 'chip'; chip.textContent = 'No target words placed. Tap New Board.'; ui.targetWords.appendChild(chip);
     }
   }
 
   function renderFoundWords(){
     ui.foundWords.innerHTML = '';
     [...state.found].sort((a,b)=>a.localeCompare(b)).forEach(word => {
-      const chip = document.createElement('div');
-      chip.className = 'chip found';
-      chip.textContent = word;
-      ui.foundWords.appendChild(chip);
+      const chip = document.createElement('div'); chip.className = 'chip found'; chip.textContent = word; ui.foundWords.appendChild(chip);
     });
     ui.foundStat.textContent = state.found.size;
   }
-
-  function formatTime(seconds){
-    const m = Math.floor(seconds / 60);
-    const s = seconds % 60;
-    return `${m}:${String(s).padStart(2,'0')}`;
-  }
-
+  function formatTime(seconds){ const m = Math.floor(seconds / 60), s = seconds % 60; return `${m}:${String(s).padStart(2,'0')}`; }
   function updateStats(){
     ui.timeStat.textContent = formatTime(state.timeLeft);
     ui.scoreStat.textContent = state.score;
     ui.comboStat.textContent = `x${state.combo}`;
     ui.multStat.textContent = state.multiplierIndices.size;
+    ui.boardWordStat.textContent = state.boardValidWords.size;
   }
-
-  function setCurrentWord(text){
-    ui.currentWord.textContent = text || '...';
-  }
+  function setCurrentWord(text){ ui.currentWord.textContent = text || '...'; }
 
   function pathCellsForWord(word){
     const dirs = [[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]];
-    for(let attempt=0; attempt<280; attempt++){
-      const used = new Set();
-      const path = [];
-      const start = randomInt(16);
-      path.push(start); used.add(start);
+    for(let attempt=0; attempt<320; attempt++){
+      const used = new Set(), path = [];
+      const start = randomInt(16); path.push(start); used.add(start);
       let ok = true;
       for(let i=1;i<word.length;i++){
-        const last = path[path.length-1];
-        const r = Math.floor(last/4), c = last%4;
-        const neighbors = dirs.map(([dr,dc]) => [r+dr,c+dc])
-          .filter(([nr,nc]) => nr>=0 && nr<4 && nc>=0 && nc<4)
-          .map(([nr,nc]) => nr*4+nc)
-          .filter(idx => !used.has(idx));
+        const last = path[path.length-1], r = Math.floor(last/4), c = last%4;
+        const neighbors = dirs.map(([dr,dc]) => [r+dr,c+dc]).filter(([nr,nc]) => nr>=0 && nr<4 && nc>=0 && nc<4)
+          .map(([nr,nc]) => nr*4+nc).filter(idx => !used.has(idx));
         if(!neighbors.length){ ok = false; break; }
-        path.push(neighbors[randomInt(neighbors.length)]);
-        used.add(path[path.length-1]);
+        const next = neighbors[randomInt(neighbors.length)];
+        path.push(next); used.add(next);
       }
       if(ok) return path;
     }
@@ -365,56 +261,129 @@
   }
 
   function letterPoolForGrade(grade){
-    const pools = {
+    return {
       K2: "AAABCDEEEFGHIIJLLMNNOOPPRRSTTUUVWY",
       G35: "AAABCDEEEFGHIIJLLMNNOOPPRRSSTTTUVWY",
       G68: "AAAABCDEEEFGHIIJKLMNNNOOPPRRSSTTTUVWY",
       G912: "AAAABCDEEEFGHIIJKLMNNNOOPPRRSSTTTUVWXYZ"
-    };
-    return pools[grade] || pools.G35;
+    }[grade] || "AAABCDEEEFGHIIJLLMNNOOPPRRSSTTTUVWY";
+  }
+
+  function canPlaceWord(board, path, word){
+    for(let i=0;i<path.length;i++){
+      const idx = path[i];
+      if(board[idx] && board[idx] !== word[i]) return false;
+    }
+    return true;
+  }
+  function placeWord(board, path, word){
+    for(let i=0;i<path.length;i++) board[path[i]] = word[i];
+  }
+
+  function countBoardWords(boardLetters){
+    const rows = 4, cols = 4;
+    const minLen = minLengthForGrade(state.currentGrade);
+    const gradeWords = gradeSet();
+    const found = new Set();
+    const neighborsMemo = Array.from({length:16}, (_, idx) => {
+      const r = Math.floor(idx/4), c = idx%4;
+      const arr = [];
+      for(let dr=-1; dr<=1; dr++){
+        for(let dc=-1; dc<=1; dc++){
+          if(!dr && !dc) continue;
+          const nr=r+dr, nc=c+dc;
+          if(nr>=0&&nr<rows&&nc>=0&&nc<cols) arr.push(nr*cols+nc);
+        }
+      }
+      return arr;
+    });
+
+    function isAllowed(word){
+      return placedTargetWords().includes(word) || gradeWords.has(word) || DICT_SET.has(word);
+    }
+
+    function dfs(idx, used, word){
+      if(word.length >= minLen && isAllowed(word)) found.add(word);
+      if(word.length >= 8) return; // cap for speed and practical play
+      for(const n of neighborsMemo[idx]){
+        if(used.has(n)) continue;
+        used.add(n);
+        dfs(n, used, word + boardLetters[n]);
+        used.delete(n);
+      }
+    }
+
+    for(let i=0;i<16;i++){
+      const used = new Set([i]);
+      dfs(i, used, boardLetters[i]);
+    }
+    return found;
   }
 
   function generateBoard(){
-    const board = Array(16).fill(null);
-    state.placedTargets = [];
+    const themeWords = [...currentTheme().words].sort((a,b)=>b.word.length-a.word.length);
+    const bonusPool = (WORD_LIBRARY[state.currentGrade]?.bonusWords || []).filter(w => w.length >= minLengthForGrade(state.currentGrade) && w.length <= 7);
+    const dictShort = DICTIONARY.words.filter(w => w.length >= minLengthForGrade(state.currentGrade) && w.length <= 6);
+    let bestBoard = null, bestPlaced = [], bestScore = -1, bestFound = new Set();
 
-    const targetCandidates = [...currentTheme().words].sort((a,b)=>b.word.length-a.word.length);
-    for(const item of targetCandidates){
-      let w = item.word.toUpperCase();
-      if(w.length > 8) w = w.slice(0,8);
-      const path = pathCellsForWord(w);
-      if(!path) continue;
+    for(let trial=0; trial<24; trial++){
+      const board = Array(16).fill(null);
+      const placedTargets = [];
 
-      let fits = true;
-      for(let i=0;i<path.length;i++){
-        const idx = path[i];
-        if(board[idx] && board[idx] !== w[i]) { fits = false; break; }
+      for(const item of themeWords){
+        let w = item.word.toUpperCase();
+        if(w.length > 8) w = w.slice(0,8);
+        const path = pathCellsForWord(w);
+        if(path && canPlaceWord(board, path, w)){
+          placeWord(board, path, w);
+          placedTargets.push({word:w, path:[...path], fact:item.fact});
+        }
+        if(placedTargets.length >= 5) break;
       }
-      if(fits){
-        for(let i=0;i<path.length;i++) board[path[i]] = w[i];
-        state.placedTargets.push({word:w, path:[...path], fact:item.fact});
+
+      // Plant more bonus words intentionally
+      const seeded = new Set();
+      const combinedBonus = [];
+      for(let i=0;i<6;i++){
+        const pick = bonusPool[randomInt(bonusPool.length)];
+        if(pick) combinedBonus.push(pick);
       }
-      if(state.placedTargets.length >= 5) break;
+      for(let i=0;i<4;i++){
+        const pick = dictShort[randomInt(dictShort.length)];
+        if(pick) combinedBonus.push(pick);
+      }
+      combinedBonus.sort((a,b)=>b.length-a.length);
+
+      for(const w of combinedBonus){
+        if(seeded.has(w)) continue;
+        const path = pathCellsForWord(w);
+        if(path && canPlaceWord(board, path, w)){
+          placeWord(board, path, w);
+          seeded.add(w);
+        }
+      }
+
+      const pool = letterPoolForGrade(state.currentGrade);
+      for(let i=0;i<16;i++) if(!board[i]) board[i] = pool[randomInt(pool.length)];
+
+      const tempPlacedWords = placedTargets.map(t => t.word);
+      const oldPlaced = state.placedTargets;
+      state.placedTargets = placedTargets; // lets countBoardWords use current targets
+      const found = countBoardWords(board);
+      state.placedTargets = oldPlaced;
+
+      const score = placedTargets.length * 100 + found.size;
+      if(score > bestScore){
+        bestScore = score;
+        bestBoard = board.slice();
+        bestPlaced = placedTargets.map(x => ({...x, path:[...x.path]}));
+        bestFound = new Set(found);
+      }
     }
 
-    const bonusPool = (WORD_LIBRARY[state.currentGrade]?.bonusWords || []).filter(w => w.length >= minLengthForGrade(state.currentGrade) && w.length <= 6);
-    for(let t=0; t<5; t++){
-      const bonus = bonusPool[randomInt(bonusPool.length)];
-      const path = pathCellsForWord(bonus);
-      if(!path) continue;
-      let fits = true;
-      for(let i=0;i<path.length;i++){
-        const idx = path[i];
-        if(board[idx] && board[idx] !== bonus[i]) { fits = false; break; }
-      }
-      if(fits){
-        for(let i=0;i<path.length;i++) board[path[i]] = bonus[i];
-      }
-    }
-
-    const pool = letterPoolForGrade(state.currentGrade);
-    for(let i=0;i<16;i++) if(!board[i]) board[i] = pool[randomInt(pool.length)];
-    state.board = board;
+    state.board = bestBoard || Array(16).fill('A');
+    state.placedTargets = bestPlaced;
+    state.boardValidWords = bestFound;
 
     const mults = new Set();
     while(mults.size < 3) mults.add(randomInt(16));
@@ -434,56 +403,36 @@
     });
     updateTileStates();
   }
-
   function updateTileStates(){
     const active = new Set(state.selected);
-    [...ui.board.children].forEach((tile, idx) => {
-      tile.classList.toggle('active', active.has(idx));
-    });
+    [...ui.board.children].forEach((tile, idx) => tile.classList.toggle('active', active.has(idx)));
     setCurrentWord(state.selected.map(i => state.board[i]).join('') || (state.gameActive ? 'DRAG TO SPELL' : 'PRESS START'));
   }
-
   function neighbors(a,b){
-    const ar = Math.floor(a/4), ac = a%4;
-    const br = Math.floor(b/4), bc = b%4;
+    const ar = Math.floor(a/4), ac = a%4, br = Math.floor(b/4), bc = b%4;
     return Math.abs(ar-br) <= 1 && Math.abs(ac-bc) <= 1 && a !== b;
   }
-
   function addIndex(idx){
     if(!state.gameActive) return;
-    if(!state.selected.length){
-      state.selected.push(idx);
-      return updateTileStates();
-    }
+    if(!state.selected.length){ state.selected.push(idx); return updateTileStates(); }
     if(state.selected.includes(idx)) return;
-    if(neighbors(state.selected[state.selected.length-1], idx)){
-      state.selected.push(idx);
-      updateTileStates();
-    }
+    if(neighbors(state.selected[state.selected.length-1], idx)){ state.selected.push(idx); updateTileStates(); }
   }
-
-  function clearPath(){
-    state.selected = [];
-    updateTileStates();
-  }
+  function clearPath(){ state.selected = []; updateTileStates(); }
 
   function wordMeta(word){
     const placed = state.placedTargets.find(x => x.word === word);
     if(placed) return {type:'theme', fact:placed.fact};
     if(gradeSet().has(word)) return {type:'grade', fact:`${word} counts as a grade-band bonus word in this mode.`};
-    if(dictionarySet().has(word)) return {type:'dictionary', fact:`${word} counts as a general dictionary word.`};
+    if(DICT_SET.has(word)) return {type:'dictionary', fact:`${word} counts as a general dictionary word.`};
     return {type:'invalid', fact:''};
   }
 
   function pointsFor(word, usedMultiplier, type){
     let base;
-    if(type === 'theme'){
-      base = word.length <= 3 ? 220 : word.length === 4 ? 260 : word.length === 5 ? 320 : word.length === 6 ? 380 : 430;
-    } else if(type === 'grade'){
-      base = word.length <= 3 ? 100 : word.length === 4 ? 140 : word.length === 5 ? 180 : word.length === 6 ? 220 : 260;
-    } else {
-      base = word.length <= 3 ? 50 : word.length === 4 ? 70 : word.length === 5 ? 90 : word.length === 6 ? 110 : 130;
-    }
+    if(type === 'theme') base = word.length <= 3 ? 220 : word.length === 4 ? 260 : word.length === 5 ? 320 : word.length === 6 ? 380 : 430;
+    else if(type === 'grade') base = word.length <= 3 ? 100 : word.length === 4 ? 140 : word.length === 5 ? 180 : word.length === 6 ? 220 : 260;
+    else base = word.length <= 3 ? 50 : word.length === 4 ? 70 : word.length === 5 ? 90 : word.length === 6 ? 110 : 130;
     base *= state.combo;
     if(usedMultiplier) base *= 2;
     return base;
@@ -495,37 +444,26 @@
     clearTimeout(showToast._t);
     showToast._t = setTimeout(() => ui.toast.className = 'toast', 1500);
   }
-
   function playBeep(freq=520, duration=0.08){
     if(!state.soundOn) return;
     try{
       const ctx = playBeep.ctx || (playBeep.ctx = new (window.AudioContext || window.webkitAudioContext)());
-      const osc = ctx.createOscillator(); const gain = ctx.createGain();
+      const osc = ctx.createOscillator(), gain = ctx.createGain();
       osc.type = 'sine'; osc.frequency.value = freq; gain.gain.value = .03;
       osc.connect(gain); gain.connect(ctx.destination); osc.start(); osc.stop(ctx.currentTime + duration);
     }catch(e){}
   }
-
   function confettiBurst(count=90){
     const colors = ['#d72638','#1faa59','#f4c542','#5fb9ff','#ffffff'];
     for(let i=0;i<count;i++){
-      const c = document.createElement('div');
-      c.className = 'confetti';
-      c.style.left = `${Math.random()*100}vw`;
-      c.style.background = colors[i % colors.length];
-      c.style.animationDuration = `${2.2 + Math.random()*1.8}s`;
-      document.body.appendChild(c);
-      setTimeout(() => c.remove(), 4300);
+      const c = document.createElement('div'); c.className = 'confetti'; c.style.left = `${Math.random()*100}vw`; c.style.background = colors[i % colors.length]; c.style.animationDuration = `${2.2 + Math.random()*1.8}s`;
+      document.body.appendChild(c); setTimeout(() => c.remove(), 4300);
     }
   }
-
   function flashSelected(){
     state.selected.forEach(i => {
       const tile = ui.board.children[i];
-      if(tile){
-        tile.classList.add('good');
-        setTimeout(() => tile.classList.remove('good'), 420);
-      }
+      if(tile){ tile.classList.add('good'); setTimeout(() => tile.classList.remove('good'), 420); }
     });
   }
 
@@ -537,39 +475,27 @@
 
     if(word.length < minLengthForGrade(state.currentGrade)){
       showToast('bad', 'Too short', `Use at least ${minLengthForGrade(state.currentGrade)} letters.`);
-      playBeep(230, .09);
-      state.combo = 1; clearPath(); updateStats(); return;
+      playBeep(230, .09); state.combo = 1; clearPath(); updateStats(); return;
     }
-
     if(meta.type === 'invalid'){
       showToast('bad', 'Not found', `${word} is not in the target, grade-band, or dictionary list.`);
-      playBeep(220, .1);
-      state.combo = 1; clearPath(); updateStats(); return;
+      playBeep(220, .1); state.combo = 1; clearPath(); updateStats(); return;
     }
-
     if(state.found.has(word)){
       showToast('bad', 'Already found', `${word} is already on your board list.`);
-      playBeep(260, .08);
-      clearPath(); return;
+      playBeep(260, .08); clearPath(); return;
     }
 
     state.found.add(word);
     if(meta.type === 'theme') state.foundTarget.add(word);
     const pts = pointsFor(word, usedMultiplier, meta.type);
-    state.score += pts;
-    state.combo += 1;
-
-    if(meta.type === 'theme'){
-      ui.factBox.textContent = meta.fact;
-    } else if(meta.type === 'grade'){
-      ui.factBox.textContent = `${word} scored as a grade-band bonus word.`;
-    } else {
-      ui.factBox.textContent = `${word} scored as a dictionary word, so real words found by students, teens, and adults still count.`;
-    }
+    state.score += pts; state.combo += 1;
+    if(meta.type === 'theme') ui.factBox.textContent = meta.fact;
+    else if(meta.type === 'grade') ui.factBox.textContent = `${word} scored as a grade-band bonus word.`;
+    else ui.factBox.textContent = `${word} scored as a dictionary word, so real words still count for students, teens, and adults.`;
 
     renderFoundWords(); updateTargetWords(); updateStats(); flashSelected();
     playBeep(meta.type === 'theme' ? 720 : meta.type === 'grade' ? 580 : 460, .09);
-
     const label = meta.type === 'theme' ? 'history word' : meta.type === 'grade' ? 'grade-band word' : 'dictionary word';
     showToast('good', `+${pts} points`, `${word}${usedMultiplier ? ' used a gold x2 tile' : ''} • ${label}`);
     clearPath(); checkRoundWin();
@@ -578,160 +504,89 @@
   function hint(){
     if(!state.gameActive) return;
     const remaining = state.placedTargets.filter(item => !state.foundTarget.has(item.word));
-    if(!remaining.length){
-      showToast('good', 'All target words found', 'You already cleared the lesson list.');
-      return;
-    }
-
+    if(!remaining.length){ showToast('good', 'All target words found', 'You already cleared the lesson list.'); return; }
     const unseen = remaining.filter(item => !state.hintWordSet.has(item.word));
     const pick = (unseen.length ? unseen : remaining)[randomInt((unseen.length ? unseen : remaining).length)];
     state.hintWordSet.add(pick.word);
 
-    const tiles = [...ui.board.children];
-    tiles.forEach(t => t.classList.remove('hintGlow'));
+    const tiles = [...ui.board.children]; tiles.forEach(t => t.classList.remove('hintGlow'));
     const startTile = tiles[pick.path[0]];
-    if(startTile){
-      startTile.classList.add('hintGlow');
-      setTimeout(() => startTile.classList.remove('hintGlow'), 1600);
-    }
+    if(startTile){ startTile.classList.add('hintGlow'); setTimeout(() => startTile.classList.remove('hintGlow'), 1600); }
 
-    if(state.currentDifficulty === 'easy'){
-      showToast('good', 'Hint', `${pick.word[0]}...${pick.word[pick.word.length-1]} • ${pick.word.length} letters`);
-    } else if(state.currentDifficulty === 'medium'){
-      showToast('good', 'Hint', `${pick.word[0]}... • ${pick.word.length} letters`);
-    } else {
-      showToast('good', 'Hint', `${pick.word.length} letters`);
-    }
+    if(state.currentDifficulty === 'easy') showToast('good', 'Hint', `${pick.word[0]}...${pick.word[pick.word.length-1]} • ${pick.word.length} letters`);
+    else if(state.currentDifficulty === 'medium') showToast('good', 'Hint', `${pick.word[0]}... • ${pick.word.length} letters`);
+    else showToast('good', 'Hint', `${pick.word.length} letters`);
   }
 
   function startTimer(){
     clearInterval(state.timer);
-    state.timer = setInterval(() => {
-      state.timeLeft -= 1;
-      updateStats();
-      if(state.timeLeft <= 0) endRound();
-    }, 1000);
+    state.timer = setInterval(() => { state.timeLeft -= 1; updateStats(); if(state.timeLeft <= 0) endRound(); }, 1000);
   }
-
   function checkRoundWin(){
     if(state.foundTarget.size === state.placedTargets.length && state.placedTargets.length){
-      confettiBurst(110);
-      showToast('good', 'Theme Cleared!', 'You found every target word on this board.');
+      confettiBurst(110); showToast('good', 'Theme Cleared!', 'You found every target word on this board.');
     }
   }
-
   function saveScore(){
-    const key = 'wglt_boggle_scores_v42';
+    const key = 'wglt_boggle_scores_v43';
     const scores = JSON.parse(localStorage.getItem(key) || '[]');
-    scores.push({
-      score: state.score,
-      grade: state.currentGrade,
-      difficulty: state.currentDifficulty,
-      theme: currentTheme().title,
-      found: state.found.size
-    });
-    scores.sort((a,b) => b.score - a.score);
-    localStorage.setItem(key, JSON.stringify(scores.slice(0,8)));
+    scores.push({score: state.score, grade: state.currentGrade, difficulty: state.currentDifficulty, theme: currentTheme().title, found: state.found.size});
+    scores.sort((a,b) => b.score - a.score); localStorage.setItem(key, JSON.stringify(scores.slice(0,8)));
   }
-
   function renderLeaderboard(){
-    const key = 'wglt_boggle_scores_v42';
-    const scores = JSON.parse(localStorage.getItem(key) || '[]');
+    const key = 'wglt_boggle_scores_v43'; const scores = JSON.parse(localStorage.getItem(key) || '[]');
     ui.leaderboard.innerHTML = '';
-    if(!scores.length){
-      ui.leaderboard.innerHTML = `<div class="tiny">No scores yet. Start a round and light up the board.</div>`;
-      return;
-    }
+    if(!scores.length){ ui.leaderboard.innerHTML = `<div class="tiny">No scores yet. Start a round and light up the board.</div>`; return; }
     scores.forEach((s, i) => {
-      const row = document.createElement('div');
-      row.className = 'leaderRow';
-      row.innerHTML = `<strong>#${i+1} ${s.score}</strong><span class="muted">${s.theme} • ${s.grade} • ${s.difficulty}</span>`;
-      ui.leaderboard.appendChild(row);
+      const row = document.createElement('div'); row.className = 'leaderRow'; row.innerHTML = `<strong>#${i+1} ${s.score}</strong><span class="muted">${s.theme} • ${s.grade} • ${s.difficulty}</span>`; ui.leaderboard.appendChild(row);
     });
   }
-
   function endRound(){
-    clearInterval(state.timer);
-    state.gameActive = false;
-    clearPath();
-    saveScore();
+    clearInterval(state.timer); state.gameActive = false; clearPath(); saveScore();
     ui.endTitle.textContent = 'Time Up';
-    ui.endText.textContent = `Score: ${state.score} • Found: ${state.found.size} words • Target words: ${state.foundTarget.size}/${state.placedTargets.length}`;
-    ui.overlay.classList.add('show');
-    renderLeaderboard();
+    ui.endText.textContent = `Score: ${state.score} • Found: ${state.found.size} words • Target words: ${state.foundTarget.size}/${state.placedTargets.length} • Board words: ${state.boardValidWords.size}`;
+    ui.overlay.classList.add('show'); renderLeaderboard();
   }
 
   function startGame(newBoard=true){
-    state.currentThemeKey = ui.themeSelect.value;
-    state.currentGrade = ui.gradeSelect.value;
-    state.currentDifficulty = ui.difficultySelect.value;
-    state.timeLeft = difficultySeconds(state.currentDifficulty);
-    state.score = 0; state.combo = 1; state.found = new Set(); state.foundTarget = new Set();
-    state.gameActive = true; state.hintWordSet = new Set();
-    updatePills();
+    state.currentThemeKey = ui.themeSelect.value; state.currentGrade = ui.gradeSelect.value; state.currentDifficulty = ui.difficultySelect.value;
+    state.timeLeft = difficultySeconds(state.currentDifficulty); state.score = 0; state.combo = 1; state.found = new Set(); state.foundTarget = new Set();
+    state.gameActive = true; state.hintWordSet = new Set(); updatePills();
     if(newBoard) generateBoard();
     renderBoard(); renderFoundWords(); updateTargetWords();
-    ui.factBox.textContent = `${currentTheme().title} is ready. Target words are on-board, and the mixed-age dictionary is active.`;
-    clearPath(); updateStats(); startTimer(); ui.overlay.classList.remove('show');
-    playBeep(500,.05);
+    ui.factBox.textContent = `${currentTheme().title} is ready. This board was tuned to pack in more valid words.`;
+    clearPath(); updateStats(); startTimer(); ui.overlay.classList.remove('show'); playBeep(500,.05);
   }
 
   function coordsToTile(clientX, clientY){
-    const el = document.elementFromPoint(clientX, clientY);
-    const tile = el && el.closest('.tile');
-    if(!tile || !ui.board.contains(tile)) return null;
-    return Number(tile.dataset.index);
+    const el = document.elementFromPoint(clientX, clientY); const tile = el && el.closest('.tile');
+    if(!tile || !ui.board.contains(tile)) return null; return Number(tile.dataset.index);
   }
-
   function pointerStart(e){
-    const tile = e.target.closest('.tile');
-    if(!tile || !state.gameActive) return;
-    e.preventDefault();
-    state.dragging = true;
-    try { tile.setPointerCapture(e.pointerId); } catch(err) {}
-    clearPath();
-    addIndex(Number(tile.dataset.index));
+    const tile = e.target.closest('.tile'); if(!tile || !state.gameActive) return;
+    e.preventDefault(); state.dragging = true; try { tile.setPointerCapture(e.pointerId); } catch(err) {}
+    clearPath(); addIndex(Number(tile.dataset.index));
   }
-
-  function pointerMove(e){
-    if(!state.dragging || !state.gameActive) return;
-    const idx = coordsToTile(e.clientX, e.clientY);
-    if(idx !== null) addIndex(idx);
-  }
-
-  function pointerEnd(){
-    if(!state.dragging) return;
-    state.dragging = false;
-    completeWord();
-  }
+  function pointerMove(e){ if(!state.dragging || !state.gameActive) return; const idx = coordsToTile(e.clientX, e.clientY); if(idx !== null) addIndex(idx); }
+  function pointerEnd(){ if(!state.dragging) return; state.dragging = false; completeWord(); }
 
   function wireEvents(){
     ui.board.addEventListener('pointerdown', pointerStart);
     ui.board.addEventListener('pointermove', pointerMove);
     window.addEventListener('pointerup', pointerEnd);
     window.addEventListener('pointercancel', pointerEnd);
-
     ui.clearBtn.addEventListener('click', clearPath);
     ui.hintBtn.addEventListener('click', hint);
     ui.newBoardBtn.addEventListener('click', () => startGame(true));
     ui.playAgainBtn.addEventListener('click', () => startGame(true));
     ui.closeModalBtn.addEventListener('click', () => ui.overlay.classList.remove('show'));
     ui.startBtn.addEventListener('click', () => startGame(true));
-
-    ui.soundBtn.addEventListener('click', () => {
-      state.soundOn = !state.soundOn;
-      ui.soundBtn.textContent = `Sound: ${state.soundOn ? 'On' : 'Off'}`;
-    });
+    ui.soundBtn.addEventListener('click', () => { state.soundOn = !state.soundOn; ui.soundBtn.textContent = `Sound: ${state.soundOn ? 'On' : 'Off'}`; });
 
     [ui.gradeSelect, ui.difficultySelect, ui.themeSelect].forEach(el => {
       el.addEventListener('change', () => {
-        state.currentGrade = ui.gradeSelect.value;
-        state.currentDifficulty = ui.difficultySelect.value;
-        state.currentThemeKey = ui.themeSelect.value;
-        state.timeLeft = difficultySeconds(state.currentDifficulty);
-        updatePills(); updateStats();
-        if(!state.gameActive){ generateBoard(); renderBoard(); }
-        updateTargetWords();
+        state.currentGrade = ui.gradeSelect.value; state.currentDifficulty = ui.difficultySelect.value; state.currentThemeKey = ui.themeSelect.value; state.timeLeft = difficultySeconds(state.currentDifficulty);
+        updatePills(); if(!state.gameActive){ generateBoard(); renderBoard(); } updateStats(); updateTargetWords();
       });
     });
 
@@ -739,10 +594,7 @@
       const es = ui.langSelect.value === 'es';
       document.getElementById('targetTitle').textContent = es ? 'Palabras Meta' : 'Target Words';
       document.getElementById('targetHint').textContent = es ? 'Solo muestra palabras que sí están en este tablero.' : 'Only words actually on this board are listed.';
-      ui.hintBtn.textContent = es ? 'Pista' : 'Hint';
-      ui.clearBtn.textContent = es ? 'Limpiar Ruta' : 'Clear Path';
-      ui.newBoardBtn.textContent = es ? 'Nuevo Tablero' : 'New Board';
-      ui.startBtn.textContent = es ? 'Comenzar' : 'Start Game';
+      ui.hintBtn.textContent = es ? 'Pista' : 'Hint'; ui.clearBtn.textContent = es ? 'Limpiar Ruta' : 'Clear Path'; ui.newBoardBtn.textContent = es ? 'Nuevo Tablero' : 'New Board'; ui.startBtn.textContent = es ? 'Comenzar' : 'Start Game';
       ui.soundBtn.textContent = `${es ? 'Sonido' : 'Sound'}: ${state.soundOn ? (es ? 'Sí' : 'On') : (es ? 'No' : 'Off')}`;
     });
   }
