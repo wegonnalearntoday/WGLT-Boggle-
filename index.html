@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>WGLT Black History Boggle V4.4.2</title>
+<title>WGLT Black History Boggle V4.4.3</title>
 <style>
 :root{--panel:#13131a;--panel2:#1b1b24;--line:rgba(255,255,255,.09);--text:#f8f1da;--muted:#beb59a;--gold:#f4c542;--shadow:0 12px 30px rgba(0,0,0,.35)}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -39,14 +39,54 @@ button{cursor:pointer}.primary{background:linear-gradient(135deg, rgba(31,170,89
 .leaderRow{display:flex;justify-content:space-between;gap:10px;padding:8px 10px;border-radius:12px;background:var(--panel2);border:1px solid var(--line);margin-bottom:8px}.muted{color:var(--muted)}
 .confetti{position:fixed;top:-20px;width:10px;height:16px;opacity:.92;z-index:40;animation:fall linear forwards}@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:1}}
 @media (max-width:920px){.controls{grid-template-columns:repeat(2,minmax(0,1fr))}.stats{grid-template-columns:repeat(3,minmax(0,1fr))}.layout{grid-template-columns:1fr}}
-@media (max-width:640px){body{padding:8px}.app{gap:8px}.controls .control:last-child{grid-column:1/-1}.stats{grid-template-columns:repeat(2,minmax(0,1fr))}.board{width:min(96vw,620px);gap:6px;margin:0 auto}.currentWord{width:min(96vw,620px);font-size:1.02rem}.tile{border-radius:12px;font-size:clamp(.9rem,6vw,1.3rem)}.wordList,.foundList,.leaderboard{justify-content:center}.statusRow{justify-content:center}}
+@media (max-width:820px){
+.layout{grid-template-columns:1fr}
+.controls{grid-template-columns:repeat(2,minmax(0,1fr))}
+.controls .control:last-child{grid-column:1/-1}
+.stats{grid-template-columns:repeat(3,minmax(0,1fr))}
+.actionRow{width:100%}
+.actionRow button{flex:1 1 140px}
+}
+@media (max-width:640px){
+body{padding:6px}
+.app{gap:8px}
+.hero{padding:12px}
+h1{font-size:clamp(1.25rem,6vw,1.8rem)}
+.subtitle{font-size:.92rem}
+.controls{grid-template-columns:1fr 1fr;gap:8px}
+.controls .control{min-width:0}
+.controls label{font-size:.8rem}
+select,button{height:44px;padding:0 10px;font-size:.95rem}
+.stats{grid-template-columns:repeat(2,minmax(0,1fr));gap:8px}
+.stat{padding:10px}
+.statusRow{justify-content:center}
+.currentWord{width:min(96vw,700px);min-height:52px;font-size:.98rem;letter-spacing:1px;padding:8px}
+.board{width:min(96vw,700px);gap:5px;margin:0 auto}
+.board.size-4{width:min(92vw,420px)}
+.board.size-5{width:min(96vw,520px)}
+.board.size-6{width:min(96vw,620px)}
+.tile{border-radius:10px;font-size:clamp(.82rem,5.5vw,1.18rem)}
+.tile.mult::after{top:2px;right:2px;font-size:.52rem;padding:1px 4px}
+.rightPanel{padding:12px}
+.wordList,.foundList,.leaderboard{justify-content:center}
+.pill{font-size:.8rem;padding:7px 10px}
+.actionRow{display:grid;grid-template-columns:1fr;gap:8px;width:100%}
+.actionRow button{width:100%}
+.modal{padding:14px}
+.toast{min-width:min(300px,92vw);padding:12px 14px}
+}
+@media (max-width:420px){
+.currentWord{font-size:.9rem}
+.board{gap:4px}
+.tile{font-size:clamp(.72rem,5vw,1rem);border-radius:9px}
+}
 </style>
 </head>
 <body>
 <div class="app">
 <section class="panel hero">
 <h1>WGLT Black History Boggle V4.4</h1>
-<div class="subtitle">Dynamic board size by grade: 4x4 for K-5, 5x5 for 6-8, 6x6 for 9 and above. Fixed full target-word placement and added one-step drag backtracking so players can slide back one letter instead of restarting a whole word. The game tries to guarantee at least 4 target words on every board.</div>
+<div class="subtitle">Dynamic board size by grade: 4x4 for K-5, 5x5 for 6-8, 6x6 for 9 and above. Fixed full target-word placement, added one-step drag backtracking, and improved mobile layout so larger boards fit phones better. The game tries to guarantee at least 4 target words on every board.</div>
 <div class="controls">
   <div class="control"><label for="gradeSelect">Grade Band</label><select id="gradeSelect"><option value="K2">K-2</option><option value="G35" selected>3-5</option><option value="G68">6-8</option><option value="G912">9-12</option></select></div>
   <div class="control"><label for="difficultySelect">Difficulty</label><select id="difficultySelect"><option value="easy" selected>Easy • 4:00</option><option value="medium">Medium • 3:00</option><option value="hard">Hard • 1:30</option></select></div>
@@ -366,6 +406,8 @@ function generateBoard(){
 function renderBoard(){
   ui.board.innerHTML = '';
   ui.board.style.gridTemplateColumns = `repeat(${state.boardCols}, 1fr)`;
+  ui.board.classList.remove('size-4','size-5','size-6');
+  ui.board.classList.add(`size-${state.boardCols}`);
   state.board.forEach((letter, idx) => {
     const tile = document.createElement('div');
     tile.className = 'tile';
@@ -379,7 +421,7 @@ function renderBoard(){
 function updateTileStates(){
   const active = new Set(state.selected);
   [...ui.board.children].forEach((tile, idx) => tile.classList.toggle('active', active.has(idx)));
-  setCurrentWord(state.selected.map(i => state.board[i]).join('') || (state.gameActive ? 'DRAG TO SPELL' : 'PRESS START'));
+  setCurrentWord(state.selected.map(i => state.board[i]).join('') || (state.gameActive ? 'DRAG TO CONNECT' : 'PRESS START'));
 }
 function neighbors(a,b){
   const ar=Math.floor(a/state.boardCols), ac=a%state.boardCols, br=Math.floor(b/state.boardCols), bc=b%state.boardCols;
