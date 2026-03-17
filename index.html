@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>WGLT Black History Boggle V4</title>
+  <title>WGLT Black History Boggle V4.1</title>
   <style>
     :root{
       --bg:#08080c; --panel:#13131a; --panel2:#1b1b24; --line:rgba(255,255,255,.09);
@@ -98,8 +98,8 @@
 <body>
 <div class="app">
   <section class="panel hero">
-    <h1>WGLT Black History Boggle V4</h1>
-    <div class="subtitle">Version 3 look and feel, with bigger JSON word banks, puzzle-aware hints, hidden word banks, and gold x2 multiplier tiles.</div>
+    <h1>WGLT Black History Boggle V4.1</h1>
+    <div class="subtitle">Fixed target words so they only show words actually placed on the current board. Version 3 look and feel stays intact.</div>
     <div class="controls">
       <div class="control"><label for="gradeSelect">Grade Band</label><select id="gradeSelect"><option value="K2">K-2</option><option value="G35" selected>3-5</option><option value="G68">6-8</option><option value="G912">9-12</option></select></div>
       <div class="control"><label for="difficultySelect">Difficulty</label><select id="difficultySelect"><option value="easy" selected>Easy • 4:00</option><option value="medium">Medium • 3:00</option><option value="hard">Hard • 1:30</option></select></div>
@@ -137,7 +137,7 @@
       <section class="panel rightPanel">
         <div class="sectionTitle">
           <h3 id="targetTitle">Target Words</h3>
-          <div class="tiny" id="targetHint">Easy shows the list. Medium and Hard reveal as found.</div>
+          <div class="tiny" id="targetHint">Now only words actually on this board are listed.</div>
         </div>
         <div class="wordList" id="targetWords"></div>
       </section>
@@ -235,6 +235,7 @@
   function randomInt(max){ return Math.floor(Math.random() * max); }
   function minLengthForGrade(grade){ return WORD_LIBRARY?.[grade]?.minLength || 3; }
   function currentTheme(){ return THEMES[state.currentThemeKey]; }
+  function placedTargetWords(){ return state.placedTargets.map(t => t.word); }
 
   async function loadJSON(path){
     const res = await fetch(path);
@@ -262,7 +263,7 @@
       renderBoard();
       updateStats();
       updateTargetWords();
-      ui.factBox.textContent = 'Word banks loaded. Easy mode shows the target list. Medium and Hard reveal them as they are found.';
+      ui.factBox.textContent = 'Word banks loaded. Target words now come only from the words actually placed on the current board.';
       wireEvents();
     }catch(err){
       ui.factBox.textContent = 'Could not load the JSON files. Keep index.html and the data folder together when you upload to GitHub Pages.';
@@ -280,31 +281,37 @@
   function acceptedLibrary(){
     return new Set([
       ...(WORD_LIBRARY[state.currentGrade]?.bonusWords || []),
-      ...currentTheme().words.map(w => w.word)
+      ...placedTargetWords()
     ].map(w => w.toUpperCase()));
   }
 
   function updateTargetWords(){
-    if(!THEMES) return;
     const diff = state.currentDifficulty;
+    const words = placedTargetWords();
     ui.targetWords.innerHTML = '';
-    currentTheme().words.forEach(item => {
+    words.forEach(word => {
       const chip = document.createElement('div');
       chip.className = 'chip';
       if(diff === 'easy'){
-        chip.textContent = item.word;
-        if(state.foundTarget.has(item.word)) chip.classList.add('found');
+        chip.textContent = word;
+        if(state.foundTarget.has(word)) chip.classList.add('found');
       } else {
-        if(state.foundTarget.has(item.word)){
-          chip.textContent = item.word;
+        if(state.foundTarget.has(word)){
+          chip.textContent = word;
           chip.classList.add('found');
         } else {
-          chip.textContent = '•'.repeat(item.word.length);
+          chip.textContent = '•'.repeat(word.length);
           chip.classList.add('hiddenWord');
         }
       }
       ui.targetWords.appendChild(chip);
     });
+    if(!words.length){
+      const chip = document.createElement('div');
+      chip.className = 'chip';
+      chip.textContent = 'No target words placed. Tap New Board.';
+      ui.targetWords.appendChild(chip);
+    }
   }
 
   function renderFoundWords(){
@@ -337,7 +344,7 @@
 
   function pathCellsForWord(word){
     const dirs = [[-1,-1],[-1,0],[-1,1],[0,-1],[0,1],[1,-1],[1,0],[1,1]];
-    for(let attempt=0; attempt<260; attempt++){
+    for(let attempt=0; attempt<280; attempt++){
       const used = new Set();
       const path = [];
       const start = randomInt(16);
@@ -372,12 +379,14 @@
   function generateBoard(){
     const board = Array(16).fill(null);
     state.placedTargets = [];
-    const targetList = [...currentTheme().words].sort((a,b)=>b.word.length-a.word.length).slice(0,5);
-    targetList.forEach(item => {
+
+    const targetCandidates = [...currentTheme().words].sort((a,b)=>b.word.length-a.word.length);
+    for(const item of targetCandidates){
       let w = item.word.toUpperCase();
       if(w.length > 8) w = w.slice(0,8);
       const path = pathCellsForWord(w);
-      if(!path) return;
+      if(!path) continue;
+
       let fits = true;
       for(let i=0;i<path.length;i++){
         const idx = path[i];
@@ -387,10 +396,11 @@
         for(let i=0;i<path.length;i++) board[path[i]] = w[i];
         state.placedTargets.push({word:w, path:[...path], fact:item.fact});
       }
-    });
+      if(state.placedTargets.length >= 5) break;
+    }
 
     const bonusPool = (WORD_LIBRARY[state.currentGrade]?.bonusWords || []).filter(w => w.length >= minLengthForGrade(state.currentGrade) && w.length <= 6);
-    for(let t=0; t<3; t++){
+    for(let t=0; t<4; t++){
       const bonus = bonusPool[randomInt(bonusPool.length)];
       const path = pathCellsForWord(bonus);
       if(!path) continue;
@@ -460,8 +470,8 @@
   }
 
   function wordMeta(word){
-    const themeWord = currentTheme().words.find(x => x.word === word);
-    if(themeWord) return {type:'theme', fact:themeWord.fact};
+    const placed = state.placedTargets.find(x => x.word === word);
+    if(placed) return {type:'theme', fact:placed.fact};
     if(acceptedLibrary().has(word)) return {type:'bonus', fact:`${word} counts as a grade-band bonus word in this mode.`};
     return {type:'invalid', fact:''};
   }
@@ -589,14 +599,14 @@
   }
 
   function checkRoundWin(){
-    if(state.foundTarget.size === currentTheme().words.length || state.foundTarget.size === state.placedTargets.length){
+    if(state.foundTarget.size === state.placedTargets.length && state.placedTargets.length){
       confettiBurst(110);
       showToast('good', 'Theme Cleared!', 'You found every target word on this board.');
     }
   }
 
   function saveScore(){
-    const key = 'wglt_boggle_scores_v4';
+    const key = 'wglt_boggle_scores_v41';
     const scores = JSON.parse(localStorage.getItem(key) || '[]');
     scores.push({
       score: state.score,
@@ -610,7 +620,7 @@
   }
 
   function renderLeaderboard(){
-    const key = 'wglt_boggle_scores_v4';
+    const key = 'wglt_boggle_scores_v41';
     const scores = JSON.parse(localStorage.getItem(key) || '[]');
     ui.leaderboard.innerHTML = '';
     if(!scores.length){
@@ -631,7 +641,7 @@
     clearPath();
     saveScore();
     ui.endTitle.textContent = 'Time Up';
-    ui.endText.textContent = `Score: ${state.score} • Found: ${state.found.size} words • Target words: ${state.foundTarget.size}/${currentTheme().words.length}`;
+    ui.endText.textContent = `Score: ${state.score} • Found: ${state.found.size} words • Target words: ${state.foundTarget.size}/${state.placedTargets.length}`;
     ui.overlay.classList.add('show');
     renderLeaderboard();
   }
@@ -646,7 +656,7 @@
     updatePills();
     if(newBoard) generateBoard();
     renderBoard(); renderFoundWords(); updateTargetWords();
-    ui.factBox.textContent = `${currentTheme().title} is ready. Puzzle-aware hints now point to words actually placed on this board.`;
+    ui.factBox.textContent = `${currentTheme().title} is ready. Every target word listed is actually on this board now.`;
     clearPath(); updateStats(); startTimer(); ui.overlay.classList.remove('show');
     playBeep(500,.05);
   }
@@ -704,14 +714,16 @@
         state.currentDifficulty = ui.difficultySelect.value;
         state.currentThemeKey = ui.themeSelect.value;
         state.timeLeft = difficultySeconds(state.currentDifficulty);
-        updatePills(); updateStats(); updateTargetWords();
+        updatePills(); updateStats();
+        if(!state.gameActive){ generateBoard(); renderBoard(); }
+        updateTargetWords();
       });
     });
 
     ui.langSelect.addEventListener('change', () => {
       const es = ui.langSelect.value === 'es';
       document.getElementById('targetTitle').textContent = es ? 'Palabras Meta' : 'Target Words';
-      document.getElementById('targetHint').textContent = es ? 'Fácil muestra la lista. Medio y Difícil revelan al encontrarlas.' : 'Easy shows the list. Medium and Hard reveal them as they are found.';
+      document.getElementById('targetHint').textContent = es ? 'Ahora solo muestra palabras que sí están en este tablero.' : 'Now only words actually on this board are listed.';
       ui.hintBtn.textContent = es ? 'Pista' : 'Hint';
       ui.clearBtn.textContent = es ? 'Limpiar Ruta' : 'Clear Path';
       ui.newBoardBtn.textContent = es ? 'Nuevo Tablero' : 'New Board';
