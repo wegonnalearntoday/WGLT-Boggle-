@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-<title>WGLT Black History Boggle V4.4.1</title>
+<title>WGLT Black History Boggle V4.4.2</title>
 <style>
 :root{--panel:#13131a;--panel2:#1b1b24;--line:rgba(255,255,255,.09);--text:#f8f1da;--muted:#beb59a;--gold:#f4c542;--shadow:0 12px 30px rgba(0,0,0,.35)}
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent}
@@ -46,7 +46,7 @@ button{cursor:pointer}.primary{background:linear-gradient(135deg, rgba(31,170,89
 <div class="app">
 <section class="panel hero">
 <h1>WGLT Black History Boggle V4.4</h1>
-<div class="subtitle">Dynamic board size by grade: 4x4 for K-5, 5x5 for 6-8, 6x6 for 9 and above. Fixed full target-word placement so words like ENGINEERING are no longer chopped down on larger boards. The game tries to guarantee at least 4 target words on every board.</div>
+<div class="subtitle">Dynamic board size by grade: 4x4 for K-5, 5x5 for 6-8, 6x6 for 9 and above. Fixed full target-word placement and added one-step drag backtracking so players can slide back one letter instead of restarting a whole word. The game tries to guarantee at least 4 target words on every board.</div>
 <div class="controls">
   <div class="control"><label for="gradeSelect">Grade Band</label><select id="gradeSelect"><option value="K2">K-2</option><option value="G35" selected>3-5</option><option value="G68">6-8</option><option value="G912">9-12</option></select></div>
   <div class="control"><label for="difficultySelect">Difficulty</label><select id="difficultySelect"><option value="easy" selected>Easy • 4:00</option><option value="medium">Medium • 3:00</option><option value="hard">Hard • 1:30</option></select></div>
@@ -387,9 +387,34 @@ function neighbors(a,b){
 }
 function addIndex(idx){
   if(!state.gameActive) return;
-  if(!state.selected.length){ state.selected.push(idx); return updateTileStates(); }
+
+  if(!state.selected.length){
+    state.selected.push(idx);
+    return updateTileStates();
+  }
+
+  const last = state.selected[state.selected.length - 1];
+  const secondLast = state.selected[state.selected.length - 2];
+
+  // Backtrack one step if the player drags back onto the previous tile
+  if(idx === secondLast){
+    const removedIdx = state.selected.pop();
+    const removedTile = ui.board.children[removedIdx];
+    if(removedTile){
+      removedTile.classList.remove('active');
+      removedTile.classList.add('good');
+      setTimeout(() => removedTile.classList.remove('good'), 180);
+    }
+    updateTileStates();
+    return;
+  }
+
   if(state.selected.includes(idx)) return;
-  if(neighbors(state.selected[state.selected.length-1], idx)){ state.selected.push(idx); updateTileStates(); }
+
+  if(neighbors(last, idx)){
+    state.selected.push(idx);
+    updateTileStates();
+  }
 }
 function clearPath(){ state.selected = []; updateTileStates(); }
 
