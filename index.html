@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
-  <title>WGLT Black History Boggle V4.1</title>
+  <title>WGLT Black History Boggle V4.2</title>
   <style>
     :root{
       --bg:#08080c; --panel:#13131a; --panel2:#1b1b24; --line:rgba(255,255,255,.09);
@@ -98,8 +98,8 @@
 <body>
 <div class="app">
   <section class="panel hero">
-    <h1>WGLT Black History Boggle V4.1</h1>
-    <div class="subtitle">Fixed target words so they only show words actually placed on the current board. Version 3 look and feel stays intact.</div>
+    <h1>WGLT Black History Boggle V4.2</h1>
+    <div class="subtitle">Mixed-age dictionary added. History words score biggest, grade-band words score next, and general dictionary words still count so fewer real words get rejected.</div>
     <div class="controls">
       <div class="control"><label for="gradeSelect">Grade Band</label><select id="gradeSelect"><option value="K2">K-2</option><option value="G35" selected>3-5</option><option value="G68">6-8</option><option value="G912">9-12</option></select></div>
       <div class="control"><label for="difficultySelect">Difficulty</label><select id="difficultySelect"><option value="easy" selected>Easy • 4:00</option><option value="medium">Medium • 3:00</option><option value="hard">Hard • 1:30</option></select></div>
@@ -137,7 +137,7 @@
       <section class="panel rightPanel">
         <div class="sectionTitle">
           <h3 id="targetTitle">Target Words</h3>
-          <div class="tiny" id="targetHint">Now only words actually on this board are listed.</div>
+          <div class="tiny" id="targetHint">Only words actually on this board are listed.</div>
         </div>
         <div class="wordList" id="targetWords"></div>
       </section>
@@ -145,7 +145,7 @@
 
     <div class="rightCol">
       <section class="panel rightPanel">
-        <div class="sectionTitle"><h3>Found Words</h3><div class="tiny">History words score bigger. Bonus words still count.</div></div>
+        <div class="sectionTitle"><h3>Found Words</h3><div class="tiny">History, grade-band, and dictionary words can all score.</div></div>
         <div class="foundList" id="foundWords"></div>
       </section>
 
@@ -210,6 +210,7 @@
 
   let WORD_LIBRARY = null;
   let THEMES = null;
+  let DICTIONARY = null;
 
   const state = {
     board: [],
@@ -245,9 +246,10 @@
 
   async function init(){
     try{
-      [WORD_LIBRARY, THEMES] = await Promise.all([
+      [WORD_LIBRARY, THEMES, DICTIONARY] = await Promise.all([
         loadJSON('./data/wglt_word_library.json'),
-        loadJSON('./data/wglt_themes.json')
+        loadJSON('./data/wglt_themes.json'),
+        loadJSON('./data/wglt_boggle_dictionary.json')
       ]);
       Object.entries(THEMES).forEach(([key, val]) => {
         const opt = document.createElement('option');
@@ -263,7 +265,7 @@
       renderBoard();
       updateStats();
       updateTargetWords();
-      ui.factBox.textContent = 'Word banks loaded. Target words now come only from the words actually placed on the current board.';
+      ui.factBox.textContent = `Mixed-age dictionary loaded with ${DICTIONARY.words.length.toLocaleString()} fallback words.`;
       wireEvents();
     }catch(err){
       ui.factBox.textContent = 'Could not load the JSON files. Keep index.html and the data folder together when you upload to GitHub Pages.';
@@ -278,12 +280,8 @@
     ui.diffPill.textContent = `Mode: ${ui.difficultySelect.options[ui.difficultySelect.selectedIndex].text.split('•')[0].trim()}`;
   }
 
-  function acceptedLibrary(){
-    return new Set([
-      ...(WORD_LIBRARY[state.currentGrade]?.bonusWords || []),
-      ...placedTargetWords()
-    ].map(w => w.toUpperCase()));
-  }
+  function gradeSet(){ return new Set((WORD_LIBRARY[state.currentGrade]?.bonusWords || []).map(w => w.toUpperCase())); }
+  function dictionarySet(){ return new Set((DICTIONARY?.words || []).map(w => w.toUpperCase())); }
 
   function updateTargetWords(){
     const diff = state.currentDifficulty;
@@ -400,7 +398,7 @@
     }
 
     const bonusPool = (WORD_LIBRARY[state.currentGrade]?.bonusWords || []).filter(w => w.length >= minLengthForGrade(state.currentGrade) && w.length <= 6);
-    for(let t=0; t<4; t++){
+    for(let t=0; t<5; t++){
       const bonus = bonusPool[randomInt(bonusPool.length)];
       const path = pathCellsForWord(bonus);
       if(!path) continue;
@@ -472,13 +470,20 @@
   function wordMeta(word){
     const placed = state.placedTargets.find(x => x.word === word);
     if(placed) return {type:'theme', fact:placed.fact};
-    if(acceptedLibrary().has(word)) return {type:'bonus', fact:`${word} counts as a grade-band bonus word in this mode.`};
+    if(gradeSet().has(word)) return {type:'grade', fact:`${word} counts as a grade-band bonus word in this mode.`};
+    if(dictionarySet().has(word)) return {type:'dictionary', fact:`${word} counts as a general dictionary word.`};
     return {type:'invalid', fact:''};
   }
 
   function pointsFor(word, usedMultiplier, type){
-    let base = word.length <= 3 ? 100 : word.length === 4 ? 140 : word.length === 5 ? 180 : word.length === 6 ? 220 : 260;
-    if(type === 'theme') base += 120;
+    let base;
+    if(type === 'theme'){
+      base = word.length <= 3 ? 220 : word.length === 4 ? 260 : word.length === 5 ? 320 : word.length === 6 ? 380 : 430;
+    } else if(type === 'grade'){
+      base = word.length <= 3 ? 100 : word.length === 4 ? 140 : word.length === 5 ? 180 : word.length === 6 ? 220 : 260;
+    } else {
+      base = word.length <= 3 ? 50 : word.length === 4 ? 70 : word.length === 5 ? 90 : word.length === 6 ? 110 : 130;
+    }
     base *= state.combo;
     if(usedMultiplier) base *= 2;
     return base;
@@ -537,7 +542,7 @@
     }
 
     if(meta.type === 'invalid'){
-      showToast('bad', 'Not found', `${word} is not in this grade-band list.`);
+      showToast('bad', 'Not found', `${word} is not in the target, grade-band, or dictionary list.`);
       playBeep(220, .1);
       state.combo = 1; clearPath(); updateStats(); return;
     }
@@ -553,10 +558,20 @@
     const pts = pointsFor(word, usedMultiplier, meta.type);
     state.score += pts;
     state.combo += 1;
-    ui.factBox.textContent = meta.type === 'theme' ? meta.fact : `${word} scored as a bonus word, so younger players still get credit for real reading wins.`;
+
+    if(meta.type === 'theme'){
+      ui.factBox.textContent = meta.fact;
+    } else if(meta.type === 'grade'){
+      ui.factBox.textContent = `${word} scored as a grade-band bonus word.`;
+    } else {
+      ui.factBox.textContent = `${word} scored as a dictionary word, so real words found by students, teens, and adults still count.`;
+    }
+
     renderFoundWords(); updateTargetWords(); updateStats(); flashSelected();
-    playBeep(meta.type === 'theme' ? 720 : 580, .09);
-    showToast('good', `+${pts} points`, `${word}${usedMultiplier ? ' used a gold x2 tile' : ''}${meta.type === 'theme' ? ' • history word' : ' • bonus word'}`);
+    playBeep(meta.type === 'theme' ? 720 : meta.type === 'grade' ? 580 : 460, .09);
+
+    const label = meta.type === 'theme' ? 'history word' : meta.type === 'grade' ? 'grade-band word' : 'dictionary word';
+    showToast('good', `+${pts} points`, `${word}${usedMultiplier ? ' used a gold x2 tile' : ''} • ${label}`);
     clearPath(); checkRoundWin();
   }
 
@@ -606,7 +621,7 @@
   }
 
   function saveScore(){
-    const key = 'wglt_boggle_scores_v41';
+    const key = 'wglt_boggle_scores_v42';
     const scores = JSON.parse(localStorage.getItem(key) || '[]');
     scores.push({
       score: state.score,
@@ -620,7 +635,7 @@
   }
 
   function renderLeaderboard(){
-    const key = 'wglt_boggle_scores_v41';
+    const key = 'wglt_boggle_scores_v42';
     const scores = JSON.parse(localStorage.getItem(key) || '[]');
     ui.leaderboard.innerHTML = '';
     if(!scores.length){
@@ -656,7 +671,7 @@
     updatePills();
     if(newBoard) generateBoard();
     renderBoard(); renderFoundWords(); updateTargetWords();
-    ui.factBox.textContent = `${currentTheme().title} is ready. Every target word listed is actually on this board now.`;
+    ui.factBox.textContent = `${currentTheme().title} is ready. Target words are on-board, and the mixed-age dictionary is active.`;
     clearPath(); updateStats(); startTimer(); ui.overlay.classList.remove('show');
     playBeep(500,.05);
   }
@@ -723,7 +738,7 @@
     ui.langSelect.addEventListener('change', () => {
       const es = ui.langSelect.value === 'es';
       document.getElementById('targetTitle').textContent = es ? 'Palabras Meta' : 'Target Words';
-      document.getElementById('targetHint').textContent = es ? 'Ahora solo muestra palabras que sí están en este tablero.' : 'Now only words actually on this board are listed.';
+      document.getElementById('targetHint').textContent = es ? 'Solo muestra palabras que sí están en este tablero.' : 'Only words actually on this board are listed.';
       ui.hintBtn.textContent = es ? 'Pista' : 'Hint';
       ui.clearBtn.textContent = es ? 'Limpiar Ruta' : 'Clear Path';
       ui.newBoardBtn.textContent = es ? 'Nuevo Tablero' : 'New Board';
